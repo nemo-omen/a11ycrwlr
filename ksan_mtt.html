@@ -1,0 +1,415 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://media.nexstardigitalmedia.com/nxsglobal/global/css/meettheteam.css">
+
+<script>
+  var staff = [{
+    // ANCHORS
+    group: 'Anchors and Reporters',
+    staff: [{
+      name: 'Carolyn McEnrue',
+      title: 'KLST Evening Anchor',
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/01/1280x720_MeetTheTeam_CMcEnrue.png',
+
+      facebook: 'https://www.facebook.com/CMcEnrue/',
+
+      twitter: 'https://twitter.com/cmcruntv',
+
+      email: 'cmcenrue@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/carolyn-mcenrue/'
+    },
+    {
+      name: 'Daija Barrett',
+      title: 'KLST Morning Anchor',
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/03/DaijaBarrett_MeetTheTeam.jpg',
+
+      facebook: 'https://www.facebook.com/DaijaBTV/',
+
+      twitter: '#',
+
+      email: 'dbarrett@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/daija-barrett-2/'
+    },
+    {
+      name: 'Erin Hunter',
+
+      title: 'KLST Weekend Anchor/Multimedia Journalist',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2021/08/1280x720_MeetTheTeam_EHunter.jpg',
+
+      facebook: '#',
+
+      twitter: 'https://twitter.com/erinhuntertv',
+
+      email: 'ehunter@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/erin-hunter/'
+    },
+    {
+      name: 'Nathan Mayer',
+
+      title: 'Multimedia Journalist',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/07/1280x720_MeetTheTeam-NMayer.png',
+
+      facebook: '#',
+
+      twitter: '#',
+
+      email: 'nmayer@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/nathan-mayer/'
+    },
+    ]
+  }, {
+    // METEOROLOGISTS
+    group: 'Meteorologists',
+    staff: [
+      {
+        name: 'Kris Boone',
+
+        title: 'KLST Chief Meteorologist',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2020/05/1280x720_KrisBoone.jpg',
+
+        facebook: 'https://www.facebook.com/KrisBooneWX/',
+
+        twitter: 'https://twitter.com/krisboonewx',
+
+        email: 'kboone@klst.net',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/kris-boone/'
+      },
+      {
+        name: 'Gracen Epley',
+
+        title: 'KLST Weather Presenter',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/10/MTT_GracenEpley.jpg',
+
+        facebook: '#',
+
+        twitter: '#',
+
+        email: 'gepley@klst.net',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/gracen-epley/'
+      }
+    ]
+  }, {
+    // SPORTS
+    group: 'Sports',
+    staff: [
+      {
+        name: 'Ryan Compeau',
+
+        title: 'Sports Reporter',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2021/10/1280x720_MeetTheTeam_RCompeau.jpg',
+
+        // facebook: 'https://www.facebook.com/RyanKLST',
+
+        twitter: 'https://twitter.com/Ry_Compeau',
+
+        email: 'rcompeau@klst.net',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/ryan-compeau/'
+      },
+      {
+        name: 'Sabrina Hoover',
+
+        title: 'Sports Reporter',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/06/1280x720_MeetTheTeam_SHoover.png',
+
+        // facebook: 'https://www.facebook.com/RyanKLST',
+
+        // twitter: 'https://twitter.com/RPRTalks/',
+
+        email: 'shoover@klst.net',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/sabrina-hoover/'
+      }
+    ]
+  },
+  // {
+  //    group: 'Producers',
+  //    staff: [
+  //       {
+  //          name: 'James Smith',
+
+  //          title: 'Producer',
+
+  //          img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2021/10/1280x720_JSmith.png',
+
+  //          email: 'jsmith@klst.net',
+
+  //          bio: 'https://www.conchovalleyhomepage.com/author/james-smith/'
+  //       }
+  //    ]
+  // },
+  // {
+  //    group: 'Photographers',
+  //    staff: [{
+  //       name: 'Jaelin Lewis',
+  //       title: 'News Photographer',
+  //       img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/01/1280x720_JLewis.png',
+  //       facebook: 'https://www.facebook.com/photogjae',
+  //       twitter: 'https://twitter.com/photogjae_cv',
+  //       email: 'jlewis@klst.net',
+  //       bio: 'https://www.conchovalleyhomepage.com/author/jaelin-lewis/'
+  //    }]
+  // },
+  {
+    group: 'Digital Team',
+    staff: [{
+      name: 'Jeffrey Caldwell',
+
+      title: 'Digital Executive Producer',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/01/1280x720_MeetTheTeam_JCaldwell.png',
+
+      facebook: 'https://www.facebook.com/JCaldwellNews',
+
+      twitter: 'https://twitter.com/JCaldwellNews',
+
+      email: 'jcaldwell@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/jeff-caldwell/'
+    },
+    {
+      name: 'Ashtin Wade',
+
+      title: 'Digital Reporter',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/01/thumbnail_AshtinWade_MeetTheTeam1.jpg',
+
+      email: 'awade@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/ashtin-wade/'
+    },
+    {
+      name: 'Dusty Ellis',
+
+      title: 'Digital Reporter',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/05/DustyEllis_MTT_Landscape.png',
+
+      email: 'dellis@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/dusty-ellis/'
+    },]
+  }, {
+    group: 'News Directors',
+    staff: [{
+      name: 'Cody Brown',
+
+      title: 'News Director',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/01/1280x720_MeetTheTeam_CBrown.png',
+
+      facebook: 'https://www.facebook.com/klstnews',
+
+      twitter: 'https://twitter.com/klstnews',
+
+      email: 'cbrown@klst.net',
+
+
+      bio: 'https://www.conchovalleyhomepage.com/author/cody-brown/'
+    }, {
+      name: 'Senora Scott',
+
+      title: 'Assistant News Director',
+
+      img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2022/01/1280x720_MeetTheTeam_SScott.png',
+
+      facebook: 'https://www.facebook.com/SenoraScottTV/',
+
+      twitter: 'https://twitter.com/SenoraTV',
+
+      email: 'mailto:SScott2@klst.net',
+
+      bio: 'https://www.conchovalleyhomepage.com/author/senora-scott/'
+    },]
+  }, {
+    // SPECIAL CONTRIBUTORS
+
+    group: 'Special Contributors',
+
+    staff: [
+      {
+        name: 'Alexandra Limon',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2019/06/AlexandraLimon_Profile.jpg',
+
+        facebook: 'https://www.facebook.com/AlexLimonNews/',
+
+        twitter: 'https://twitter.com/AlexLimonNews',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/alexandra-limon-2/'
+      }
+      ,
+      {
+        name: 'Anna Wiernicki',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/01/AnnaWiernicki_Profile.jpg',
+
+        facebook: 'https://www.facebook.com/AnnaWiernickiTV/',
+
+        twitter: 'https://twitter.com/AnnaEWiernicki',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/anna-wiernicki-2/'
+      },
+      {
+        name: 'Raquel Martin',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://media.nexstardigitalmedia.com/nxsglobal/global/html/icons_bios/Brie%20Jackson.jpg',
+
+        facebook: 'https://www.facebook.com/RaquelMartinTV/',
+
+        twitter: 'https://twitter.com/RaquelMartinTV',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/raquel-martin/'
+      },
+      {
+        name: 'Trevor Shirley',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/01/TrevorShirley_Profile-e1673976569509.png',
+
+        facebook: 'https://www.facebook.com/TrevorShirleyNews/',
+
+        twitter: 'https://twitter.com/Trevor_Reports',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/trevor-shirley/'
+      },
+      {
+        name: 'Jessi Turnure',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/01/JessiTurnure_Profile.jpg',
+
+        facebook: 'https://www.facebook.com/JessiTurnure/',
+
+        twitter: 'https://twitter.com/JessiTurnure',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/jessi-turnure/'
+      },
+      {
+        name: 'Basil John',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/01/BasilJohn_Profile.jpg',
+
+        facebook: '#',
+
+        twitter: '#',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/basil-john-2/'
+      },
+      {
+        name: 'Reshad Hudson',
+
+        title: 'Washington Correspondent',
+
+        img: 'https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/01/ReshadHudson_Profile.jpg',
+
+        facebook: '#',
+
+        twitter: 'https://twitter.com/reshadhudson',
+
+        email: '#',
+
+        bio: 'https://www.conchovalleyhomepage.com/author/reshad-hudson/'
+      },
+      {
+        name: 'Hannah Brandt',
+
+        title: 'Washington Correspondent',
+
+        img: '#',
+
+        facebook: '#',
+
+        twitter: '#',
+
+        email: '#',
+
+        bio: '#'
+      },
+    ]
+  }
+  ];
+  $(function () {
+    var $row = $('<div/>').attr('class',
+      'row'),
+      $h4 = $('<h4/>'),
+      $h5 = $('<h5/>'),
+      $wrap_staff = $('<div/>').attr('class',
+        'col-sm-4 col-xs-4'),
+      $a = $('<a/>').attr('target',
+        '_top'),
+      $img = $('<img/>').attr('width',
+        '240'),
+      $details = $('<div/>').attr('class',
+        'caption'),
+      $span = $('<div/>'), // CHANGE SPAN TO DIV - Scott Herrick
+
+      // $br=$( '<br/>'),		// REMOVE BR TAG HERE AND IN SCRIPT .APPEND BELOW
+      // USE MARGIN-BOTTOM ON TITLE DIV - Scott Herrick
+
+      $social = $('<div/>').attr('class',
+        'social-group'),
+      $facebook = $a.clone().attr('class',
+        'facebook-icon'),
+      $twitter = $a.clone().attr('class',
+        'twitter-icon'),
+      $email = $a.clone().attr('class',
+        'email-icon');
+    $.each(staff,
+      function (gk,
+        g) {
+        var $this_row = $row.clone().append($h4.clone().text(g.group));
+        $.each(g.staff,
+          function (sk, s) {
+            if (0 == sk % 3) {
+              $this_row.appendTo('#container');
+              $this_row = $row.clone();
+            }
+            $this_row.append($wrap_staff.clone().append($a.clone().attr('href', s.bio).append($img.clone().attr({
+              'src': s.img + '?w=320&h=180&crop=1',
+              'alt': s.name
+            }))).append($details.clone().append($h5.clone().text(s.name)).append($span.clone().text(s.title)).append($social.clone().append('#' == s.facebook ? '' : $facebook.clone().attr('href', s.facebook)).append('#' == s.twitter ? '' : $twitter.clone().attr('href', s.twitter)).append($email.clone().attr('href', 'mailto:' + s.email)))));
+          }
+        );
+        $this_row.appendTo('#container');
+      }
+    );
+  }
+
+  );
+</script>
+<div id="container"></div>
