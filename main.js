@@ -59,9 +59,10 @@ async function main() {
   const ready = await login('https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskrsta.P_RegsStatusDisp');
   if(ready) {
     const {results, pageName} = await generateReport(startPage);
-    await browser.close();
     writeResults(results, pageName);
   }
 }
 
-main();
+main().then(async() => {
+  await browser.close();
+});
