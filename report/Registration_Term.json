@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2023-05-15T14:37:51.692Z",
+  "timestamp": "2023-05-15T18:20:37.763Z",
   "url": "https://ssb.angelo.edu/prod/bwskrsta.P_RegsStatusDisp",
   "toolOptions": {
     "reporter": "v1"
@@ -4959,7 +4959,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>\n<td class=\"pldefault\">\n<h2>Registration Term </h2>\n</td>\n<td class=\"pldefault\">\n&nbsp;\n</td>\n<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 09:37 am<br>\n</div>\n</td>\n</tr>",
+          "html": "<tr>\n<td class=\"pldefault\">\n<h2>Registration Term </h2>\n</td>\n<td class=\"pldefault\">\n&nbsp;\n</td>\n<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:20 pm<br>\n</div>\n</td>\n</tr>",
           "target": [
             ".pagetitlediv > .plaintable > tbody > tr:nth-child(1)"
           ]
@@ -5039,7 +5039,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 09:37 am<br>\n</div>\n</td>",
+          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:20 pm<br>\n</div>\n</td>",
           "target": [
             ".pldefault:nth-child(3)"
           ]
@@ -5079,7 +5079,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 09:37 am<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:20 pm<br>\n</div>",
           "target": [
             ".staticheaders"
           ]
@@ -8442,7 +8442,7 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 09:37 am<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:20 pm<br>\n</div>",
           "target": [
             ".staticheaders"
           ],

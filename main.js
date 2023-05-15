@@ -6,7 +6,7 @@ const { AxePuppeteer } = require('@axe-core/puppeteer');
 const reportsDir = './reports';
 
 let browser;
-let page;
+let startPage;
 let links = new Set();
 let cookies;
 
@@ -22,37 +22,46 @@ async function login(url) {
     ignoreDefaultArgs: ['--enable-automation']
   });
 
-  page = await browser.newPage();
-  await page.setBypassCSP(true);
+  startPage = await browser.newPage();
+  await startPage.setBypassCSP(true);
 
-  await page.goto(url);
-  await page.type('#username', process.env.RAMPORT_USERNAME);
-  await page.type('#password', process.env.RAMPORT_PASSWORD);
+  await startPage.goto(url);
+  await startPage.type('#username', process.env.RAMPORT_USERNAME);
+  await startPage.type('#password', process.env.RAMPORT_PASSWORD);
 
   await Promise.all([
-      page.click('.btn'),
-      page.waitForNetworkIdle()
+      startPage.click('.btn'),
+      startPage.waitForNetworkIdle()
     ]);
 
-  cookies = await page.cookies();
+  cookies = await startPage.cookies();
+  return true;
+}
+
+async function generateReport(page) {
+  console.log(`Visiting ${await page.url()}`);
   const pageTitle = await page.title();
   const pageName = pageTitle.replaceAll(' ', '_');
 
   const results = await new AxePuppeteer(page).analyze();
-  writeResults(results, pageName);
+  console.log('Results done. Closing page...');
+  const body = {results, pageName};
   await page.close();
-  await browser.close();
-  return true;
+  return body;
 }
 
 function writeResults(results, name) {
   console.log('Writing results...');
-  fs.writeFileSync(`./report/${name}.json`, JSON.stringify(results));
+  fs.writeFileSync(`./report/${name}.json`, JSON.stringify(results, null, 2));
 }
 
 async function main() {
   const ready = await login('https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskrsta.P_RegsStatusDisp');
-  // const ready = await login('https://ramport.angelo.edu');
+  if(ready) {
+    const {results, pageName} = await generateReport(startPage);
+    await browser.close();
+    writeResults(results, pageName);
+  }
 }
 
 main();
