@@ -10,10 +10,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@axe-core/puppeteer": "^4.7.0",
+    "@axe-core/puppeteer": "^4.7.1-alpha.384",
+    "@axe-core/webdriverio": "^4.7.1-alpha.384",
+    "@wdio/globals": "^8.10.2",
     "dotenv": "^16.0.3",
     "lighthouse": "^10.2.0",
-    "puppeteer": "^20.2.0"
+    "puppeteer": "^20.2.0",
+    "webdriverio": "^8.10.2"
   },
   "devDependencies": {
     "eslint": "^8.40.0"
