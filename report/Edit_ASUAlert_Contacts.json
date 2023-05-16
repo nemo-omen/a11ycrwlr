@@ -13,7 +13,7 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2023-05-16T18:05:48.091Z",
+  "timestamp": "2023-05-16T18:06:45.940Z",
   "url": "https://ssb.angelo.edu/prod/bwwkulrt.P_EditASUAlrtContacts",
   "toolOptions": {
     "reporter": "v2"
@@ -5467,7 +5467,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>\n</td>",
+          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:06 pm<br>\n</div>\n</td>",
           "target": [
             ".pldefault:nth-child(3)"
           ]
@@ -5507,7 +5507,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:06 pm<br>\n</div>",
           "target": [
             ".staticheaders"
           ]
@@ -11785,7 +11785,7 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:06 pm<br>\n</div>",
           "target": [
             ".staticheaders"
           ]
