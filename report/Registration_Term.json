@@ -13,10 +13,10 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2023-05-15T18:22:23.459Z",
+  "timestamp": "2023-05-16T18:05:41.150Z",
   "url": "https://ssb.angelo.edu/prod/bwskrsta.P_RegsStatusDisp",
   "toolOptions": {
-    "reporter": "v1"
+    "reporter": "v2"
   },
   "inapplicable": [
     {
@@ -4959,7 +4959,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>\n<td class=\"pldefault\">\n<h2>Registration Term </h2>\n</td>\n<td class=\"pldefault\">\n&nbsp;\n</td>\n<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:22 pm<br>\n</div>\n</td>\n</tr>",
+          "html": "<tr>\n<td class=\"pldefault\">\n<h2>Registration Term </h2>\n</td>\n<td class=\"pldefault\">\n&nbsp;\n</td>\n<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>\n</td>\n</tr>",
           "target": [
             ".pagetitlediv > .plaintable > tbody > tr:nth-child(1)"
           ]
@@ -5039,7 +5039,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:22 pm<br>\n</div>\n</td>",
+          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>\n</td>",
           "target": [
             ".pldefault:nth-child(3)"
           ]
@@ -5079,7 +5079,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:22 pm<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>",
           "target": [
             ".staticheaders"
           ]
@@ -8093,8 +8093,7 @@
           "html": "<h1>Angelo State University</h1>",
           "target": [
             "h1"
-          ],
-          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+          ]
         },
         {
           "any": [
@@ -8125,8 +8124,7 @@
           "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_GenMnu\" onmouseover=\"window.status='Personal Information'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='Personal Information'; return true\" onblur=\"window.status=''; return true\">Personal Information</a>",
           "target": [
             ".taboff[height=\"22\"]:nth-child(1) > a[onmouseout=\"window.status=''; return true\"][onblur=\"window.status=''; return true\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8157,8 +8155,7 @@
           "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu\" onmouseover=\"window.status='Student Services'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='Student Services'; return true\" onblur=\"window.status=''; return true\">Student Services</a>",
           "target": [
             ".tabon > a[onmouseout=\"window.status=''; return true\"][onblur=\"window.status=''; return true\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8189,8 +8186,7 @@
           "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_FinAidMainMnu\" onmouseover=\"window.status='Financial Aid'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='Financial Aid'; return true\" onblur=\"window.status=''; return true\">Financial Aid</a>",
           "target": [
             ".taboff[height=\"22\"]:nth-child(5) > a[onmouseout=\"window.status=''; return true\"][onblur=\"window.status=''; return true\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8221,8 +8217,7 @@
           "html": "<a href=\"/prod/bwgkprxy.P_ManageProxy\" onmouseover=\"window.status='FERPA/Proxy'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='FERPA/Proxy'; return true\" onblur=\"window.status=''; return true\">FERPA/Proxy</a>",
           "target": [
             "a[href$=\"bwgkprxy.P_ManageProxy\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8253,8 +8248,7 @@
           "html": "<span class=\"pageheaderlinks\">",
           "target": [
             ".pageheaderlinks"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8285,8 +8279,7 @@
           "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
           "target": [
             "#ssbbackurl"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8317,8 +8310,7 @@
           "html": "<a href=\"/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3\" accesskey=\"2\" class=\"submenulinktext2\">SITE MAP</a>",
           "target": [
             "a[accesskey=\"2\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8349,8 +8341,7 @@
           "html": "<a href=\"/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm\" accesskey=\"H\" onclick=\"popup = window.open('/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
           "target": [
             "a[accesskey=\"H\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8381,8 +8372,7 @@
           "html": "<a href=\"twbkwbis.P_Logout\" accesskey=\"3\" class=\"submenulinktext2\">EXIT</a>",
           "target": [
             "a[href$=\"twbkwbis.P_Logout\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8413,8 +8403,7 @@
           "html": "<h2>Registration Term </h2>",
           "target": [
             "h2"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8442,11 +8431,10 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 15,2023 01:22 pm<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:05 pm<br>\n</div>",
           "target": [
             ".staticheaders"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8477,8 +8465,7 @@
           "html": "<td class=\"delabel\" scope=\"row\">Select a Term: </td>",
           "target": [
             ".delabel"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8509,8 +8496,7 @@
           "html": "<span class=\"releasetext\">Release: 8.7.1</span>",
           "target": [
             ".releasetext"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         },
         {
           "any": [
@@ -8541,8 +8527,7 @@
           "html": "<h5>© 2023 Ellucian Company L.P. and its affiliates.<br></h5>",
           "target": [
             "h5"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          ]
         }
       ]
     }
@@ -8575,8 +8560,7 @@
           "html": "<h5>© 2023 Ellucian Company L.P. and its affiliates.<br></h5>",
           "target": [
             "h5"
-          ],
-          "failureSummary": "Fix any of the following:\n  Heading order invalid"
+          ]
         }
       ]
     },
@@ -8607,8 +8591,7 @@
           "html": "<html lang=\"en\">",
           "target": [
             "html"
-          ],
-          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          ]
         }
       ]
     },
@@ -8641,8 +8624,7 @@
           "html": "<h1>Angelo State University</h1>",
           "target": [
             "h1"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8662,8 +8644,7 @@
           "html": "<table class=\"plaintable\" summary=\"This is main table for displaying Tab Items.\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">",
           "target": [
             "map > .plaintable[cellspacing=\"0\"][cellpadding=\"0\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8683,8 +8664,7 @@
           "html": "<td class=\"pldefault\">",
           "target": [
             ".headerwrapperdiv > .plaintable > tbody > tr > .pldefault:nth-child(2)"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8704,8 +8684,7 @@
           "html": "<div class=\"pagetitlediv\">",
           "target": [
             ".pagetitlediv"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8725,8 +8704,7 @@
           "html": "<td class=\"delabel\" scope=\"row\">Select a Term: </td>",
           "target": [
             ".delabel"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8746,8 +8724,7 @@
           "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
           "target": [
             "#term_id"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8767,8 +8744,7 @@
           "html": "<table class=\"plaintable\" summary=\"This is table displays line separator at end of the page.\" width=\"100%\" cellspacing=\"0\" cellpadding=\"0\" border=\"0\">",
           "target": [
             ".pagebodydiv > .plaintable[cellspacing=\"0\"][cellpadding=\"0\"]"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8788,8 +8764,7 @@
           "html": "<div class=\"pagefooterdiv\">\n<span class=\"releasetext\">Release: 8.7.1</span>\n</div>",
           "target": [
             ".pagefooterdiv"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         },
         {
           "any": [
@@ -8809,8 +8784,7 @@
           "html": "<div class=\"banner_copyright\"> <br><h5>© 2023 Ellucian Company L.P. and its affiliates.<br></h5></div>",
           "target": [
             ".banner_copyright"
-          ],
-          "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+          ]
         }
       ]
     },
@@ -8893,8 +8867,7 @@
           "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
           "target": [
             "#term_id"
-          ],
-          "failureSummary": "Fix any of the following:\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+          ]
         }
       ]
     }

@@ -1,0 +1,58 @@
+[
+  {
+    "name": "sessionDataKeyExpiration_",
+    "value": "1684261176951",
+    "domain": "login.angelo.edu",
+    "path": "/",
+    "expires": -1,
+    "size": 38,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  },
+  {
+    "name": "sessionDataKey_",
+    "value": "5f2490f3-fb65-43ab-baaa-7d796aee6ed2",
+    "domain": "login.angelo.edu",
+    "path": "/",
+    "expires": -1,
+    "size": 51,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  },
+  {
+    "name": "serviceUrl_",
+    "value": "unknown",
+    "domain": "login.angelo.edu",
+    "path": "/",
+    "expires": -1,
+    "size": 18,
+    "httpOnly": false,
+    "secure": false,
+    "session": true,
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  },
+  {
+    "name": "JSESSIONID",
+    "value": "EAE8C304CA8E2C43B2D56226B8AE1A52430E27379511E67BEDDEDE7400553B8899DC0367BB4C3507D05445FCCB911B04A62F93FA7871A8207195A108B438CE0B9E0CD2621E5C1EF700B8BF82F2C50EB90330AA3A47AA36A4C6854C139EE7DB5FB3C8D317669AE88716998D39268A23304BAF0DA92325E21D0EBB74FEF90B9785",
+    "domain": "login.angelo.edu",
+    "path": "/authenticationendpoint",
+    "expires": -1,
+    "size": 266,
+    "httpOnly": true,
+    "secure": true,
+    "session": true,
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "sourcePort": 443
+  }
+]

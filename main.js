@@ -35,10 +35,11 @@ async function login(url) {
 
   await Promise.all([
     startPage.click('.btn'),
+    cookies = await startPage.cookies(),
     startPage.waitForNetworkIdle()
   ]);
 
-  cookies = await startPage.cookies();
+  writeCookies(cookies);
   return true;
 }
 
@@ -56,6 +57,10 @@ async function generateReport(page) {
   return body;
 }
 
+function writeCookies(c) {
+  fs.writeFileSync('cookies.json', JSON.stringify(cookies, null, 2));
+}
+
 function writeResults(results, name) {
   console.log('Writing results...');
   fs.writeFileSync(`./report/${name}.json`, JSON.stringify(results, null, 2));
@@ -63,13 +68,28 @@ function writeResults(results, name) {
 
 async function visit(href) {
   if(href.length > 0) {
-    // const page = await browser.newPage();
-    // await page.setBypassCSP(true);
-    // await page.setCookie(...cookies);
-    await startPage.goto(href);
-    await startPage.waitForNetworkIdle();
-    await startPage.waitForTimeout(3000);
-    // await page.close();
+    const page = await browser.newPage();
+    await page.setBypassCSP(true);
+    await page.setCookie(...JSON.parse(fs.readFileSync('./cookies.json')));
+    await page.goto(href);
+    await page.waitForNetworkIdle();
+    const { results, pageName } = await generateReport(page);
+    writeResults(results, pageName);
+
+    try {
+
+      page.screenshot({
+        path: `./images/${pageName}.jpg`,
+        type: 'jpeg',
+        quality: 50
+      }).then(() => {
+        // await page.waitForTimeout(1000);
+        page.close();
+      });
+    } catch(error) {
+      console.error(error);
+      page.close();
+    }
   }
 }
 
@@ -86,11 +106,15 @@ async function main() {
     await startPage.waitForNetworkIdle();
     title = await startPage.title();
     console.log('title: ', title);
+    // cookies = await startPage.cookies();
+    // console.log(cookies);
+
     let linksList = await startPage.evaluate(() => {
       let links = Array.from(document.querySelectorAll('a'));
       links = links.map((a) => a.href);
       return links;
     });
+
     for(const href of linksList) {
       links.add(href);
     }
@@ -105,5 +129,5 @@ async function main() {
 }
 
 main().then(async() => {
-  await browser.close();
+  // await browser.close();
 });

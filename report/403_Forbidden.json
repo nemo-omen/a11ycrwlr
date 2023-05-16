@@ -8,15 +8,15 @@
   },
   "testEnvironment": {
     "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
-    "windowWidth": 946,
-    "windowHeight": 382,
+    "windowWidth": 1280,
+    "windowHeight": 1024,
     "orientationAngle": 0,
-    "orientationType": "landscape-primary"
+    "orientationType": "portrait-primary"
   },
-  "timestamp": "2023-05-16T01:23:26.021Z",
-  "url": "https://login.angelo.edu/duoauthenticationendpoint/duoAuth.jsp?authenticator=DuoAuthenticator%3ALOCAL&type=duo&signreq=TX%7CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%3D%3D%7C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77%3AAPP%7CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMzgwNQ%3D%3D%7C730cfa085afa29493e0ba5e40d77a22a75fdf968&sessionDataKey=fe8f3c67-8d37-45c5-830f-b47ca99832b6&duoHost=api%2Ddafb1c4b%2Eduosecurity%2Ecom",
+  "timestamp": "2023-05-16T18:05:46.290Z",
+  "url": "https://ssb.angelo.edu/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3#top",
   "toolOptions": {
-    "reporter": "v1"
+    "reporter": "v2"
   },
   "inapplicable": [
     {
@@ -28,7 +28,7 @@
       ],
       "description": "Ensures every accesskey attribute value is unique",
       "help": "accesskey attribute value should be unique",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/accesskeys?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/accesskeys?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -47,7 +47,7 @@
       ],
       "description": "Ensures <area> elements of image maps have alternate text",
       "help": "Active <area> elements must have alternate text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/area-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/area-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -60,7 +60,7 @@
       ],
       "description": "Ensures ARIA attributes are allowed for an element's role",
       "help": "Elements must only use allowed ARIA attributes",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-attr?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-attr?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -72,7 +72,7 @@
       ],
       "description": "Ensures role attribute has an appropriate value for the element",
       "help": "ARIA role should be appropriate for the element",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-role?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-role?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -88,7 +88,7 @@
       ],
       "description": "Ensures every ARIA button, link and menuitem has an accessible name",
       "help": "ARIA commands must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-command-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-command-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -100,7 +100,7 @@
       ],
       "description": "Ensures every ARIA dialog and alertdialog node has an accessible name",
       "help": "ARIA dialog and alertdialog nodes should have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-dialog-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-dialog-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -113,7 +113,7 @@
       ],
       "description": "Ensures aria-hidden elements are not focusable nor contain focusable elements",
       "help": "ARIA hidden element must not be focusable or contain focusable elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-hidden-focus?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-hidden-focus?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -129,7 +129,7 @@
       ],
       "description": "Ensures every ARIA input field has an accessible name",
       "help": "ARIA input fields must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-input-field-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-input-field-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -142,7 +142,7 @@
       ],
       "description": "Ensures every ARIA meter node has an accessible name",
       "help": "ARIA meter nodes must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-meter-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-meter-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -155,7 +155,7 @@
       ],
       "description": "Ensures every ARIA progressbar node has an accessible name",
       "help": "ARIA progressbar nodes must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-progressbar-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-progressbar-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -168,7 +168,7 @@
       ],
       "description": "Ensures elements with ARIA roles have all required ARIA attributes",
       "help": "Required ARIA attributes must be provided",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-attr?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-attr?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -181,7 +181,7 @@
       ],
       "description": "Ensures elements with an ARIA role that require child roles contain them",
       "help": "Certain ARIA roles must contain particular children",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-children?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-children?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -194,7 +194,7 @@
       ],
       "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
       "help": "Certain ARIA roles must be contained by particular parents",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-parent?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-parent?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -207,7 +207,7 @@
       ],
       "description": "Ensures all elements with a role attribute use a valid value",
       "help": "ARIA roles used must conform to valid values",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-roles?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-roles?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -219,7 +219,7 @@
       ],
       "description": "Ensures \"role=text\" is used on elements with no focusable descendants",
       "help": "\"role=text\" should have no focusable descendants",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-text?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-text?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -235,7 +235,7 @@
       ],
       "description": "Ensures every ARIA toggle field has an accessible name",
       "help": "ARIA toggle fields must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-toggle-field-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-toggle-field-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -248,7 +248,7 @@
       ],
       "description": "Ensures every ARIA tooltip node has an accessible name",
       "help": "ARIA tooltip nodes must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-tooltip-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-tooltip-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -260,7 +260,7 @@
       ],
       "description": "Ensures every ARIA treeitem node has an accessible name",
       "help": "ARIA treeitem nodes should have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-treeitem-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-treeitem-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -273,7 +273,7 @@
       ],
       "description": "Ensures all ARIA attributes have valid values",
       "help": "ARIA attributes must conform to valid values",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-valid-attr-value?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-valid-attr-value?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -286,7 +286,7 @@
       ],
       "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
       "help": "ARIA attributes must conform to valid names",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-valid-attr?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-valid-attr?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -300,7 +300,7 @@
       ],
       "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
       "help": "autocomplete attribute must be used correctly",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/autocomplete-valid?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/autocomplete-valid?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -314,7 +314,7 @@
       ],
       "description": "Ensure that text spacing set through style attributes can be adjusted with custom stylesheets",
       "help": "Inline text spacing must be adjustable with custom stylesheets",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/avoid-inline-spacing?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/avoid-inline-spacing?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -331,7 +331,7 @@
       ],
       "description": "Ensures <blink> elements are not used",
       "help": "<blink> elements are deprecated and must not be used",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/blink?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/blink?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -349,7 +349,7 @@
       ],
       "description": "Ensures buttons have discernible text",
       "help": "Buttons must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -366,23 +366,7 @@
       ],
       "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
       "help": "Page must have means to bypass repeated blocks",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/bypass?application=webdriverio",
-      "nodes": []
-    },
-    {
-      "id": "color-contrast",
-      "impact": null,
-      "tags": [
-        "cat.color",
-        "wcag2aa",
-        "wcag143",
-        "ACT",
-        "TTv5",
-        "TT13.c"
-      ],
-      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-      "help": "Elements must meet minimum color contrast ratio thresholds",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/bypass?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -395,7 +379,7 @@
       ],
       "description": "Ensures <dl> elements are structured correctly",
       "help": "<dl> elements must only directly contain properly-ordered <dt> and <dd> groups, <script>, <template> or <div> elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/definition-list?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/definition-list?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -408,7 +392,7 @@
       ],
       "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
       "help": "<dt> and <dd> elements must be contained by a <dl>",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/dlitem?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/dlitem?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -421,7 +405,7 @@
       ],
       "description": "Ensures every id attribute value of active elements is unique",
       "help": "IDs of active elements must be unique",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -434,19 +418,20 @@
       ],
       "description": "Ensures every id attribute value used in ARIA and in labels is unique",
       "help": "IDs used in ARIA and labels must be unique",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-aria?application=axe-puppeteer",
       "nodes": []
     },
     {
-      "id": "empty-heading",
+      "id": "duplicate-id",
       "impact": null,
       "tags": [
-        "cat.name-role-value",
-        "best-practice"
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
       ],
-      "description": "Ensures headings have discernible text",
-      "help": "Headings should not be empty",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-heading?application=webdriverio",
+      "description": "Ensures every id attribute value is unique",
+      "help": "id attribute value must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -458,7 +443,7 @@
       ],
       "description": "Ensures table headers have discernible text",
       "help": "Table header text should not be empty",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-table-header?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-table-header?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -473,7 +458,7 @@
       ],
       "description": "Ensures form field does not have multiple label elements",
       "help": "Form field must not have multiple label elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -488,7 +473,20 @@
       ],
       "description": "Ensures <frame> and <iframe> elements with focusable content do not have tabindex=-1",
       "help": "Frames with focusable content must not have tabindex=-1",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-focusable-content?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-focusable-content?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "frame-tested",
+      "impact": null,
+      "tags": [
+        "cat.structure",
+        "review-item",
+        "best-practice"
+      ],
+      "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
+      "help": "Frames should be tested with axe-core",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-tested?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -503,19 +501,24 @@
       ],
       "description": "Ensures <iframe> and <frame> elements contain a unique title attribute",
       "help": "Frames must have a unique title attribute",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-title-unique?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-title-unique?application=axe-puppeteer",
       "nodes": []
     },
     {
-      "id": "heading-order",
+      "id": "frame-title",
       "impact": null,
       "tags": [
-        "cat.semantics",
-        "best-practice"
+        "cat.text-alternatives",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.i",
+        "TTv5",
+        "TT12.c"
       ],
-      "description": "Ensures the order of headings is semantically correct",
-      "help": "Heading levels should only increase by one",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/heading-order?application=webdriverio",
+      "description": "Ensures <iframe> and <frame> elements have an accessible name",
+      "help": "Frames must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-title?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -531,7 +534,7 @@
       ],
       "description": "Ensures the lang attribute of the <html> element has a valid value",
       "help": "<html> element must have a valid value for the lang attribute",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-lang-valid?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-lang-valid?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -545,7 +548,7 @@
       ],
       "description": "Ensure that HTML elements with both valid lang and xml:lang attributes agree on the base language of the page",
       "help": "HTML elements with lang and xml:lang must have the same base language",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-xml-lang-mismatch?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-xml-lang-mismatch?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -564,7 +567,7 @@
       ],
       "description": "Ensures <img> elements have alternate text or a role of none or presentation",
       "help": "Images must have alternate text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/image-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/image-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -576,7 +579,7 @@
       ],
       "description": "Ensure image alternative is not repeated as text",
       "help": "Alternative text of images should not be repeated as text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/image-redundant-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/image-redundant-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -594,7 +597,7 @@
       ],
       "description": "Ensures input buttons have discernible text",
       "help": "Input buttons must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -613,7 +616,7 @@
       ],
       "description": "Ensures <input type=\"image\"> elements have alternate text",
       "help": "Image buttons must have alternate text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-image-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-image-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -625,7 +628,7 @@
       ],
       "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
       "help": "Form elements should have a visible label",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label-title-only?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label-title-only?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -643,7 +646,7 @@
       ],
       "description": "Ensures every form element has a label",
       "help": "Form elements must have labels",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -655,7 +658,7 @@
       ],
       "description": "Ensures the banner landmark is at top level",
       "help": "Banner landmark should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-banner-is-top-level?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-banner-is-top-level?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -667,7 +670,7 @@
       ],
       "description": "Ensures the complementary landmark or aside is at top level",
       "help": "Aside should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-complementary-is-top-level?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-complementary-is-top-level?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -679,7 +682,7 @@
       ],
       "description": "Ensures the contentinfo landmark is at top level",
       "help": "Contentinfo landmark should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-contentinfo-is-top-level?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-contentinfo-is-top-level?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -691,7 +694,7 @@
       ],
       "description": "Ensures the main landmark is at top level",
       "help": "Main landmark should not be contained in another landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-main-is-top-level?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-main-is-top-level?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -703,7 +706,7 @@
       ],
       "description": "Ensures the document has at most one banner landmark",
       "help": "Document should not have more than one banner landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-banner?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-banner?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -715,7 +718,7 @@
       ],
       "description": "Ensures the document has at most one contentinfo landmark",
       "help": "Document should not have more than one contentinfo landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-contentinfo?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-contentinfo?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -727,7 +730,7 @@
       ],
       "description": "Ensures the document has at most one main landmark",
       "help": "Document should not have more than one main landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-main?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-main?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -739,7 +742,7 @@
       ],
       "help": "Ensures landmarks are unique",
       "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-unique?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-unique?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -754,7 +757,7 @@
       ],
       "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
       "help": "Links must be distinguishable without relying on color",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -773,7 +776,7 @@
       ],
       "description": "Ensures links have discernible text",
       "help": "Links must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -786,7 +789,7 @@
       ],
       "description": "Ensures that lists are structured correctly",
       "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/list?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/list?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -799,7 +802,7 @@
       ],
       "description": "Ensures <li> elements are used semantically",
       "help": "<li> elements must be contained in a <ul> or <ol>",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/listitem?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/listitem?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -814,7 +817,7 @@
       ],
       "description": "Ensures <marquee> elements are not used",
       "help": "<marquee> elements are deprecated and must not be used",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/marquee?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/marquee?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -829,7 +832,7 @@
       ],
       "description": "Ensures <meta http-equiv=\"refresh\"> is not used for delayed refresh",
       "help": "Delayed refresh under 20 hours must not be used",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-refresh?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-refresh?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -841,7 +844,7 @@
       ],
       "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
       "help": "Users should be able to zoom and scale the text up to 500%",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport-large?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport-large?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -855,7 +858,7 @@
       ],
       "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
       "help": "Zooming and scaling must not be disabled",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -870,7 +873,7 @@
       ],
       "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
       "help": "Interactive controls must not be nested",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/nested-interactive?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/nested-interactive?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -885,7 +888,7 @@
       ],
       "description": "Ensures <object> elements have alternate text",
       "help": "<object> elements must have alternate text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/object-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/object-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -898,7 +901,7 @@
       ],
       "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
       "help": "Ensure elements marked as presentational are consistently ignored",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/presentation-role-conflict?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/presentation-role-conflict?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -916,7 +919,7 @@
       ],
       "description": "Ensures [role='img'] elements have alternate text",
       "help": "[role='img'] elements must have an alternative text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -928,7 +931,7 @@
       ],
       "description": "Ensures the scope attribute is used correctly on tables",
       "help": "scope attribute should be used correctly",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -941,7 +944,7 @@
       ],
       "description": "Ensure elements that have scrollable content are accessible by keyboard",
       "help": "Scrollable region must have keyboard access",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -959,7 +962,7 @@
       ],
       "description": "Ensures select element has an accessible name",
       "help": "Select element must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/select-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/select-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -974,7 +977,7 @@
       ],
       "description": "Ensures that server-side image maps are not used",
       "help": "Server-side image maps must not be used",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/server-side-image-map?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/server-side-image-map?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -986,7 +989,7 @@
       ],
       "description": "Ensure all skip links have a focusable target",
       "help": "The skip-link target should exist and be focusable",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/skip-link?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/skip-link?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1004,7 +1007,7 @@
       ],
       "description": "Ensures <svg> elements with an img, graphics-document or graphics-symbol role have an accessible text",
       "help": "<svg> elements with an img role must have an alternative text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/svg-img-alt?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/svg-img-alt?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1016,7 +1019,7 @@
       ],
       "description": "Ensures tabindex attribute values are not greater than 0",
       "help": "Elements should not have tabindex greater than zero",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/tabindex?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/tabindex?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1028,7 +1031,7 @@
       ],
       "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
       "help": "tables should not have the same summary and caption",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/table-duplicate-name?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/table-duplicate-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1043,7 +1046,7 @@
       ],
       "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
       "help": "Table cells that use the headers attribute must only refer to cells in the same table",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/td-headers-attr?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/td-headers-attr?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1060,7 +1063,7 @@
       ],
       "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
       "help": "Table headers in a data table must refer to data cells",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/th-has-data-cells?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/th-has-data-cells?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1076,7 +1079,7 @@
       ],
       "description": "Ensures lang attributes have valid values",
       "help": "lang attribute must have a valid value",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/valid-lang?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/valid-lang?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1093,7 +1096,7 @@
       ],
       "description": "Ensures <video> elements have captions",
       "help": "<video> elements must have captions",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/video-caption?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/video-caption?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -1109,7 +1112,7 @@
       ],
       "description": "Ensures <video> or <audio> elements do not autoplay audio for more than 3 seconds without a control mechanism to stop or mute the audio",
       "help": "<video> or <audio> elements must not play automatically",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/no-autoplay-audio?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/no-autoplay-audio?application=axe-puppeteer",
       "nodes": []
     }
   ],
@@ -1124,7 +1127,7 @@
       ],
       "description": "Ensures aria-hidden='true' is not present on the document body.",
       "help": "aria-hidden='true' must not be present on the document body",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-hidden-body?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-hidden-body?application=axe-puppeteer",
       "nodes": [
         {
           "any": [
@@ -1139,7 +1142,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<body>",
+          "html": "<body>\n<h1>Forbidden</h1>\n<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>\n\n</body>",
           "target": [
             "body"
           ]
@@ -1147,148 +1150,75 @@
       ]
     },
     {
-      "id": "duplicate-id",
+      "id": "color-contrast",
       "impact": null,
       "tags": [
-        "cat.parsing",
-        "wcag2a",
-        "wcag411"
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "ACT",
+        "TTv5",
+        "TT13.c"
       ],
-      "description": "Ensures every id attribute value is unique",
-      "help": "id attribute value must be unique",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id?application=webdriverio",
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=axe-puppeteer",
       "nodes": [
         {
           "any": [
             {
-              "id": "duplicate-id",
-              "data": "duo_iframe",
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "24.0pt (32px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "3:1"
+              },
               "relatedNodes": [],
-              "impact": "minor",
-              "message": "Document has no static elements that share the same id attribute"
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<iframe id=\"duo_iframe\" width=\"620\" height=\"330\" frameborder=\"0\" src=\"https://api-dafb1c4b.duosecurity.com/frame/web/v1/auth?tx=TX%7CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%3D%3D%7C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77&amp;parent=https%3A%2F%2Flogin.angelo.edu%2Fduoauthenticationendpoint%2FduoAuth.jsp%3Fauthenticator%3DDuoAuthenticator%253ALOCAL%26type%3Dduo%26signreq%3DTX%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%253D%253D%257C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77%253AAPP%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMzgwNQ%253D%253D%257C730cfa085afa29493e0ba5e40d77a22a75fdf968%26sessionDataKey%3Dfe8f3c67-8d37-45c5-830f-b47ca99832b6%26duoHost%3Dapi%252Ddafb1c4b%252Eduosecurity%252Ecom&amp;v=2.9\">",
+          "html": "<h1>Forbidden</h1>",
           "target": [
-            "#duo_iframe"
+            "h1"
           ]
         },
         {
           "any": [
             {
-              "id": "duplicate-id",
-              "data": "duo_form",
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#000000",
+                "bgColor": "#ffffff",
+                "contrastRatio": 21,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
               "relatedNodes": [],
-              "impact": "minor",
-              "message": "Document has no static elements that share the same id attribute"
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 21"
             }
           ],
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<form method=\"POST\" id=\"duo_form\">\n             <input type=\"hidden\" name=\"sessionDataKey\" value=\"fe8f3c67-8d37-45c5-830f-b47ca99832b6\">\n         </form>",
+          "html": "<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>",
           "target": [
-            "#duo_form"
+            "p"
           ]
         }
       ]
     },
     {
-      "id": "region",
-      "impact": null,
-      "tags": [
-        "cat.keyboard",
-        "best-practice"
-      ],
-      "description": "Ensures all page content is contained by landmarks",
-      "help": "All page content should be contained by landmarks",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/region?application=webdriverio",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": true
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<iframe id=\"duo_iframe\" width=\"620\" height=\"330\" frameborder=\"0\" src=\"https://api-dafb1c4b.duosecurity.com/frame/web/v1/auth?tx=TX%7CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%3D%3D%7C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77&amp;parent=https%3A%2F%2Flogin.angelo.edu%2Fduoauthenticationendpoint%2FduoAuth.jsp%3Fauthenticator%3DDuoAuthenticator%253ALOCAL%26type%3Dduo%26signreq%3DTX%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%253D%253D%257C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77%253AAPP%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMzgwNQ%253D%253D%257C730cfa085afa29493e0ba5e40d77a22a75fdf968%26sessionDataKey%3Dfe8f3c67-8d37-45c5-830f-b47ca99832b6%26duoHost%3Dapi%252Ddafb1c4b%252Eduosecurity%252Ecom&amp;v=2.9\">",
-          "target": [
-            "#duo_iframe"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<form method=\"POST\" id=\"duo_form\">\n             <input type=\"hidden\" name=\"sessionDataKey\" value=\"fe8f3c67-8d37-45c5-830f-b47ca99832b6\">\n         </form>",
-          "target": [
-            "#duo_form"
-          ]
-        }
-      ]
-    }
-  ],
-  "incomplete": [
-    {
-      "id": "frame-tested",
-      "impact": "critical",
-      "tags": [
-        "cat.structure",
-        "review-item",
-        "best-practice"
-      ],
-      "description": "Ensures <iframe> and <frame> elements contain the axe-core script",
-      "help": "Frames should be tested with axe-core",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-tested?application=webdriverio",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "frame-tested",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "The iframe still has to be tested with axe-core"
-            }
-          ],
-          "none": [],
-          "impact": "critical",
-          "html": "<iframe id=\"duo_iframe\" width=\"620\" height=\"330\" frameborder=\"0\" src=\"https://api-dafb1c4b.duosecurity.com/frame/web/v1/auth?tx=TX%7CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%3D%3D%7C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77&amp;parent=https%3A%2F%2Flogin.angelo.edu%2Fduoauthenticationendpoint%2FduoAuth.jsp%3Fauthenticator%3DDuoAuthenticator%253ALOCAL%26type%3Dduo%26signreq%3DTX%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%253D%253D%257C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77%253AAPP%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMzgwNQ%253D%253D%257C730cfa085afa29493e0ba5e40d77a22a75fdf968%26sessionDataKey%3Dfe8f3c67-8d37-45c5-830f-b47ca99832b6%26duoHost%3Dapi%252Ddafb1c4b%252Eduosecurity%252Ecom&amp;v=2.9\">",
-          "target": [
-            "#duo_iframe"
-          ],
-          "failureSummary": "Fix all of the following:\n  The iframe still has to be tested with axe-core"
-        }
-      ]
-    }
-  ],
-  "violations": [
-    {
       "id": "document-title",
-      "impact": "serious",
+      "impact": null,
       "tags": [
         "cat.text-alternatives",
         "wcag2a",
@@ -1299,7 +1229,7 @@
       ],
       "description": "Ensures each HTML document contains a non-empty <title> element",
       "help": "Documents must have <title> element to aid in navigation",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/document-title?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/document-title?application=axe-puppeteer",
       "nodes": [
         {
           "any": [
@@ -1308,80 +1238,131 @@
               "data": null,
               "relatedNodes": [],
               "impact": "serious",
-              "message": "Document does not have a non-empty <title> element"
+              "message": "Document has a non-empty <title> element"
             }
           ],
           "all": [],
           "none": [],
-          "impact": "serious",
-          "html": "<html>",
+          "impact": null,
+          "html": "<html><head>\n<title>403 Forbidden</title>\n</head><body>\n<h1>Forbidden</h1>\n<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>\n\n</body></html>",
           "target": [
             "html"
-          ],
-          "failureSummary": "Fix any of the following:\n  Document does not have a non-empty <title> element"
+          ]
         }
       ]
     },
     {
-      "id": "frame-title",
-      "impact": "serious",
+      "id": "empty-heading",
+      "impact": null,
       "tags": [
-        "cat.text-alternatives",
-        "wcag2a",
-        "wcag412",
-        "section508",
-        "section508.22.i",
-        "TTv5",
-        "TT12.c"
+        "cat.name-role-value",
+        "best-practice"
       ],
-      "description": "Ensures <iframe> and <frame> elements have an accessible name",
-      "help": "Frames must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/frame-title?application=webdriverio",
+      "description": "Ensures headings have discernible text",
+      "help": "Headings should not be empty",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-heading?application=axe-puppeteer",
       "nodes": [
         {
           "any": [
             {
-              "id": "non-empty-title",
-              "data": {
-                "messageKey": "noAttr"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has no title attribute"
-            },
-            {
-              "id": "aria-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-label attribute does not exist or is empty"
-            },
-            {
-              "id": "aria-labelledby",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-            },
-            {
-              "id": "presentational-role",
+              "id": "has-visible-text",
               "data": null,
               "relatedNodes": [],
               "impact": "minor",
-              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+              "message": "Element has text that is visible to screen readers"
             }
           ],
           "all": [],
           "none": [],
-          "impact": "serious",
-          "html": "<iframe id=\"duo_iframe\" width=\"620\" height=\"330\" frameborder=\"0\" src=\"https://api-dafb1c4b.duosecurity.com/frame/web/v1/auth?tx=TX%7CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%3D%3D%7C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77&amp;parent=https%3A%2F%2Flogin.angelo.edu%2Fduoauthenticationendpoint%2FduoAuth.jsp%3Fauthenticator%3DDuoAuthenticator%253ALOCAL%26type%3Dduo%26signreq%3DTX%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMDUwNQ%253D%253D%257C20e6f3ac7b5b9d26f49d7d32fb5a43c0bd787c77%253AAPP%257CamNhbGR3ZWxsMkBjYXJib24uc3VwZXJ8RElZNjhBNzQ1NUdEUzE0SkdTUFN8MTY4NDIwMzgwNQ%253D%253D%257C730cfa085afa29493e0ba5e40d77a22a75fdf968%26sessionDataKey%3Dfe8f3c67-8d37-45c5-830f-b47ca99832b6%26duoHost%3Dapi%252Ddafb1c4b%252Eduosecurity%252Ecom&amp;v=2.9\">",
+          "impact": null,
+          "html": "<h1>Forbidden</h1>",
           "target": [
-            "#duo_iframe"
-          ],
-          "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+            "h1"
+          ]
         }
       ]
     },
+    {
+      "id": "heading-order",
+      "impact": null,
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/heading-order?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "heading-order",
+              "data": {
+                "headingOrder": [
+                  {
+                    "ancestry": [
+                      "html > body > h1:nth-child(1)"
+                    ],
+                    "level": 1
+                  }
+                ]
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Heading order valid"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<h1>Forbidden</h1>",
+          "target": [
+            "h1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page-has-heading-one",
+      "impact": null,
+      "tags": [
+        "cat.semantics",
+        "best-practice"
+      ],
+      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+      "help": "Page should contain a level-one heading",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/page-has-heading-one?application=axe-puppeteer",
+      "nodes": [
+        {
+          "any": [],
+          "all": [
+            {
+              "id": "page-has-heading-one",
+              "data": null,
+              "relatedNodes": [
+                {
+                  "html": "<h1>Forbidden</h1>",
+                  "target": [
+                    "h1"
+                  ]
+                }
+              ],
+              "impact": "moderate",
+              "message": "Page has at least one level-one heading"
+            }
+          ],
+          "none": [],
+          "impact": null,
+          "html": "<html><head>\n<title>403 Forbidden</title>\n</head><body>\n<h1>Forbidden</h1>\n<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>\n\n</body></html>",
+          "target": [
+            "html"
+          ]
+        }
+      ]
+    }
+  ],
+  "incomplete": [],
+  "violations": [
     {
       "id": "html-has-lang",
       "impact": "serious",
@@ -1395,7 +1376,7 @@
       ],
       "description": "Ensures every HTML document has a lang attribute",
       "help": "<html> element must have a lang attribute",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-has-lang?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/html-has-lang?application=axe-puppeteer",
       "nodes": [
         {
           "any": [
@@ -1412,11 +1393,10 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<html>",
+          "html": "<html><head>\n<title>403 Forbidden</title>\n</head><body>\n<h1>Forbidden</h1>\n<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>\n\n</body></html>",
           "target": [
             "html"
-          ],
-          "failureSummary": "Fix any of the following:\n  The <html> element does not have a lang attribute"
+          ]
         }
       ]
     },
@@ -1429,7 +1409,7 @@
       ],
       "description": "Ensures the document has a main landmark",
       "help": "Document should have one main landmark",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-one-main?application=webdriverio",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-one-main?application=axe-puppeteer",
       "nodes": [
         {
           "any": [],
@@ -1444,43 +1424,63 @@
           ],
           "none": [],
           "impact": "moderate",
-          "html": "<html>",
+          "html": "<html><head>\n<title>403 Forbidden</title>\n</head><body>\n<h1>Forbidden</h1>\n<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>\n\n</body></html>",
           "target": [
             "html"
-          ],
-          "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+          ]
         }
       ]
     },
     {
-      "id": "page-has-heading-one",
+      "id": "region",
       "impact": "moderate",
       "tags": [
-        "cat.semantics",
+        "cat.keyboard",
         "best-practice"
       ],
-      "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-      "help": "Page should contain a level-one heading",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/page-has-heading-one?application=webdriverio",
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/region?application=axe-puppeteer",
       "nodes": [
         {
-          "any": [],
-          "all": [
+          "any": [
             {
-              "id": "page-has-heading-one",
-              "data": null,
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
               "relatedNodes": [],
               "impact": "moderate",
-              "message": "Page must have a level-one heading"
+              "message": "Some page content is not contained by landmarks"
             }
           ],
+          "all": [],
           "none": [],
           "impact": "moderate",
-          "html": "<html>",
+          "html": "<h1>Forbidden</h1>",
           "target": [
-            "html"
+            "h1"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "region",
+              "data": {
+                "isIframe": false
+              },
+              "relatedNodes": [],
+              "impact": "moderate",
+              "message": "Some page content is not contained by landmarks"
+            }
           ],
-          "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
+          "all": [],
+          "none": [],
+          "impact": "moderate",
+          "html": "<p>You don't have permission to access /prod/twbksite.P_DispSiteMap\non this server.</p>",
+          "target": [
+            "p"
+          ]
         }
       ]
     }

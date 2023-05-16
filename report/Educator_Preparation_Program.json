@@ -13,8 +13,8 @@
     "orientationAngle": 0,
     "orientationType": "portrait-primary"
   },
-  "timestamp": "2023-05-16T18:03:17.775Z",
-  "url": "https://ssb.angelo.edu/prod/bwskrsta.P_RegsStatusDisp",
+  "timestamp": "2023-05-16T18:05:45.167Z",
+  "url": "https://ssb.angelo.edu/prod/twbkwbis.P_GenMenu?name=wmenu.P_EduPrepProg",
   "toolOptions": {
     "reporter": "v2"
   },
@@ -367,6 +367,19 @@
       "nodes": []
     },
     {
+      "id": "duplicate-id-active",
+      "impact": null,
+      "tags": [
+        "cat.parsing",
+        "wcag2a",
+        "wcag411"
+      ],
+      "description": "Ensures every id attribute value of active elements is unique",
+      "help": "IDs of active elements must be unique",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
       "id": "duplicate-id",
       "impact": null,
       "tags": [
@@ -389,6 +402,21 @@
       "description": "Ensures table headers have discernible text",
       "help": "Table header text should not be empty",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-table-header?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "form-field-multiple-labels",
+      "impact": null,
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag332",
+        "TTv5",
+        "TT5.c"
+      ],
+      "description": "Ensures form field does not have multiple label elements",
+      "help": "Form field must not have multiple label elements",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -466,6 +494,24 @@
       "nodes": []
     },
     {
+      "id": "input-button-name",
+      "impact": null,
+      "tags": [
+        "cat.name-role-value",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.a",
+        "ACT",
+        "TTv5",
+        "TT5.c"
+      ],
+      "description": "Ensures input buttons have discernible text",
+      "help": "Input buttons must have discernible text",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
       "id": "input-image-alt",
       "impact": null,
       "tags": [
@@ -482,6 +528,18 @@
       "description": "Ensures <input type=\"image\"> elements have alternate text",
       "help": "Image buttons must have alternate text",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-image-alt?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "label-title-only",
+      "impact": null,
+      "tags": [
+        "cat.forms",
+        "best-practice"
+      ],
+      "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+      "help": "Form elements should have a visible label",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label-title-only?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -742,6 +800,18 @@
       "nodes": []
     },
     {
+      "id": "scope-attr-valid",
+      "impact": null,
+      "tags": [
+        "cat.tables",
+        "best-practice"
+      ],
+      "description": "Ensures the scope attribute is used correctly on tables",
+      "help": "scope attribute should be used correctly",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
       "id": "scrollable-region-focusable",
       "impact": null,
       "tags": [
@@ -752,6 +822,24 @@
       "description": "Ensure elements that have scrollable content are accessible by keyboard",
       "help": "Scrollable region must have keyboard access",
       "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=axe-puppeteer",
+      "nodes": []
+    },
+    {
+      "id": "select-name",
+      "impact": null,
+      "tags": [
+        "cat.forms",
+        "wcag2a",
+        "wcag412",
+        "section508",
+        "section508.22.n",
+        "ACT",
+        "TTv5",
+        "TT5.c"
+      ],
+      "description": "Ensures select element has an accessible name",
+      "help": "Select element must have an accessible name",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/select-name?application=axe-puppeteer",
       "nodes": []
     },
     {
@@ -904,9 +992,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm\" accesskey=\"H\" onclick=\"popup = window.open('/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
+          "html": "<a href=\"/wtlhelp/twbhhelp.htm\" accesskey=\"H\" onclick=\"popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
           "target": [
-            "a[accesskey=\"H\"]"
+            "a[href$=\"twbhhelp.htm\"]"
           ]
         },
         {
@@ -997,7 +1085,7 @@
                   ]
                 },
                 {
-                  "html": "<h2>Registration Term </h2>",
+                  "html": "<h2>Educator Preparation Program</h2>",
                   "target": [
                     "h2"
                   ]
@@ -1075,57 +1163,7 @@
           "impact": null,
           "html": "<input type=\"submit\" value=\"Go\">",
           "target": [
-            "input[value=\"Go\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#000000",
-                "bgColor": "#efefef",
-                "contrastRatio": 18.26,
-                "fontSize": "9.7pt (12.96px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 18.26"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
-          "target": [
-            "#term_id"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "fgColor": "#000000",
-                "bgColor": "#efefef",
-                "contrastRatio": 18.26,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "normal",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has sufficient color contrast of 18.26"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input type=\"submit\" value=\"Submit\">",
-          "target": [
-            "input[value=\"Submit\"]"
+            "input[type=\"submit\"]"
           ]
         }
       ]
@@ -1166,38 +1204,6 @@
       ]
     },
     {
-      "id": "duplicate-id-active",
-      "impact": null,
-      "tags": [
-        "cat.parsing",
-        "wcag2a",
-        "wcag411"
-      ],
-      "description": "Ensures every id attribute value of active elements is unique",
-      "help": "IDs of active elements must be unique",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "duplicate-id-active",
-              "data": "ssbbackurl",
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Document has no active elements that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
-          "target": [
-            "#ssbbackurl"
-          ]
-        }
-      ]
-    },
-    {
       "id": "duplicate-id-aria",
       "impact": null,
       "tags": [
@@ -1225,24 +1231,6 @@
           "html": "<input type=\"text\" name=\"KEYWRD_IN\" size=\"20\" maxlength=\"65\" id=\"keyword_in_id\">",
           "target": [
             "#keyword_in_id"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "duplicate-id-aria",
-              "data": "term_id",
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
-          "target": [
-            "#term_id"
           ]
         }
       ]
@@ -1289,7 +1277,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Registration Term </h2>",
+          "html": "<h2>Educator Preparation Program</h2>",
           "target": [
             "h2"
           ]
@@ -1310,47 +1298,6 @@
           "html": "<h5>© 2023 Ellucian Company L.P. and its affiliates.<br></h5>",
           "target": [
             "h5"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "form-field-multiple-labels",
-      "impact": null,
-      "tags": [
-        "cat.forms",
-        "wcag2a",
-        "wcag332",
-        "TTv5",
-        "TT5.c"
-      ],
-      "description": "Ensures form field does not have multiple label elements",
-      "help": "Form field must not have multiple label elements",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "multiple-label",
-              "data": null,
-              "relatedNodes": [
-                {
-                  "html": "<label for=\"term_id\"><span class=\"fieldlabeltextinvisible\">Term</span></label>",
-                  "target": [
-                    "label[for=\"term_id\"]"
-                  ]
-                }
-              ],
-              "impact": "moderate",
-              "message": "Form field does not have multiple label elements"
-            }
-          ],
-          "impact": null,
-          "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
-          "target": [
-            "#term_id"
           ]
         }
       ]
@@ -1418,7 +1365,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Registration Term </h2>",
+          "html": "<h2>Educator Preparation Program</h2>",
           "target": [
             "h2"
           ]
@@ -1886,74 +1833,6 @@
       ]
     },
     {
-      "id": "input-button-name",
-      "impact": null,
-      "tags": [
-        "cat.name-role-value",
-        "wcag2a",
-        "wcag412",
-        "section508",
-        "section508.22.a",
-        "ACT",
-        "TTv5",
-        "TT5.c"
-      ],
-      "description": "Ensures input buttons have discernible text",
-      "help": "Input buttons must have discernible text",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "non-empty-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Element has a non-empty value attribute"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input type=\"submit\" value=\"Submit\">",
-          "target": [
-            "input[value=\"Submit\"]"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "label-title-only",
-      "impact": null,
-      "tags": [
-        "cat.forms",
-        "best-practice"
-      ],
-      "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-      "help": "Form elements should have a visible label",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label-title-only?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [],
-          "all": [],
-          "none": [
-            {
-              "id": "title-only",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Form element does not solely use title attribute for its label"
-            }
-          ],
-          "impact": null,
-          "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
-          "target": [
-            "#term_id"
-          ]
-        }
-      ]
-    },
-    {
       "id": "link-name",
       "impact": null,
       "tags": [
@@ -2096,32 +1975,6 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
-          "target": [
-            "#ssbbackurl"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "has-visible-text",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element has text that is visible to screen readers"
-            }
-          ],
-          "all": [],
-          "none": [
-            {
-              "id": "focusable-no-name",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element is not in tab order or has accessible text"
-            }
-          ],
-          "impact": null,
           "html": "<a href=\"/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3\" accesskey=\"2\" class=\"submenulinktext2\">SITE MAP</a>",
           "target": [
             "a[accesskey=\"2\"]"
@@ -2148,9 +2001,9 @@
             }
           ],
           "impact": null,
-          "html": "<a href=\"/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm\" accesskey=\"H\" onclick=\"popup = window.open('/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
+          "html": "<a href=\"/wtlhelp/twbhhelp.htm\" accesskey=\"H\" onclick=\"popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
           "target": [
-            "a[accesskey=\"H\"]"
+            "a[href$=\"twbhhelp.htm\"]"
           ]
         },
         {
@@ -2177,6 +2030,32 @@
           "html": "<a href=\"twbkwbis.P_Logout\" accesskey=\"3\" class=\"submenulinktext2\">EXIT</a>",
           "target": [
             "a[href$=\"twbkwbis.P_Logout\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "has-visible-text",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "minor",
+              "message": "Element has text that is visible to screen readers"
+            }
+          ],
+          "all": [],
+          "none": [
+            {
+              "id": "focusable-no-name",
+              "data": null,
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element is not in tab order or has accessible text"
+            }
+          ],
+          "impact": null,
+          "html": "<a href=\"/prod/bwwkeapp.P_Entry\" class=\"submenulinktext2 \" onmouseover=\"window.status='Educator Preparation Program (EPP) Application'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='Educator Preparation Program (EPP) Application'; return true\" onblur=\"window.status=''; return true\">",
+          "target": [
+            "a[href$=\"bwwkeapp.P_Entry\"]"
           ]
         }
       ]
@@ -2301,1698 +2180,6 @@
           "html": "<img src=\"/wtlgifs/web_transparent.gif\" alt=\"Transparent Image\" class=\"headerImg\" title=\"Transparent Image\" name=\"web_transparent\" hspace=\"0\" vspace=\"0\" border=\"0\" height=\"3\" width=\"10\">",
           "target": [
             ".bg3 > img[src$=\"web_transparent.gif\"][alt=\"Transparent Image\"][title=\"Transparent Image\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202410\">2023 FALL SEMESTER</option>",
-          "target": [
-            "option[value=\"202410\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202340\">2023 SECOND SUMMER SESSION</option>",
-          "target": [
-            "option[value=\"202340\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202330\">2023 FIRST SUMMER SESSION</option>",
-          "target": [
-            "option[value=\"202330\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202320\">2023 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202320\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202310\">2022 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202310\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202306\">2023 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202306\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202240\">2022 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202240\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202230\">2022 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202230\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202220\">2022 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202220\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202210\">2021 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202210\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202208\">2022 ELLI SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202208\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202206\">2022 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202206\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202205\">2021 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202205\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202140\">2021 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202140\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202130\">2021 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202130\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202120\">2021 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202120\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202110\">2020 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202110\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202106\">2021 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202106\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202040\">2020 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202040\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202030\">2020 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202030\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202020\">2020 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202020\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202010\">2019 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202010\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201940\">2019 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"201940\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201930\">2019 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"201930\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201920\">2019 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201920\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201910\">2018 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201910\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201908\">2019 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201908\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201906\">2019 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201906\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201905\">2018 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201905\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201840\">2018 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201840\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201830\">2018 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201830\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201820\">2018 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201820\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201810\">2017 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201810\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201808\">2018 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201808\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201806\">2018 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201806\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201805\">2017 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201805\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201740\">2017 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201740\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201730\">2017 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201730\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201720\">2017 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201720\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201710\">2016 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201710\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201708\">2017 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201708\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201706\">2017 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201706\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201705\">2016 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201705\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201640\">2016 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201640\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201630\">2016 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201630\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201620\">2016 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201620\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201610\">2015 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201610\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201608\">2016 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201608\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201606\">2016 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201606\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201605\">2015 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201605\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201540\">2015 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201540\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201530\">2015 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201530\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201520\">2015 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201520\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201510\">2014 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201510\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201508\">2015 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201508\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201506\">2015 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201506\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201505\">2014 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201505\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201440\">2014 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201440\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201430\">2014 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201430\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201420\">2014 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201420\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201410\">2013 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201410\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201408\">2014 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201408\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201407\">2014 ELLI SUMMER INTERSESSION (View only)</option>",
-          "target": [
-            "option[value=\"201407\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201406\">2014 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201406\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201405\">2013 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201405\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201340\">2013 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201340\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201330\">2013 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201330\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201320\">2013 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201320\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201310\">2012 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201310\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201308\">2013 ELLI SUMMER TERM (View only)</option>",
-          "target": [
-            "option[value=\"201308\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201240\">2012 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201240\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201230\">2012 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201230\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201220\">2012 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201220\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201210\">2011 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201210\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201140\">2011 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201140\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201130\">2011 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201130\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201120\">2011 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201120\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201110\">2010 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201110\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201040\">2010 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201040\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201030\">2010 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201030\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201020\">2010 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201020\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201010\">2009 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201010\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200940\">2009 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200940\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200930\">2009 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200930\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200920\">2009 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200920\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200910\">2008 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200910\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200840\">2008 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200840\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200830\">2008 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200830\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200820\">2008 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200820\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200810\">2007 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200810\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200740\">2007 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200740\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200730\">2007 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200730\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200720\">2007 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200720\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "no-focusable-content",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element does not have focusable descendants"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input type=\"submit\" value=\"Submit\">",
-          "target": [
-            "input[value=\"Submit\"]"
           ]
         },
         {
@@ -4839,26 +3026,6 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
-          "target": [
-            "#ssbbackurl"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<a href=\"/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3\" accesskey=\"2\" class=\"submenulinktext2\">SITE MAP</a>",
           "target": [
             "a[accesskey=\"2\"]"
@@ -4879,9 +3046,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<a href=\"/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm\" accesskey=\"H\" onclick=\"popup = window.open('/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
+          "html": "<a href=\"/wtlhelp/twbhhelp.htm\" accesskey=\"H\" onclick=\"popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
           "target": [
-            "a[accesskey=\"H\"]"
+            "a[href$=\"twbhhelp.htm\"]"
           ]
         },
         {
@@ -4959,7 +3126,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<tr>\n<td class=\"pldefault\">\n<h2>Registration Term </h2>\n</td>\n<td class=\"pldefault\">\n&nbsp;\n</td>\n<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:03 pm<br>\n</div>\n</td>\n</tr>",
+          "html": "<tr>\n<td class=\"pldefault\">\n<h2>Educator Preparation Program</h2>\n</td>\n<td class=\"pldefault\">\n&nbsp;\n</td>\n<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\n</div>\n</td>\n</tr>",
           "target": [
             ".pagetitlediv > .plaintable > tbody > tr:nth-child(1)"
           ]
@@ -4979,7 +3146,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td class=\"pldefault\">\n<h2>Registration Term </h2>\n</td>",
+          "html": "<td class=\"pldefault\">\n<h2>Educator Preparation Program</h2>\n</td>",
           "target": [
             ".pagetitlediv > .plaintable > tbody > tr:nth-child(1) > .pldefault:nth-child(1)"
           ]
@@ -4999,7 +3166,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<h2>Registration Term </h2>",
+          "html": "<h2>Educator Preparation Program</h2>",
           "target": [
             "h2"
           ]
@@ -5039,7 +3206,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:03 pm<br>\n</div>\n</td>",
+          "html": "<td class=\"pldefault\"><p class=\"rightaligntext\" p=\"\">\n</p><div class=\"staticheaders\">\n</div>\n</td>",
           "target": [
             ".pldefault:nth-child(3)"
           ]
@@ -5079,49 +3246,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:03 pm<br>\n</div>",
+          "html": "<div class=\"staticheaders\">\n</div>",
           "target": [
             ".staticheaders"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            ".staticheaders > br:nth-child(1)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<br>",
-          "target": [
-            "br:nth-child(2)"
           ]
         },
         {
@@ -5239,49 +3366,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<form action=\"/prod/bwskrsta.P_RegsStatusDisp\" method=\"post\">",
-          "target": [
-            ".pagebodydiv > form"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<table class=\"dataentrytable\" summary=\"This table allows\n                                                the user to select a\n                                                valid term for\n                                                registration\n                                                processing.\">",
-          "target": [
-            ".dataentrytable"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
           "html": "<tbody>",
           "target": [
-            ".dataentrytable > tbody"
+            ".menuplaintable > tbody"
           ]
         },
         {
@@ -5301,7 +3388,7 @@
           "impact": null,
           "html": "<tr>",
           "target": [
-            ".dataentrytable > tbody > tr:nth-child(1)"
+            ".menuplaintable > tbody > tr"
           ]
         },
         {
@@ -5319,9 +3406,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<td class=\"dedefault\">",
+          "html": "<td class=\"mpdefault\">&nbsp;</td>",
           "target": [
-            ".dedefault"
+            ".mpdefault:nth-child(1)"
           ]
         },
         {
@@ -5339,9 +3426,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<label for=\"term_id\"><span class=\"fieldlabeltextinvisible\">Term</span></label>",
+          "html": "<td class=\"mpdefault\">",
           "target": [
-            "label[for=\"term_id\"]"
+            ".mpdefault:nth-child(2)"
           ]
         },
         {
@@ -5359,9 +3446,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<option value=\"202410\">2023 FALL SEMESTER</option>",
+          "html": "<a href=\"/prod/bwwkeapp.P_Entry\" class=\"submenulinktext2 \" onmouseover=\"window.status='Educator Preparation Program (EPP) Application'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='Educator Preparation Program (EPP) Application'; return true\" onblur=\"window.status=''; return true\">",
           "target": [
-            "option[value=\"202410\"]"
+            "a[href$=\"bwwkeapp.P_Entry\"]"
           ]
         },
         {
@@ -5379,9 +3466,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<option value=\"202340\">2023 SECOND SUMMER SESSION</option>",
+          "html": "<br>",
           "target": [
-            "option[value=\"202340\"]"
+            ".mpdefault:nth-child(2) > br"
           ]
         },
         {
@@ -5399,9 +3486,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<option value=\"202330\">2023 FIRST SUMMER SESSION</option>",
+          "html": "<span class=\"menulinkdesctext \">All students completing a degree resulting in teacher certification or a post-baccalaureate certification plan must be admitted to the EPP before enrolling in upper-level education coursework.<br><br></span>",
           "target": [
-            "option[value=\"202330\"]"
+            ".menulinkdesctext"
           ]
         },
         {
@@ -5419,9 +3506,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<option value=\"202320\">2023 SPRING SEMESTER (View only)</option>",
+          "html": "<br>",
           "target": [
-            "option[value=\"202320\"]"
+            ".menulinkdesctext > br:nth-child(1)"
           ]
         },
         {
@@ -5439,1829 +3526,9 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<option value=\"202310\">2022 FALL SEMESTER (View only)</option>",
+          "html": "<br>",
           "target": [
-            "option[value=\"202310\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202306\">2023 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202306\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202240\">2022 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202240\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202230\">2022 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202230\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202220\">2022 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202220\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202210\">2021 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202210\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202208\">2022 ELLI SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202208\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202206\">2022 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202206\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202205\">2021 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202205\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202140\">2021 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202140\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202130\">2021 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202130\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202120\">2021 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202120\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202110\">2020 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202110\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202106\">2021 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202106\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202040\">2020 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202040\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202030\">2020 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"202030\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202020\">2020 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202020\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"202010\">2019 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"202010\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201940\">2019 SECOND SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"201940\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201930\">2019 FIRST SUMMER SESSION (View only)</option>",
-          "target": [
-            "option[value=\"201930\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201920\">2019 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201920\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201910\">2018 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201910\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201908\">2019 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201908\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201906\">2019 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201906\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201905\">2018 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201905\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201840\">2018 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201840\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201830\">2018 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201830\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201820\">2018 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201820\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201810\">2017 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201810\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201808\">2018 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201808\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201806\">2018 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201806\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201805\">2017 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201805\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201740\">2017 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201740\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201730\">2017 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201730\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201720\">2017 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201720\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201710\">2016 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201710\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201708\">2017 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201708\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201706\">2017 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201706\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201705\">2016 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201705\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201640\">2016 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201640\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201630\">2016 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201630\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201620\">2016 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201620\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201610\">2015 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201610\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201608\">2016 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201608\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201606\">2016 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201606\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201605\">2015 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201605\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201540\">2015 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201540\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201530\">2015 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201530\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201520\">2015 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201520\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201510\">2014 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201510\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201508\">2015 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201508\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201506\">2015 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201506\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201505\">2014 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201505\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201440\">2014 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201440\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201430\">2014 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201430\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201420\">2014 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201420\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201410\">2013 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201410\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201408\">2014 ELLI SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201408\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201407\">2014 ELLI SUMMER INTERSESSION (View only)</option>",
-          "target": [
-            "option[value=\"201407\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201406\">2014 ELLI SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201406\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201405\">2013 ELLI FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201405\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201340\">2013 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201340\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201330\">2013 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201330\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201320\">2013 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201320\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201310\">2012 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201310\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201308\">2013 ELLI SUMMER TERM (View only)</option>",
-          "target": [
-            "option[value=\"201308\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201240\">2012 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201240\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201230\">2012 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201230\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201220\">2012 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201220\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201210\">2011 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201210\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201140\">2011 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201140\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201130\">2011 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201130\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201120\">2011 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201120\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201110\">2010 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201110\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201040\">2010 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201040\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201030\">2010 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201030\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201020\">2010 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201020\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"201010\">2009 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"201010\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200940\">2009 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200940\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200930\">2009 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200930\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200920\">2009 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200920\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200910\">2008 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200910\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200840\">2008 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200840\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200830\">2008 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200830\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200820\">2008 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200820\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200810\">2007 FALL SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200810\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200740\">2007 SECOND SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200740\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200730\">2007 FIRST SUMMER SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200730\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<option value=\"200720\">2007 SPRING SEMESTER (View only)</option>",
-          "target": [
-            "option[value=\"200720\"]"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<tr>\n<td colspan=\"11\" class=\"deseparator\">&nbsp;</td>\n</tr>",
-          "target": [
-            ".dataentrytable > tbody > tr:nth-child(2)"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<td colspan=\"11\" class=\"deseparator\">&nbsp;</td>",
-          "target": [
-            ".deseparator"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "All page content is contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": null,
-          "html": "<input type=\"submit\" value=\"Submit\">",
-          "target": [
-            "input[value=\"Submit\"]"
+            ".menulinkdesctext > br:nth-child(2)"
           ]
         },
         {
@@ -7439,7 +3706,7 @@
           "all": [],
           "none": [],
           "impact": null,
-          "html": "<span class=\"releasetext\">Release: 8.7.1</span>",
+          "html": "<span class=\"releasetext\">Release: 8.9.1.5</span>",
           "target": [
             ".releasetext"
           ]
@@ -7647,44 +3914,6 @@
       ]
     },
     {
-      "id": "scope-attr-valid",
-      "impact": null,
-      "tags": [
-        "cat.tables",
-        "best-practice"
-      ],
-      "description": "Ensures the scope attribute is used correctly on tables",
-      "help": "scope attribute should be used correctly",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [],
-          "all": [
-            {
-              "id": "html5-scope",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Scope attribute is only used on table header elements (<th>)"
-            },
-            {
-              "id": "scope-value",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Scope attribute is used correctly"
-            }
-          ],
-          "none": [],
-          "impact": null,
-          "html": "<td class=\"delabel\" scope=\"row\">Select a Term: </td>",
-          "target": [
-            ".delabel"
-          ]
-        }
-      ]
-    },
-    {
       "id": "table-duplicate-name",
       "impact": null,
       "tags": [
@@ -7780,9 +4009,9 @@
             }
           ],
           "impact": null,
-          "html": "<table class=\"dataentrytable\" summary=\"This table allows\n                                                the user to select a\n                                                valid term for\n                                                registration\n                                                processing.\">",
+          "html": "<table class=\"menuplaintable\" summary=\"This layout table holds the menu items\">",
           "target": [
-            ".dataentrytable"
+            ".menuplaintable"
           ]
         },
         {
@@ -7904,9 +4133,9 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<table class=\"dataentrytable\" summary=\"This table allows\n                                                the user to select a\n                                                valid term for\n                                                registration\n                                                processing.\">",
+          "html": "<table class=\"menuplaintable\" summary=\"This layout table holds the menu items\">",
           "target": [
-            ".dataentrytable"
+            ".menuplaintable"
           ]
         },
         {
@@ -8030,9 +4259,9 @@
           ],
           "none": [],
           "impact": null,
-          "html": "<table class=\"dataentrytable\" summary=\"This table allows\n                                                the user to select a\n                                                valid term for\n                                                registration\n                                                processing.\">",
+          "html": "<table class=\"menuplaintable\" summary=\"This layout table holds the menu items\">",
           "target": [
-            ".dataentrytable"
+            ".menuplaintable"
           ]
         },
         {
@@ -8276,37 +4505,6 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_RegMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
-          "target": [
-            "#ssbbackurl"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "contrastRatio": 0,
-                "fontSize": "8.7pt (11.664px)",
-                "fontWeight": "normal",
-                "messageKey": "bgImage",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<body>",
-                  "target": [
-                    "body"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's background color could not be determined due to a background image"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
           "html": "<a href=\"/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3\" accesskey=\"2\" class=\"submenulinktext2\">SITE MAP</a>",
           "target": [
             "a[accesskey=\"2\"]"
@@ -8338,9 +4536,9 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<a href=\"/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm\" accesskey=\"H\" onclick=\"popup = window.open('/prod/twbkfrmt.P_DispHelp?pagename_in=bwskflib.P_SelDefTerm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
+          "html": "<a href=\"/wtlhelp/twbhhelp.htm\" accesskey=\"H\" onclick=\"popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false\" target=\"_blank\" onmouseover=\"window.status='';  return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='';  return true\" onblur=\"window.status=''; return true\" class=\"submenulinktext2\">",
           "target": [
-            "a[accesskey=\"H\"]"
+            "a[href$=\"twbhhelp.htm\"]"
           ]
         },
         {
@@ -8400,7 +4598,7 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<h2>Registration Term </h2>",
+          "html": "<h2>Educator Preparation Program</h2>",
           "target": [
             "h2"
           ]
@@ -8431,9 +4629,40 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nMay 16,2023 01:03 pm<br>\n</div>",
+          "html": "<a href=\"/prod/bwwkeapp.P_Entry\" class=\"submenulinktext2 \" onmouseover=\"window.status='Educator Preparation Program (EPP) Application'; return true\" onmouseout=\"window.status=''; return true\" onfocus=\"window.status='Educator Preparation Program (EPP) Application'; return true\" onblur=\"window.status=''; return true\">",
           "target": [
-            ".staticheaders"
+            "a[href$=\"bwwkeapp.P_Entry\"]"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.7pt (12.96px)",
+                "fontWeight": "normal",
+                "messageKey": "bgImage",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<body>",
+                  "target": [
+                    "body"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background image"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"menulinkdesctext \">All students completing a degree resulting in teacher certification or a post-baccalaureate certification plan must be admitted to the EPP before enrolling in upper-level education coursework.<br><br></span>",
+          "target": [
+            ".menulinkdesctext"
           ]
         },
         {
@@ -8462,38 +4691,7 @@
           "all": [],
           "none": [],
           "impact": "serious",
-          "html": "<td class=\"delabel\" scope=\"row\">Select a Term: </td>",
-          "target": [
-            ".delabel"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "color-contrast",
-              "data": {
-                "contrastRatio": 0,
-                "fontSize": "10.8pt (14.4px)",
-                "fontWeight": "bold",
-                "messageKey": "bgImage",
-                "expectedContrastRatio": "4.5:1"
-              },
-              "relatedNodes": [
-                {
-                  "html": "<body>",
-                  "target": [
-                    "body"
-                  ]
-                }
-              ],
-              "impact": "serious",
-              "message": "Element's background color could not be determined due to a background image"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "serious",
-          "html": "<span class=\"releasetext\">Release: 8.7.1</span>",
+          "html": "<span class=\"releasetext\">Release: 8.9.1.5</span>",
           "target": [
             ".releasetext"
           ]
@@ -8701,29 +4899,9 @@
           "all": [],
           "none": [],
           "impact": "moderate",
-          "html": "<td class=\"delabel\" scope=\"row\">Select a Term: </td>",
+          "html": "<table class=\"menuplaintable\" summary=\"This layout table holds the menu items\">",
           "target": [
-            ".delabel"
-          ]
-        },
-        {
-          "any": [
-            {
-              "id": "region",
-              "data": {
-                "isIframe": false
-              },
-              "relatedNodes": [],
-              "impact": "moderate",
-              "message": "Some page content is not contained by landmarks"
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "moderate",
-          "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
-          "target": [
-            "#term_id"
+            ".menuplaintable"
           ]
         },
         {
@@ -8761,7 +4939,7 @@
           "all": [],
           "none": [],
           "impact": "moderate",
-          "html": "<div class=\"pagefooterdiv\">\n<span class=\"releasetext\">Release: 8.7.1</span>\n</div>",
+          "html": "<div class=\"pagefooterdiv\">\n<span class=\"releasetext\">Release: 8.9.1.5</span>\n</div>",
           "target": [
             ".pagefooterdiv"
           ]
@@ -8784,89 +4962,6 @@
           "html": "<div class=\"banner_copyright\"> <br><h5>© 2023 Ellucian Company L.P. and its affiliates.<br></h5></div>",
           "target": [
             ".banner_copyright"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "select-name",
-      "impact": "critical",
-      "tags": [
-        "cat.forms",
-        "wcag2a",
-        "wcag412",
-        "section508",
-        "section508.22.n",
-        "ACT",
-        "TTv5",
-        "TT5.c"
-      ],
-      "description": "Ensures select element has an accessible name",
-      "help": "Select element must have an accessible name",
-      "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/select-name?application=axe-puppeteer",
-      "nodes": [
-        {
-          "any": [
-            {
-              "id": "implicit-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "critical",
-              "message": "Form element does not have an implicit (wrapped) <label>"
-            },
-            {
-              "id": "explicit-label",
-              "data": {
-                "explicitLabel": ""
-              },
-              "relatedNodes": [
-                {
-                  "html": "<label for=\"term_id\"><span class=\"fieldlabeltextinvisible\">Term</span></label>",
-                  "target": [
-                    "label[for=\"term_id\"]"
-                  ]
-                }
-              ],
-              "impact": "critical",
-              "message": "Form element does not have an explicit <label>"
-            },
-            {
-              "id": "aria-label",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-label attribute does not exist or is empty"
-            },
-            {
-              "id": "aria-labelledby",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty"
-            },
-            {
-              "id": "non-empty-title",
-              "data": {
-                "messageKey": "noAttr"
-              },
-              "relatedNodes": [],
-              "impact": "serious",
-              "message": "Element has no title attribute"
-            },
-            {
-              "id": "presentational-role",
-              "data": null,
-              "relatedNodes": [],
-              "impact": "minor",
-              "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
-            }
-          ],
-          "all": [],
-          "none": [],
-          "impact": "critical",
-          "html": "<select name=\"term_in\" size=\"1\" id=\"term_id\">",
-          "target": [
-            "#term_id"
           ]
         }
       ]

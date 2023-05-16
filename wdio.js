@@ -39,6 +39,10 @@ const load = async() => {
   button.waitForClickable();
   await button.click();
   cookies = await browser.getCookies();
+  
+  const pup = await browser.getPuppeteer();
+  const pages = await pup.pages();
+  pages[0].waitForNetworkIdle();
   return true;
 };
 
