@@ -17,3 +17,7 @@ I will need to authenticate before running a crawl on the site. The following tu
 [Fast and easy authentication with Playwright](https://timdeschryver.dev/blog/fast-and-easy-authentication-with-playwright)
 
 [Authenticate Once with Playwright](https://qxperts.io/authenticate-once-with-playwright/)
+
+## Fastify Server
+
+Read the series of pieces [here](https://davipon.hashnode.dev/better-backend-dx-fastify-esbuild) to get started.
