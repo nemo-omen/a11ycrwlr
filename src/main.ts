@@ -1,6 +1,7 @@
 import { chromium } from 'playwright';
 import { targetPages } from './targetPages';
 import { login } from './login';
+
 async function run() {
   const browser = await chromium.launch({
     headless: false
@@ -15,8 +16,8 @@ async function run() {
 
   const loginResult = await login(page);
 
-  if (loginResult.ok) {
-    console.log('Logged in!');
+  if (!loginResult.ok) {
+    console.log("Oops! Couldn't log in!");
   }
 
   return { browser, context };
