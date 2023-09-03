@@ -1,6 +1,8 @@
-export const targetUrls = [
-
-  { name: 'Home', url: 'https://ramport.angelo.edu/' },
+export const targetPages = [
+  {
+    name: 'Home',
+    url: 'https://ramport.angelo.edu/'
+  },
   {
     name: 'Academics',
     url: 'https://ramport.angelo.edu/web/home-community/academics',

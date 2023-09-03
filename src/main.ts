@@ -1,5 +1,6 @@
 import { chromium } from 'playwright';
-
+import { targetPages } from './targetPages';
+import { login } from './login';
 async function run() {
   const browser = await chromium.launch({
     headless: false
@@ -12,11 +13,12 @@ async function run() {
     height: 1080
   });
 
-  await page.goto('https://css-tricks.com');
-  await page.waitForLoadState('networkidle');
-  setTimeout(() => {
-    //
-  }, 3000);
+  const loginResult = await login(page);
+
+  if (loginResult.ok) {
+    console.log('Logged in!');
+  }
+
   return { browser, context };
 }
 
