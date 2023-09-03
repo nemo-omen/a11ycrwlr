@@ -1,7 +1,8 @@
 import { chromium } from 'playwright';
 import { targetPages } from './targetPages';
 import { login } from './login';
-
+import AxeBuilder from '@axe-core/playwright';
+import { saveResults } from './saveResults';
 async function run() {
   const browser = await chromium.launch({
     headless: false
@@ -19,6 +20,16 @@ async function run() {
   if (!loginResult.ok) {
     console.log("Oops! Couldn't log in!");
   }
+
+  const axeResults = await new AxeBuilder({ page }).analyze().catch((error) => console.error(error));
+  // console.log(axeResults);
+  const testResult = {
+    name: 'Home',
+    url: 'https://ramport.angelo.edu',
+    results: axeResults
+  };
+
+  saveResults(testResult);
 
   return { browser, context };
 }

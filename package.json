@@ -22,10 +22,12 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@axe-core/playwright": "^4.7.3",
     "@swc/cli": "^0.1.62",
     "chokidar": "^3.5.3",
     "concurrently": "^8.2.1",
     "dotenv": "^16.3.1",
+    "just-kebab-case": "^4.2.0",
     "nodemon": "^3.0.1",
     "playwright": "^1.37.1"
   }
