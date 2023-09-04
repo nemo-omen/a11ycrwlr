@@ -16,7 +16,7 @@ export async function processLogin(loginPage: Page, loginOpts: TestOptions): Pro
     title: 'Login - Enter Username'
   };
 
-  const test1Result = await testPage(loginPage, test1Opts);
+  const test1Result = await testPage(loginPage);
 
   if (!test1Result.ok) return test1Result;
 
@@ -40,7 +40,7 @@ export async function processLogin(loginPage: Page, loginOpts: TestOptions): Pro
     title: 'Login - Enter Password',
   };
 
-  const test2Result = await testPage(loginPage, test2Opts);
+  const test2Result = await testPage(loginPage);
 
   if (!test2Result.ok) return test1Result;
 
