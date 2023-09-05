@@ -1,4 +1,4 @@
-import type AxeResults from '@axe-core/playwright';
+import { AxeResults } from "axe-core";
 export type Result = { ok: true, value: any; } | { ok: false, error: string; };
 export type TestOptions = {
   title: string;

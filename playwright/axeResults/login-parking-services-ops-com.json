@@ -12,11 +12,11 @@
         "testEnvironment": {
             "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
             "windowWidth": 930,
-            "windowHeight": 1080,
+            "windowHeight": 930,
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-04T20:37:10.579Z",
+        "timestamp": "2023-09-05T02:20:50.636Z",
         "url": "https://angelostate.ops-com.com/login",
         "toolOptions": {
             "resultTypes": [

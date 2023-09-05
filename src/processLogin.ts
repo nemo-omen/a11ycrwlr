@@ -20,7 +20,10 @@ export async function processLogin(loginPage: Page, loginOpts: TestOptions): Pro
 
   if (!test1Result.ok) return test1Result;
 
-  const test1WriteResult = await saveResults(test1Result.value, test1Opts);
+  const test1WriteResult = await saveResults(
+    test1Result.value,
+    test1Opts,
+  );
 
   if (!test1WriteResult.ok) return test1WriteResult;
 
@@ -44,7 +47,10 @@ export async function processLogin(loginPage: Page, loginOpts: TestOptions): Pro
 
   if (!test2Result.ok) return test1Result;
 
-  const test2WriteResult = await saveResults(test1Result.value, test2Opts);
+  const test2WriteResult = await saveResults(
+    test1Result.value,
+    test2Opts,
+  );
 
   if (!test2WriteResult.ok) return test2WriteResult;
 

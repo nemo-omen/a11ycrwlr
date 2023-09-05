@@ -24,6 +24,7 @@
   "dependencies": {
     "@axe-core/playwright": "^4.7.3",
     "@swc/cli": "^0.1.62",
+    "axe-core": "^4.7.2",
     "chokidar": "^3.5.3",
     "concurrently": "^8.2.1",
     "dotenv": "^16.3.1",

@@ -12,12 +12,12 @@
         "testEnvironment": {
             "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36",
             "windowWidth": 930,
-            "windowHeight": 1080,
+            "windowHeight": 930,
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-04T20:37:14.043Z",
-        "url": "https://login.microsoftonline.com/7cf1d100-35b0-4cec-a70d-9b8bd80b9ad0/saml2?SAMLRequest=jVLBauMwFPwVo7ttWa7XiYhdQkqh0EJJ2z30ssjScyqwJa%2BenObzq7gJ9S7bJTchvZl5M6PV9aHvoj041NZUJEsoicBIq7TZVeTl%2BTZekOt6haLvBr4e%2FZvZwu8R0EcBZ5BPDxUZneFWoEZuRA%2FIveRP64d7zhLKB2e9lbYj0RoRnA9CG2tw7ME9gdtrCS%2Fb%2B4q8eT8gT9PO7rRJhNlBZxNQYypt31sjgjaJboKyNsJPy%2F6J6LV0Fm3rrem0gSTA0lK2mcoojfOiofGVBBmLkqp42SwataDNUiiaHi0wEt1aJ2FyWJFWdAgkurupyC%2BqKFVFU7ZtRqFgcrkQktHAlYUzbYowho8CUe%2FhC4g4wp1BL4yvCKMsj%2BkyplfPjPK85FmW5Hn5SqKf59xDTuSc8gR2l%2BcrzqmS%2Bu%2Fs4j7%2FUazSOe%2BnChv4qUdQk%2BfQiIfDvFV2ca0b2w%2FCaTwagYOQ%2FmSF8Tn1pguLbqGdS1xs7L9jkssjd7g%2B9vBunfq0%2FG%2F9%2BvT4TQL1Oa75Z68%2FAA%3D%3D&RelayState=05106f23-6f86-4ea6-9c33-519429e4ddbf",
+        "timestamp": "2023-09-05T02:20:54.013Z",
+        "url": "https://login.microsoftonline.com/7cf1d100-35b0-4cec-a70d-9b8bd80b9ad0/saml2?SAMLRequest=jZJRa9swFIX%2FitG7bVm2k1jELiGlUOhgpO0e%2BjIU6ToV2JKnK2f5%2BVPchHmjG3nV1blH5zta3536LjqCQ21NTbKEkgiMtEqbQ01eXx7iFblr1ij6buCb0b%2BbHfwYAX0UdAb5NKjJ6Ay3AjVyI3pA7iV%2F3nx54iyhfHDWW2k7Em0QwflgtLUGxx7cM7ijlvC6e6rJu%2FcD8jTt7EGbRJgDdDYBNabS9r01IniT6D44ayP89Ng%2FFb2WzqJtvTWdNpAEWbqUbaYySuO83NO4kCBjsaQqrvarvVrRfSUUTc8RGIkerJMwJaxJKzoEEj3e1%2BR7XpRQsIVcLfKqWC5b0YaTilZlzlRWgAzX8KtA1Ef4LUQc4dGgF8bXhFGWx7SKaflCGWeUl1lSVIs3En27cg%2BcyJXyJHa38xVXqqT5m13c54tync73friwgV96BDVlDo14OM1bZTfXurX9IJzGcxA4CekvURifr9524aE7aOcWNwf77zXJ5Xl3OD738NM69RH5c%2F%2FmMvwHgeaKa%2F7Zm18%3D&RelayState=8b34b9f8-c1d8-4717-9732-93e7ea989d92",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -1256,7 +1256,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\" data-report-attached=\"1\">",
                         "target": [
                             "#i0116"
                         ]
@@ -1385,7 +1385,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\" data-report-attached=\"1\">",
                         "target": [
                             "#i0116"
                         ]
@@ -1640,7 +1640,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\" data-report-attached=\"1\">",
                         "target": [
                             "#i0116"
                         ]
@@ -1692,7 +1692,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\" data-report-attached=\"1\">",
                         "target": [
                             "#i0116"
                         ]
@@ -2224,12 +2224,6 @@
                                     {
                                         "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
                                         "target": [
-                                            "style:nth-child(30)"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
-                                        "target": [
                                             "style:nth-child(31)"
                                         ]
                                     },
@@ -2242,7 +2236,13 @@
                                     {
                                         "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
                                         "target": [
-                                            "style:nth-child(34)"
+                                            "style:nth-child(33)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
+                                        "target": [
+                                            "style:nth-child(35)"
                                         ]
                                     }
                                 ],
@@ -2255,7 +2255,7 @@
                         "impact": "minor",
                         "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
                         "target": [
-                            "style:nth-child(29)"
+                            "style:nth-child(30)"
                         ],
                         "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: customCssStyle"
                     }

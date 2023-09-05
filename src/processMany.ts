@@ -21,7 +21,11 @@ export async function processMany(page: Page, targets: TestOptions[]): Promise<R
     if (!testResult.ok) {
       results.errors.push(testResult);
     }
-    const writeResult = await saveResults(testResult.value, { title: await page.title(), url: target.url });
+    const writeResult = await saveResults(
+      testResult.value,
+      { title: await page.title(), url: target.url },
+    );
+    console.log({ writeResult });
     if (!writeResult.ok) {
       results.errors.push(writeResult);
     } else {
