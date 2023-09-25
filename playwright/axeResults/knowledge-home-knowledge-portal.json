@@ -16,7 +16,7 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-05T02:20:47.774Z",
+        "timestamp": "2023-09-25T11:47:17.492Z",
         "url": "https://angelostate.servicenowservices.com/kb?id=kb_home",
         "toolOptions": {
             "resultTypes": [
@@ -471,6 +471,19 @@
                 "nodes": []
             },
             {
+                "id": "presentation-role-conflict",
+                "impact": null,
+                "tags": [
+                    "cat.aria",
+                    "best-practice",
+                    "ACT"
+                ],
+                "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+                "help": "Ensure elements marked as presentational are consistently ignored",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/presentation-role-conflict?application=playwright",
+                "nodes": []
+            },
+            {
                 "id": "role-img-alt",
                 "impact": null,
                 "tags": [
@@ -498,6 +511,21 @@
                 "description": "Ensures the scope attribute is used correctly on tables",
                 "help": "scope attribute should be used correctly",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=playwright",
+                "nodes": []
+            },
+            {
+                "id": "scrollable-region-focusable",
+                "impact": null,
+                "tags": [
+                    "cat.keyboard",
+                    "wcag2a",
+                    "wcag211",
+                    "TTv5",
+                    "TT4.a"
+                ],
+                "description": "Ensure elements that have scrollable content are accessible by keyboard",
+                "help": "Scrollable region must have keyboard access",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=playwright",
                 "nodes": []
             },
             {
@@ -740,9 +768,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<nav class=\"navbar-inverse navbar\" ng-class=\"::{'navbar':!isViewNative, 'is-native': isViewNative}\" role=\"navigation\" aria-label=\"Primary\">",
+                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" role=\"banner\" class=\"ng-scope\" style=\"\">",
                         "target": [
-                            "nav"
+                            "header"
                         ]
                     }
                 ]
@@ -772,7 +800,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<body class=\"chrome ng-scope fixed-header\" ng-class=\"main.style\" ng-controller=\"spPageCtrl as main\" accessibility=\"false\" style=\"\">",
+                        "html": "<body class=\"chrome ng-scope fixed-header\" ng-class=\"[main.style, 'false' == 'true' ? 'has-agent-chat' : '' ]\" ng-controller=\"spPageCtrl as main\" accessibility=\"false\" style=\"\">",
                         "target": [
                             "body"
                         ]
@@ -852,16 +880,16 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<nav class=\"navbar-inverse navbar\" ng-class=\"::{'navbar':!isViewNative, 'is-native': isViewNative}\" role=\"navigation\" aria-label=\"Primary\">",
+                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" role=\"banner\" class=\"ng-scope\" style=\"\">",
                         "target": [
-                            "nav"
+                            "header"
                         ]
                     }
                 ]
             },
             {
                 "id": "aria-required-children",
-                "impact": null,
+                "impact": "critical",
                 "tags": [
                     "cat.aria",
                     "wcag2a",
@@ -969,9 +997,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<nav class=\"navbar-inverse navbar\" ng-class=\"::{'navbar':!isViewNative, 'is-native': isViewNative}\" role=\"navigation\" aria-label=\"Primary\">",
+                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" role=\"banner\" class=\"ng-scope\" style=\"\">",
                         "target": [
-                            "nav"
+                            "header"
                         ]
                     }
                 ]
@@ -1152,26 +1180,19 @@
                     {
                         "any": [
                             {
-                                "id": "aria-label",
+                                "id": "button-has-visible-text",
                                 "data": null,
                                 "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "aria-label attribute exists and is not empty"
-                            },
-                            {
-                                "id": "non-empty-title",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element has a title attribute"
+                                "impact": "critical",
+                                "message": "Element has inner text that is visible to screen readers"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<button name=\"search\" type=\"submit\" class=\"btn btn-default\" title=\"Search\" aria-label=\"Search\"> <!-- ngIf: ::c.options.glyph --><i ng-if=\"::c.options.glyph\" class=\"fa fa-search\" aria-hidden=\"true\"></i><!-- end ngIf: ::c.options.glyph --> </button>",
+                        "html": "<button ng-if=\"data.hasMenuItems || (!user.logged_in &amp;&amp; page.id != portal.login_page_dv &amp;&amp; !data.hasLogin) || user.logged_in\" type=\"button\" class=\"navbar-toggle collapsed ng-scope\" data-toggle=\"collapse\" data-target=\"#sp-nav-bar\" aria-haspopup=\"menu\">",
                         "target": [
-                            ".btn"
+                            ".navbar-toggle"
                         ]
                     }
                 ]
@@ -1211,19 +1232,19 @@
                                         ]
                                     },
                                     {
-                                        "html": "<h3 class=\"panel-title ng-binding\" ng-bind=\"::options.title\" aria-label=\"Most Viewed\">Most Viewed</h3>",
+                                        "html": "<h3 ng-if=\"!c.data.isKBView\" class=\"panel-title ng-binding ng-scope\" ng-bind=\"::options.title\" aria-label=\"Most Viewed\">Most Viewed</h3>",
                                         "target": [
                                             "h3[aria-label=\"Most Viewed\"]"
                                         ]
                                     },
                                     {
-                                        "html": "<h3 class=\"panel-title ng-binding\" ng-bind=\"::options.title\" aria-label=\"Featured\">Featured</h3>",
+                                        "html": "<h3 ng-if=\"!c.data.isKBView\" class=\"panel-title ng-binding ng-scope\" ng-bind=\"::options.title\" aria-label=\"Featured\">Featured</h3>",
                                         "target": [
                                             "h3[aria-label=\"Featured\"]"
                                         ]
                                     },
                                     {
-                                        "html": "<h3 class=\"panel-title ng-binding\" ng-bind=\"::options.title\" aria-label=\"Most Useful\">Most Useful</h3>",
+                                        "html": "<h3 ng-if=\"!c.data.isKBView\" class=\"panel-title ng-binding ng-scope\" ng-bind=\"::options.title\" aria-label=\"Most Useful\">Most Useful</h3>",
                                         "target": [
                                             "h3[aria-label=\"Most Useful\"]"
                                         ]
@@ -1237,7 +1258,7 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\">",
+                                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\" role=\"main\">",
                                         "target": [
                                             "main"
                                         ]
@@ -1277,24 +1298,24 @@
                             {
                                 "id": "color-contrast",
                                 "data": {
-                                    "fgColor": "#ffffff",
-                                    "bgColor": "#245397",
-                                    "contrastRatio": 7.61,
-                                    "fontSize": "10.5pt (14px)",
+                                    "fgColor": "#555555",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 7.45,
+                                    "fontSize": "13.5pt (18px)",
                                     "fontWeight": "normal",
                                     "expectedContrastRatio": "4.5:1"
                                 },
                                 "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "Element has sufficient color contrast of 7.61"
+                                "message": "Element has sufficient color contrast of 7.45"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<a href=\"\" ng-click=\"::openLogin()\">Log in</a>",
+                        "html": "<input name=\"query\" ng-model=\"c.keyword\" type=\"text\" aria-label=\"Enter text and press enter\" placeholder=\"What do you need help with?\" class=\"form-control ng-pristine ng-untouched ng-valid ng-empty\" role=\"textbox\">",
                         "target": [
-                            "a[href=\"\"]"
+                            ".form-control"
                         ]
                     }
                 ]
@@ -1662,15 +1683,6 @@
                                 "relatedNodes": [],
                                 "impact": "serious",
                                 "message": "Element has a title attribute"
-                            },
-                            {
-                                "id": "presentational-role",
-                                "data": {
-                                    "role": "presentation"
-                                },
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "Element's default semantics were overriden with role=\"presentation\""
                             }
                         ],
                         "all": [],
@@ -1684,7 +1696,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" role=\"presentation\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
+                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
                         "target": [
                             "img"
                         ]
@@ -1715,7 +1727,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" role=\"presentation\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
+                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
                         "target": [
                             "img"
                         ]
@@ -1831,7 +1843,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" class=\"ng-scope\" style=\"\">",
+                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" role=\"banner\" class=\"ng-scope\" style=\"\">",
                         "target": [
                             "header"
                         ]
@@ -1864,7 +1876,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\">",
+                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\" role=\"main\">",
                         "target": [
                             "main"
                         ]
@@ -1895,7 +1907,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" class=\"ng-scope\" style=\"\">",
+                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" role=\"banner\" class=\"ng-scope\" style=\"\">",
                         "target": [
                             "header"
                         ]
@@ -1926,7 +1938,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\">",
+                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\" role=\"main\">",
                         "target": [
                             "main"
                         ]
@@ -1952,7 +1964,7 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\">",
+                                        "html": "<main class=\"body padding-top\" data-page-id=\"e1c919e4dbd3220099f93691f0b8f535\" data-page-title=\"Knowledge Home\" role=\"main\">",
                                         "target": [
                                             "main"
                                         ]
@@ -1998,7 +2010,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" class=\"ng-scope\" style=\"\">",
+                        "html": "<header ng-if=\"theme.header &amp;&amp; theme.navbar_fixed\" role=\"banner\" class=\"ng-scope\" style=\"\">",
                         "target": [
                             "header"
                         ]
@@ -2142,9 +2154,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<button name=\"search\" type=\"submit\" class=\"btn btn-default\" title=\"Search\" aria-label=\"Search\"> <!-- ngIf: ::c.options.glyph --><i ng-if=\"::c.options.glyph\" class=\"fa fa-search\" aria-hidden=\"true\"></i><!-- end ngIf: ::c.options.glyph --> </button>",
+                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
                         "target": [
-                            ".btn"
+                            "img"
                         ]
                     }
                 ]
@@ -2188,45 +2200,6 @@
                 ]
             },
             {
-                "id": "presentation-role-conflict",
-                "impact": null,
-                "tags": [
-                    "cat.aria",
-                    "best-practice",
-                    "ACT"
-                ],
-                "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
-                "help": "Ensure elements marked as presentational are consistently ignored",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/presentation-role-conflict?application=playwright",
-                "nodes": [
-                    {
-                        "any": [],
-                        "all": [],
-                        "none": [
-                            {
-                                "id": "is-element-focusable",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "Element is focusable."
-                            },
-                            {
-                                "id": "has-global-aria-attribute",
-                                "data": [],
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "Element has global ARIA attributes: "
-                            }
-                        ],
-                        "impact": null,
-                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" role=\"presentation\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
-                        "target": [
-                            "img"
-                        ]
-                    }
-                ]
-            },
-            {
                 "id": "region",
                 "impact": null,
                 "tags": [
@@ -2255,40 +2228,6 @@
                         "html": "<div class=\"sp-page-root page flex-column sp-can-animate\" ng-class=\"{'sp-loading': main.firstPage, 'sp-can-animate': main.doAnimate}\" style=\"\">",
                         "target": [
                             ".sp-page-root"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "scrollable-region-focusable",
-                "impact": null,
-                "tags": [
-                    "cat.keyboard",
-                    "wcag2a",
-                    "wcag211",
-                    "TTv5",
-                    "TT4.a"
-                ],
-                "description": "Ensure elements that have scrollable content are accessible by keyboard",
-                "help": "Scrollable region must have keyboard access",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "focusable-content",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element contains focusable elements"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": null,
-                        "html": "<section class=\"flex-grow page sp-scroll\" role=\"presentation\" tabindex=\"-1\">",
-                        "target": [
-                            ".flex-grow"
                         ]
                     }
                 ]
@@ -2429,27 +2368,6 @@
                             {
                                 "id": "aria-allowed-role",
                                 "data": [
-                                    "presentation"
-                                ],
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "ARIA role presentation is not allowed for given element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "minor",
-                        "html": "<img ng-src=\"8fb0955edb234810174f38f0ad9619d6.iix\" title=\"Knowledge Portal\" role=\"presentation\" alt=\"Knowledge Portal Logo\" src=\"8fb0955edb234810174f38f0ad9619d6.iix\">",
-                        "target": [
-                            "img"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "aria-allowed-role",
-                                "data": [
                                     "form"
                                 ],
                                 "relatedNodes": [],
@@ -2465,6 +2383,194 @@
                             "#kb_home_search_form"
                         ],
                         "failureSummary": "Fix any of the following:\n  ARIA role form is not allowed for given element"
+                    }
+                ]
+            },
+            {
+                "id": "aria-required-children",
+                "impact": "critical",
+                "tags": [
+                    "cat.aria",
+                    "wcag2a",
+                    "wcag131"
+                ],
+                "description": "Ensures elements with an ARIA role that require child roles contain them",
+                "help": "Certain ARIA roles must contain particular children",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-children?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "aria-required-children",
+                                "data": {
+                                    "messageKey": "unallowed",
+                                    "values": "[role=group]"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "critical",
+                                "message": "Element has children which are not allowed: [role=group]"
+                            },
+                            {
+                                "id": "aria-busy",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Element uses aria-busy=\"true\" while showing a loader"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "critical",
+                        "html": "<div ng-if=\"c.options.result.length >",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=group]\n  Element uses aria-busy=\"true\" while showing a loader"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "aria-required-children",
+                                "data": {
+                                    "messageKey": "unallowed",
+                                    "values": "[role=group]"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "critical",
+                                "message": "Element has children which are not allowed: [role=group]"
+                            },
+                            {
+                                "id": "aria-busy",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Element uses aria-busy=\"true\" while showing a loader"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "critical",
+                        "html": "<div ng-if=\"c.options.result.length >",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=group]\n  Element uses aria-busy=\"true\" while showing a loader"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "aria-required-children",
+                                "data": {
+                                    "messageKey": "unallowed",
+                                    "values": "[role=group]"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "critical",
+                                "message": "Element has children which are not allowed: [role=group]"
+                            },
+                            {
+                                "id": "aria-busy",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Element uses aria-busy=\"true\" while showing a loader"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "critical",
+                        "html": "<div ng-if=\"c.options.result.length >",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has children which are not allowed: [role=group]\n  Element uses aria-busy=\"true\" while showing a loader"
                     }
                 ]
             },
@@ -2778,7 +2884,7 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">81</span>",
+                                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">82</span>",
                                         "target": [
                                             "div[aria-label=\"Collapsed category Blackboard\"] > .badge.pull-right.pointer"
                                         ]
@@ -2791,7 +2897,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">81</span>",
+                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">82</span>",
                         "target": [
                             "div[aria-label=\"Collapsed category Blackboard\"] > .badge.pull-right.pointer"
                         ],
@@ -2982,7 +3088,7 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"panel-heading\" ng-class=\"{'b-b': !c.options.color}\"> \n   <h3 class=\"panel-title ng-binding\" ng-bind=\"::options.title\" aria-label=\"Most Viewed\">Most Viewed</h3> \n  </div>",
+                                        "html": "<div class=\"panel-heading\" ng-class=\"{'b-b': !c.options.color}\">",
                                         "target": [
                                             ".panel-primary.b.panel > .panel-heading[ng-class=\"{'b-b': !c.options.color}\"]"
                                         ]
@@ -2995,7 +3101,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<h3 class=\"panel-title ng-binding\" ng-bind=\"::options.title\" aria-label=\"Most Viewed\">Most Viewed</h3>",
+                        "html": "<h3 ng-if=\"!c.data.isKBView\" class=\"panel-title ng-binding ng-scope\" ng-bind=\"::options.title\" aria-label=\"Most Viewed\">Most Viewed</h3>",
                         "target": [
                             "h3[aria-label=\"Most Viewed\"]"
                         ],
@@ -3016,9 +3122,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
                                         ]
                                     }
                                 ],
@@ -3031,7 +3137,7 @@
                         "impact": "serious",
                         "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Using the MyPassword Service</div>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3050,9 +3156,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
                                         ]
                                     }
                                 ],
@@ -3063,9 +3169,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7130 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7384 Views</span>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3084,9 +3190,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
                                         ]
                                     }
                                 ],
@@ -3099,7 +3205,7 @@
                         "impact": "serious",
                         "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">YuJa for Students</div>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3118,9 +3224,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
                                         ]
                                     }
                                 ],
@@ -3131,9 +3237,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">6921 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7054 Views</span>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3152,9 +3258,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
                                         ]
                                     }
                                 ],
@@ -3167,7 +3273,7 @@
                         "impact": "serious",
                         "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Purchase a Parking Permit</div>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3186,9 +3292,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
                                         ]
                                     }
                                 ],
@@ -3199,9 +3305,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">6022 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">6215 Views</span>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3220,9 +3326,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
                                         ]
                                     }
                                 ],
@@ -3235,7 +3341,7 @@
                         "impact": "serious",
                         "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">TechSmith Knowmia</div>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3254,9 +3360,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"listitem\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
                                         "target": [
-                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
                                         ]
                                     }
                                 ],
@@ -3269,7 +3375,687 @@
                         "impact": "serious",
                         "html": "<span aria-hidden=\"true\" class=\"ng-binding\">5470 Views</span>",
                         "target": [
-                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"listitem\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Connecting to the Console Wi-Fi</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">3523 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Submit a Support Ticket</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">261 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">What steps can I take when I receive an email I believe to be SPAM or PHISHING?</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">348 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Computer and Internet Access for Students</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">326 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Getting Started with YuJa</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">1004 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Adobe Acrobat/Creative Cloud Sign-In &amp; Activation</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">2600 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Submitting Video/Audio Recordings in Blackboard as a Student</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">2374 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">ASU Login</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">424 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Kaltura Express Capture</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">1586 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#428bca",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 3.63,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">YuJa for Students</div>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #428bca, background color: #ffffff, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#979797",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.92,
+                                    "fontSize": "9.8pt (13.02px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div role=\"group\" ng-repeat=\"item in c.getOrderedItems() track by item.id\" class=\"list-group-item kb-list-item ng-scope\" ng-class=\"{'kb-item-block':c.isNative}\">",
+                                        "target": [
+                                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7054 Views</span>",
+                        "target": [
+                            ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #979797, background color: #ffffff, font size: 9.8pt (13.02px), font weight: normal). Expected contrast ratio of 4.5:1"
                     }

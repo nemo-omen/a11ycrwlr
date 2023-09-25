@@ -1,6 +1,6 @@
 {
-    "title": "Home - RamPort",
-    "url": "https://test-ramport.angelo.edu/",
+    "title": "Home | Navigate",
+    "url": "https://angelo.campus.eab.com/",
     "results": {
         "testEngine": {
             "name": "axe-core",
@@ -16,8 +16,8 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:31.550Z",
-        "url": "https://test-ramport.angelo.edu/",
+        "timestamp": "2023-09-25T11:47:52.869Z",
+        "url": "https://angelo.campus.eab.com/home",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -55,22 +55,6 @@
                 "description": "Ensures <area> elements of image maps have alternate text",
                 "help": "Active <area> elements must have alternate text",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/area-alt?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "aria-command-name",
-                "impact": null,
-                "tags": [
-                    "cat.aria",
-                    "wcag2a",
-                    "wcag412",
-                    "ACT",
-                    "TTv5",
-                    "TT6.a"
-                ],
-                "description": "Ensures every ARIA button, link and menuitem has an accessible name",
-                "help": "ARIA commands must have an accessible name",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-command-name?application=playwright",
                 "nodes": []
             },
             {
@@ -125,19 +109,6 @@
                 "description": "Ensures every ARIA progressbar node has an accessible name",
                 "help": "ARIA progressbar nodes must have an accessible name",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-progressbar-name?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "aria-required-children",
-                "impact": null,
-                "tags": [
-                    "cat.aria",
-                    "wcag2a",
-                    "wcag131"
-                ],
-                "description": "Ensures elements with an ARIA role that require child roles contain them",
-                "help": "Certain ARIA roles must contain particular children",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-children?application=playwright",
                 "nodes": []
             },
             {
@@ -225,6 +196,24 @@
                 "nodes": []
             },
             {
+                "id": "button-name",
+                "impact": null,
+                "tags": [
+                    "cat.name-role-value",
+                    "wcag2a",
+                    "wcag412",
+                    "section508",
+                    "section508.22.a",
+                    "ACT",
+                    "TTv5",
+                    "TT6.a"
+                ],
+                "description": "Ensures buttons have discernible text",
+                "help": "Buttons must have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=playwright",
+                "nodes": []
+            },
+            {
                 "id": "definition-list",
                 "impact": null,
                 "tags": [
@@ -248,33 +237,6 @@
                 "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
                 "help": "<dt> and <dd> elements must be contained by a <dl>",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/dlitem?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "empty-table-header",
-                "impact": null,
-                "tags": [
-                    "cat.name-role-value",
-                    "best-practice"
-                ],
-                "description": "Ensures table headers have discernible text",
-                "help": "Table header text should not be empty",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-table-header?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "form-field-multiple-labels",
-                "impact": null,
-                "tags": [
-                    "cat.forms",
-                    "wcag2a",
-                    "wcag332",
-                    "TTv5",
-                    "TT5.c"
-                ],
-                "description": "Ensures form field does not have multiple label elements",
-                "help": "Form field must not have multiple label elements",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=playwright",
                 "nodes": []
             },
             {
@@ -389,48 +351,6 @@
                 "nodes": []
             },
             {
-                "id": "label-title-only",
-                "impact": null,
-                "tags": [
-                    "cat.forms",
-                    "best-practice"
-                ],
-                "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
-                "help": "Form elements should have a visible label",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label-title-only?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "label",
-                "impact": null,
-                "tags": [
-                    "cat.forms",
-                    "wcag2a",
-                    "wcag412",
-                    "section508",
-                    "section508.22.n",
-                    "ACT",
-                    "TTv5",
-                    "TT5.c"
-                ],
-                "description": "Ensures every form element has a label",
-                "help": "Form elements must have labels",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "landmark-banner-is-top-level",
-                "impact": null,
-                "tags": [
-                    "cat.semantics",
-                    "best-practice"
-                ],
-                "description": "Ensures the banner landmark is at top level",
-                "help": "Banner landmark should not be contained in another landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-banner-is-top-level?application=playwright",
-                "nodes": []
-            },
-            {
                 "id": "landmark-complementary-is-top-level",
                 "impact": null,
                 "tags": [
@@ -467,6 +387,21 @@
                 "nodes": []
             },
             {
+                "id": "link-in-text-block",
+                "impact": null,
+                "tags": [
+                    "cat.color",
+                    "wcag2a",
+                    "wcag141",
+                    "TTv5",
+                    "TT13.a"
+                ],
+                "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+                "help": "Links must be distinguishable without relying on color",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=playwright",
+                "nodes": []
+            },
+            {
                 "id": "marquee",
                 "impact": null,
                 "tags": [
@@ -497,6 +432,32 @@
                 "nodes": []
             },
             {
+                "id": "meta-viewport-large",
+                "impact": null,
+                "tags": [
+                    "cat.sensory-and-visual-cues",
+                    "best-practice"
+                ],
+                "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
+                "help": "Users should be able to zoom and scale the text up to 500%",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport-large?application=playwright",
+                "nodes": []
+            },
+            {
+                "id": "meta-viewport",
+                "impact": null,
+                "tags": [
+                    "cat.sensory-and-visual-cues",
+                    "wcag2aa",
+                    "wcag144",
+                    "ACT"
+                ],
+                "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
+                "help": "Zooming and scaling must not be disabled",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport?application=playwright",
+                "nodes": []
+            },
+            {
                 "id": "object-alt",
                 "impact": null,
                 "tags": [
@@ -509,36 +470,6 @@
                 "description": "Ensures <object> elements have alternate text",
                 "help": "<object> elements must have alternate text",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/object-alt?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "role-img-alt",
-                "impact": null,
-                "tags": [
-                    "cat.text-alternatives",
-                    "wcag2a",
-                    "wcag111",
-                    "section508",
-                    "section508.22.a",
-                    "ACT",
-                    "TTv5",
-                    "TT7.a"
-                ],
-                "description": "Ensures [role='img'] elements have alternate text",
-                "help": "[role='img'] elements must have an alternative text",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "scope-attr-valid",
-                "impact": null,
-                "tags": [
-                    "cat.tables",
-                    "best-practice"
-                ],
-                "description": "Ensures the scope attribute is used correctly on tables",
-                "help": "scope attribute should be used correctly",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=playwright",
                 "nodes": []
             },
             {
@@ -622,35 +553,6 @@
                 "nodes": []
             },
             {
-                "id": "tabindex",
-                "impact": null,
-                "tags": [
-                    "cat.keyboard",
-                    "best-practice"
-                ],
-                "description": "Ensures tabindex attribute values are not greater than 0",
-                "help": "Elements should not have tabindex greater than zero",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/tabindex?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "th-has-data-cells",
-                "impact": null,
-                "tags": [
-                    "cat.tables",
-                    "wcag2a",
-                    "wcag131",
-                    "section508",
-                    "section508.22.g",
-                    "TTv5",
-                    "14.b"
-                ],
-                "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
-                "help": "Table headers in a data table must refer to data cells",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/th-has-data-cells?application=playwright",
-                "nodes": []
-            },
-            {
                 "id": "valid-lang",
                 "impact": null,
                 "tags": [
@@ -703,7 +605,7 @@
         "passes": [
             {
                 "id": "aria-allowed-attr",
-                "impact": "critical",
+                "impact": "serious",
                 "tags": [
                     "cat.aria",
                     "wcag2a",
@@ -748,16 +650,16 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<button id=\"user-name\" type=\"button\" data-toggle=\"dropdown\" class=\"dropdown-toggle\" aria-haspopup=\"true\" aria-expanded=\"false\"> <span class=\"name\">Jeffrey Caldwell</span> </button>",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "#user-name"
+                            "hi-navigation-secondary"
                         ]
                     }
                 ]
             },
             {
                 "id": "aria-allowed-role",
-                "impact": null,
+                "impact": "minor",
                 "tags": [
                     "cat.aria",
                     "best-practice"
@@ -779,9 +681,54 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "hi-navigation-secondary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "aria-command-name",
+                "impact": null,
+                "tags": [
+                    "cat.aria",
+                    "wcag2a",
+                    "wcag412",
+                    "ACT",
+                    "TTv5",
+                    "TT6.a"
+                ],
+                "description": "Ensures every ARIA button, link and menuitem has an accessible name",
+                "help": "ARIA commands must have an accessible name",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-command-name?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "has-visible-text",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "Element has text that is visible to screen readers"
+                            },
+                            {
+                                "id": "aria-label",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "aria-label attribute exists and is not empty"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<div id=\"flyoutValue\" role=\"button\" tabindex=\"0\" aria-controls=\"flyoutContainer\" aria-label=\"Actions\" aria-haspopup=\"true\"><slot id=\"anchor\" name=\"anchor\"><hi-icon x-hip=\"hi-icon\"></hi-icon><span x-style=\"hidden\">Actions</span></slot></div>",
+                        "target": [
+                            [
+                                "#notification_messages_icon",
+                                "#flyoutValue"
+                            ]
                         ]
                     }
                 ]
@@ -811,7 +758,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<body class=\"skin-2 yui3-skin-sam controls-visible signed-in public-page site  dockbar-ready pace-done\">",
+                        "html": "<body class=\"ssc_plus  ext-safari ext-linux\" x-hip-style=\"no-link\" flag--eip-hi-navigation-hide-network-activity=\"flag--eip-hi-navigation-hide-network-activity\" style=\"--hi-clr--university-bkg: #00529b; --hi-clr--university-primary: #000000; --hi-clr--university-text: var(--hi-color--white);\" x-hip=\"hi-loader\">",
                         "target": [
                             "body"
                         ]
@@ -859,9 +806,9 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<i class=\"fa fa-sign-out\" aria-hidden=\"true\"></i>",
+                        "html": "<div id=\"minimized_dialogs\" class=\"announcement_popup\" aria-hidden=\"true\" index-first=\"0\" index-last=\"0\">",
                         "target": [
-                            ".fa-sign-out.fa[aria-hidden=\"true\"]"
+                            "#minimized_dialogs"
                         ]
                     }
                 ]
@@ -891,9 +838,73 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "hi-navigation-secondary"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "aria-required-children",
+                "impact": null,
+                "tags": [
+                    "cat.aria",
+                    "wcag2a",
+                    "wcag131"
+                ],
+                "description": "Ensures elements with an ARIA role that require child roles contain them",
+                "help": "Certain ARIA roles must contain particular children",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-children?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "aria-required-children",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "critical",
+                                "message": "Required ARIA children are present"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<ul role=\"tablist\" class=\"ui-tabs-nav ui-corner-all ui-helper-reset ui-helper-clearfix ui-widget-header\" aria-labelledby=\"tabKeysDescribed\" tabindex=\"0\">",
+                        "target": [
+                            ".ui-tabs-nav"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "aria-required-parent",
+                "impact": null,
+                "tags": [
+                    "cat.aria",
+                    "wcag2a",
+                    "wcag131"
+                ],
+                "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
+                "help": "Certain ARIA roles must be contained by particular parents",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-parent?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "aria-required-parent",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "critical",
+                                "message": "Required ARIA parent role present"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<li role=\"tab\" tabindex=\"0\" class=\"ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active active\" aria-controls=\"class_information_tab\" aria-labelledby=\"ui-id-1\" aria-selected=\"true\" aria-expanded=\"true\" id=\"ui-tab_courses\" aria-describedby=\"ui-tab_courses tabKeysDescribed\">",
+                        "target": [
+                            "#ui-tab_courses"
                         ]
                     }
                 ]
@@ -944,9 +955,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "hi-navigation-secondary"
                         ]
                     }
                 ]
@@ -990,9 +1001,9 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<button id=\"user-name\" type=\"button\" data-toggle=\"dropdown\" class=\"dropdown-toggle\" aria-haspopup=\"true\" aria-expanded=\"false\"> <span class=\"name\">Jeffrey Caldwell</span> </button>",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "#user-name"
+                            "hi-navigation-secondary"
                         ]
                     }
                 ]
@@ -1022,9 +1033,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<button id=\"user-name\" type=\"button\" data-toggle=\"dropdown\" class=\"dropdown-toggle\" aria-haspopup=\"true\" aria-expanded=\"false\"> <span class=\"name\">Jeffrey Caldwell</span> </button>",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "#user-name"
+                            "hi-navigation-secondary"
                         ]
                     }
                 ]
@@ -1069,46 +1080,9 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
+                        "html": "<body class=\"ssc_plus  ext-safari ext-linux\" x-hip-style=\"no-link\" flag--eip-hi-navigation-hide-network-activity=\"flag--eip-hi-navigation-hide-network-activity\" style=\"--hi-clr--university-bkg: #00529b; --hi-clr--university-primary: #000000; --hi-clr--university-text: var(--hi-color--white);\" x-hip=\"hi-loader\">",
                         "target": [
-                            "nav:nth-child(2)"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "button-name",
-                "impact": null,
-                "tags": [
-                    "cat.name-role-value",
-                    "wcag2a",
-                    "wcag412",
-                    "section508",
-                    "section508.22.a",
-                    "ACT",
-                    "TTv5",
-                    "TT6.a"
-                ],
-                "description": "Ensures buttons have discernible text",
-                "help": "Buttons must have discernible text",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "button-has-visible-text",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Element has inner text that is visible to screen readers"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": null,
-                        "html": "<button id=\"user-name\" type=\"button\" data-toggle=\"dropdown\" class=\"dropdown-toggle\" aria-haspopup=\"true\" aria-expanded=\"false\"> <span class=\"name\">Jeffrey Caldwell</span> </button>",
-                        "target": [
-                            "#user-name"
+                            "body"
                         ]
                     }
                 ]
@@ -1143,39 +1117,51 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                                        "html": "<div aria-level=\"1\" class=\"dropdown\" role=\"heading\">\n<h1 class=\"heading_1 current-role\">\nStudent Home\n</h1>\n<ul data-dropdown--list=\"\">\n</ul>\n</div>",
+                                        "target": [
+                                            ".dropdown"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<h1 class=\"heading_1 current-role\">\nStudent Home\n</h1>",
                                         "target": [
                                             "h1"
                                         ]
                                     },
                                     {
-                                        "html": "<h2 class=\"portlet-title\"> <span class=\"\" onmouseover=\"Liferay.Portal.ToolTip.show(this, 'COVID-19')\"> <img id=\"rjus__column2__3\" src=\"/html/icons/journal_content.png\" alt=\"\"> <span class=\"taglib-text hide-accessible\">COVID-19</span> </span> <span class=\"portlet-title-text\">COVID-19</span> </h2>",
+                                        "html": "<h2>Courses</h2>",
                                         "target": [
-                                            "#portlet_56_INSTANCE_XafGzZGzVmJR > header > .portlet-title"
+                                            "#student_class_listing > .gz_title > h2"
                                         ]
                                     },
                                     {
-                                        "html": "<h2 class=\"portlet-title\"> <span class=\"portlet-title-text\">Announcements</span> </h2>",
+                                        "html": "<h2>Assignments</h2>",
                                         "target": [
-                                            "#portlet_LuminisAnnouncements_WAR_luminis > header > .portlet-title"
+                                            ".display-flex > .gz_title > h2"
                                         ]
                                     },
                                     {
-                                        "html": "<h2 class=\"portlet-title\">",
+                                        "html": "<h3 slot=\"title\">Quick Links</h3>",
                                         "target": [
-                                            "#portlet_56_INSTANCE_spYY7BjH5cTy > header > .portlet-title"
+                                            "hi-tile:nth-child(2) > h3"
                                         ]
                                     },
                                     {
-                                        "html": "<h2 class=\"portlet-title\"> <span class=\"\" onmouseover=\"Liferay.Portal.ToolTip.show(this, 'Library')\"> <img id=\"rjus__column4__0\" src=\"/html/icons/default.png\" alt=\"\"> <span class=\"taglib-text hide-accessible\">Library</span> </span> <span class=\"portlet-title-text\">Library</span> </h2>",
+                                        "html": "<h3 slot=\"title\">Current Visits</h3>",
                                         "target": [
-                                            "#portlet_118_INSTANCE_Hs8mtvWuVl5l > header > .portlet-title"
+                                            "hi-tile:nth-child(3) > h3"
                                         ]
                                     },
                                     {
-                                        "html": "<h2 class=\"portlet-title\">",
+                                        "html": "<h3 slot=\"title\">Upcoming Appointments</h3>",
                                         "target": [
-                                            "#portlet_56_INSTANCE_IDhHhXSh9JhP > header > .portlet-title"
+                                            "hi-tile:nth-child(4) > h3"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<h3 slot=\"title\">Your Success Team</h3>",
+                                        "target": [
+                                            "#container-academic-team > h3"
                                         ]
                                     }
                                 ],
@@ -1187,15 +1173,9 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                                        "html": "<div id=\"bd\" role=\"main\" tabindex=\"-1\">",
                                         "target": [
-                                            "#main-content"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
-                                        "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                                            "#bd"
                                         ]
                                     }
                                 ],
@@ -1206,7 +1186,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<html class=\"aui ltr yui3-js-enabled webkit ltr js chrome chrome116 chrome116-0 linux secure\" dir=\"ltr\" lang=\"en-US\">",
+                        "html": "<html lang=\"en\" class=\"ext-strict js-focus-visible\" data-js-focus-visible=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1233,19 +1213,27 @@
                             {
                                 "id": "color-contrast",
                                 "data": {
-                                    "messageKey": "hidden"
+                                    "fgColor": "#ffffff",
+                                    "bgColor": "#00529b",
+                                    "contrastRatio": 7.83,
+                                    "fontSize": "12.0pt (16px)",
+                                    "fontWeight": "normal",
+                                    "expectedContrastRatio": "4.5:1"
                                 },
                                 "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "Element is hidden"
+                                "message": "Element has sufficient color contrast of 7.83"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<input class=\"field\" id=\"_3_keywords\" name=\"_3_keywords\" title=\"Search\" type=\"text\" value=\"\" size=\"30\">",
+                        "html": "<section id=\"content\"><slot><!--?lit$866859167$--></slot><!--?lit$866859167$--></section>",
                         "target": [
-                            "#_3_keywords"
+                            [
+                                "hi-navigation-primary",
+                                "#content"
+                            ]
                         ]
                     }
                 ]
@@ -1278,7 +1266,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<html class=\"aui ltr yui3-js-enabled webkit ltr js chrome chrome116 chrome116-0 linux secure\" dir=\"ltr\" lang=\"en-US\">",
+                        "html": "<html lang=\"en\" class=\"ext-strict js-focus-visible\" data-js-focus-visible=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1287,7 +1275,7 @@
             },
             {
                 "id": "duplicate-id-active",
-                "impact": null,
+                "impact": "serious",
                 "tags": [
                     "cat.parsing",
                     "wcag2a",
@@ -1301,7 +1289,7 @@
                         "any": [
                             {
                                 "id": "duplicate-id-active",
-                                "data": "skip-to-content",
+                                "data": "flyoutValue",
                                 "relatedNodes": [],
                                 "impact": "serious",
                                 "message": "Document has no active elements that share the same id attribute"
@@ -1310,9 +1298,12 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<a href=\"#main-content\" id=\"skip-to-content\">Skip to Content</a>",
+                        "html": "<div id=\"flyoutValue\" role=\"button\" tabindex=\"0\" aria-controls=\"flyoutContainer\" aria-label=\"Actions\" aria-haspopup=\"true\"><slot id=\"anchor\" name=\"anchor\"><hi-icon x-hip=\"hi-icon\"></hi-icon><span x-style=\"hidden\">Actions</span></slot></div>",
                         "target": [
-                            "#skip-to-content"
+                            [
+                                "#notification_messages_icon",
+                                "#flyoutValue"
+                            ]
                         ]
                     }
                 ]
@@ -1333,7 +1324,7 @@
                         "any": [
                             {
                                 "id": "duplicate-id-aria",
-                                "data": "user-name",
+                                "data": "notification_messages_icon",
                                 "relatedNodes": [],
                                 "impact": "critical",
                                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -1342,9 +1333,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<button id=\"user-name\" type=\"button\" data-toggle=\"dropdown\" class=\"dropdown-toggle\" aria-haspopup=\"true\" aria-expanded=\"false\"> <span class=\"name\">Jeffrey Caldwell</span> </button>",
+                        "html": "<hi-flyout cap-height=\"\" id=\"notification_messages_icon\" aesthetic=\"ghost\" data-tab-target=\"#gradesfirst_messages\" aria-label=\"Unread Messages\" alignment=\"left\" touch-action=\"none\" focusable=\"focusable\" x-hip=\"hi-flyout\">",
                         "target": [
-                            "#user-name"
+                            "#notification_messages_icon"
                         ]
                     }
                 ]
@@ -1365,7 +1356,7 @@
                         "any": [
                             {
                                 "id": "duplicate-id",
-                                "data": "yui3-css-stamp",
+                                "data": "s2id_term_focusser",
                                 "relatedNodes": [],
                                 "impact": "minor",
                                 "message": "Document has no static elements that share the same id attribute"
@@ -1374,9 +1365,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"yui3-css-stamp\" style=\"position: absolute !important; visibility: hidden !important\" class=\"\"></div>",
+                        "html": "<style type=\"text/css\" id=\"s2id_term_focusser\">#s2id_term .select2-focusser{width:180px!important; height:28px!important}</style>",
                         "target": [
-                            "#yui3-css-stamp"
+                            "#s2id_term_focusser"
                         ]
                     }
                 ]
@@ -1405,9 +1396,81 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                        "html": "<div aria-level=\"1\" class=\"dropdown\" role=\"heading\">\n<h1 class=\"heading_1 current-role\">\nStudent Home\n</h1>\n<ul data-dropdown--list=\"\">\n</ul>\n</div>",
                         "target": [
-                            "h1"
+                            ".dropdown"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "empty-table-header",
+                "impact": null,
+                "tags": [
+                    "cat.name-role-value",
+                    "best-practice"
+                ],
+                "description": "Ensures table headers have discernible text",
+                "help": "Table header text should not be empty",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/empty-table-header?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "has-visible-text",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "Element has text that is visible to screen readers"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<th empty_checkbox_label=\"false\" class=\"gz_checkbox\">",
+                        "target": [
+                            "thead > tr > .gz_checkbox[empty_checkbox_label=\"false\"]"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "form-field-multiple-labels",
+                "impact": null,
+                "tags": [
+                    "cat.forms",
+                    "wcag2a",
+                    "wcag332",
+                    "TTv5",
+                    "TT5.c"
+                ],
+                "description": "Ensures form field does not have multiple label elements",
+                "help": "Form field must not have multiple label elements",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/form-field-multiple-labels?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [],
+                        "none": [
+                            {
+                                "id": "multiple-label",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<label for=\"s2id_autogen2\" class=\"select2-offscreen\">Term:</label>",
+                                        "target": [
+                                            "label[for=\"s2id_autogen2\"]"
+                                        ]
+                                    }
+                                ],
+                                "impact": "moderate",
+                                "message": "Form field does not have multiple label elements"
+                            }
+                        ],
+                        "impact": null,
+                        "html": "<input class=\"select2-focusser select2-offscreen\" type=\"text\" aria-haspopup=\"true\" role=\"button\" aria-labelledby=\"select2-chosen-2\" id=\"s2id_autogen2\" tabindex=\"0\">",
+                        "target": [
+                            "#s2id_autogen2"
                         ]
                     }
                 ]
@@ -1431,39 +1494,51 @@
                                     "headingOrder": [
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > nav:nth-child(2) > div:nth-child(1) > h1"
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1)"
                                             ],
                                             "level": 1
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > h1:nth-child(1)"
+                                            ],
+                                            "level": 1
+                                        },
+                                        {
+                                            "ancestry": [
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > h2"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) > div > h2"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(2) > hi-tile:nth-child(2) > h3:nth-child(1)"
                                             ],
-                                            "level": 2
+                                            "level": 3
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(2) > hi-tile:nth-child(3) > h3:nth-child(1)"
                                             ],
-                                            "level": 2
+                                            "level": 3
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(2) > hi-tile:nth-child(4) > h3:nth-child(1)"
                                             ],
-                                            "level": 2
+                                            "level": 3
+                                        },
+                                        {
+                                            "ancestry": [
+                                                "html > body > div:nth-child(13) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(2) > hi-tile:nth-child(5) > h3:nth-child(1)"
+                                            ],
+                                            "level": 3
                                         }
                                     ]
                                 },
@@ -1475,9 +1550,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                        "html": "<div aria-level=\"1\" class=\"dropdown\" role=\"heading\">\n<h1 class=\"heading_1 current-role\">\nStudent Home\n</h1>\n<ul data-dropdown--list=\"\">\n</ul>\n</div>",
                         "target": [
-                            "h1"
+                            ".dropdown"
                         ]
                     }
                 ]
@@ -1510,7 +1585,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<html class=\"aui ltr yui3-js-enabled webkit ltr js chrome chrome116 chrome116-0 linux secure\" dir=\"ltr\" lang=\"en-US\">",
+                        "html": "<html lang=\"en\" class=\"ext-strict js-focus-visible\" data-js-focus-visible=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1545,7 +1620,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<html class=\"aui ltr yui3-js-enabled webkit ltr js chrome chrome116 chrome116-0 linux secure\" dir=\"ltr\" lang=\"en-US\">",
+                        "html": "<html lang=\"en\" class=\"ext-strict js-focus-visible\" data-js-focus-visible=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1578,6 +1653,15 @@
                                 "relatedNodes": [],
                                 "impact": "critical",
                                 "message": "Element has an alt attribute"
+                            },
+                            {
+                                "id": "presentational-role",
+                                "data": {
+                                    "role": "presentation"
+                                },
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "Element's default semantics were overriden with role=\"presentation\""
                             }
                         ],
                         "all": [],
@@ -1591,9 +1675,12 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\">",
+                        "html": "<img id=\"image\" src=\"/images/eab_logo.png\" alt=\"\">",
                         "target": [
-                            "#siteLogo"
+                            [
+                                "hi-image",
+                                "#image"
+                            ]
                         ]
                     }
                 ]
@@ -1622,16 +1709,109 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\">",
+                        "html": "<img id=\"image\" src=\"/images/eab_logo.png\" alt=\"\">",
                         "target": [
-                            "#siteLogo"
+                            [
+                                "hi-image",
+                                "#image"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "label-title-only",
+                "impact": null,
+                "tags": [
+                    "cat.forms",
+                    "best-practice"
+                ],
+                "description": "Ensures that every form element has a visible label and is not solely labeled using hidden labels, or the title or aria-describedby attributes",
+                "help": "Form elements should have a visible label",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label-title-only?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [],
+                        "none": [
+                            {
+                                "id": "title-only",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Form element does not solely use title attribute for its label"
+                            }
+                        ],
+                        "impact": null,
+                        "html": "<input class=\"select2-focusser select2-offscreen\" type=\"text\" aria-haspopup=\"true\" role=\"button\" aria-labelledby=\"select2-chosen-2\" id=\"s2id_autogen2\" tabindex=\"0\">",
+                        "target": [
+                            "#s2id_autogen2"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "label",
+                "impact": null,
+                "tags": [
+                    "cat.forms",
+                    "wcag2a",
+                    "wcag412",
+                    "section508",
+                    "section508.22.n",
+                    "ACT",
+                    "TTv5",
+                    "TT5.c"
+                ],
+                "description": "Ensures every form element has a label",
+                "help": "Form elements must have labels",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/label?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "explicit-label",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<label for=\"s2id_autogen2\" class=\"select2-offscreen\">Term:</label>",
+                                        "target": [
+                                            "label[for=\"s2id_autogen2\"]"
+                                        ]
+                                    }
+                                ],
+                                "impact": "critical",
+                                "message": "Form element has an explicit <label>"
+                            },
+                            {
+                                "id": "aria-labelledby",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "aria-labelledby attribute exists and references elements that are visible to screen readers"
+                            }
+                        ],
+                        "all": [],
+                        "none": [
+                            {
+                                "id": "hidden-explicit-label",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "critical",
+                                "message": "Form element has a visible explicit <label>"
+                            }
+                        ],
+                        "impact": null,
+                        "html": "<input class=\"select2-focusser select2-offscreen\" type=\"text\" aria-haspopup=\"true\" role=\"button\" aria-labelledby=\"select2-chosen-2\" id=\"s2id_autogen2\" tabindex=\"0\">",
+                        "target": [
+                            "#s2id_autogen2"
                         ]
                     }
                 ]
             },
             {
                 "id": "landmark-main-is-top-level",
-                "impact": "moderate",
+                "impact": null,
                 "tags": [
                     "cat.semantics",
                     "best-practice"
@@ -1655,40 +1835,40 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                        "html": "<div id=\"bd\" role=\"main\" tabindex=\"-1\">",
                         "target": [
-                            "#main-content"
+                            "#bd"
                         ]
                     }
                 ]
             },
             {
-                "id": "landmark-no-duplicate-banner",
+                "id": "landmark-no-duplicate-main",
                 "impact": null,
                 "tags": [
                     "cat.semantics",
                     "best-practice"
                 ],
-                "description": "Ensures the document has at most one banner landmark",
-                "help": "Document should not have more than one banner landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-banner?application=playwright",
+                "description": "Ensures the document has at most one main landmark",
+                "help": "Document should not have more than one main landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-main?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
-                                "id": "page-no-duplicate-banner",
+                                "id": "page-no-duplicate-main",
                                 "data": null,
                                 "relatedNodes": [],
                                 "impact": "moderate",
-                                "message": "Document does not have more than one banner landmark"
+                                "message": "Document does not have more than one main landmark"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<header class=\"portlet-topper\">",
+                        "html": "<div id=\"bd\" role=\"main\" tabindex=\"-1\">",
                         "target": [
-                            "#portlet_56_INSTANCE_XafGzZGzVmJR > header"
+                            "#bd"
                         ]
                     }
                 ]
@@ -1712,15 +1892,9 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                                        "html": "<div id=\"bd\" role=\"main\" tabindex=\"-1\">",
                                         "target": [
-                                            "#main-content"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
-                                        "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                                            "#bd"
                                         ]
                                     }
                                 ],
@@ -1730,7 +1904,7 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<html class=\"aui ltr yui3-js-enabled webkit ltr js chrome chrome116 chrome116-0 linux secure\" dir=\"ltr\" lang=\"en-US\">",
+                        "html": "<html lang=\"en\" class=\"ext-strict js-focus-visible\" data-js-focus-visible=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1738,42 +1912,35 @@
                 ]
             },
             {
-                "id": "link-in-text-block",
+                "id": "landmark-unique",
                 "impact": null,
                 "tags": [
-                    "cat.color",
-                    "wcag2a",
-                    "wcag141",
-                    "TTv5",
-                    "TT13.a"
+                    "cat.semantics",
+                    "best-practice"
                 ],
-                "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-                "help": "Links must be distinguishable without relying on color",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=playwright",
+                "help": "Ensures landmarks are unique",
+                "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-unique?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
-                                "id": "link-in-text-block-style",
-                                "data": null,
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Links can be distinguished from surrounding text by visual styling"
+                                "id": "landmark-is-unique",
+                                "data": {
+                                    "role": "navigation",
+                                    "accessibleText": "main menu"
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Landmarks must have a unique role or role/label/title (i.e. accessible name) combination"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>",
+                        "html": "<hi-navigation-secondary x-region=\"navigation-secondary\" role=\"navigation\" aria-label=\"Main Menu\" x-hip=\"hi-navigation-secondary\">",
                         "target": [
-                            "a[href$=\"ramport.angelo.edu\"]"
+                            "hi-navigation-secondary"
                         ]
                     }
                 ]
@@ -1817,16 +1984,19 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<a href=\"#main-content\" id=\"skip-to-content\">Skip to Content</a>",
+                        "html": "<a id=\"link\" href=\"/home\" target=\"_self\"><slot></slot></a>",
                         "target": [
-                            "#skip-to-content"
+                            [
+                                "#hi-nav-tertiary-link-0",
+                                "#link"
+                            ]
                         ]
                     }
                 ]
             },
             {
                 "id": "list",
-                "impact": "serious",
+                "impact": null,
                 "tags": [
                     "cat.structure",
                     "wcag2a",
@@ -1849,9 +2019,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<ul>",
+                        "html": "<ul>\n<li class=\"text-sz-m ptm\">\n<a class=\"schoolinformation\" href=\"/informations\">School Information</a>\n</li>\n</ul>",
                         "target": [
-                            "#sub_menu > ul"
+                            "hi-tile:nth-child(2) > div > ul"
                         ]
                     }
                 ]
@@ -1881,80 +2051,16 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<li class=\"rams\"><a href=\"https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=twbkwbis.P_GenMenu?name=bmenu.P_StuMainMnu\" target=\"_blank\">Rams</a></li>",
+                        "html": "<li class=\"text-sz-m ptm\">\n<a class=\"schoolinformation\" href=\"/informations\">School Information</a>\n</li>",
                         "target": [
-                            ".rams"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "meta-viewport-large",
-                "impact": null,
-                "tags": [
-                    "cat.sensory-and-visual-cues",
-                    "best-practice"
-                ],
-                "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
-                "help": "Users should be able to zoom and scale the text up to 500%",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport-large?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "meta-viewport-large",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "<meta> tag does not prevent significant zooming on mobile devices"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": null,
-                        "html": "<meta content=\"initial-scale=1.0, width=device-width\" name=\"viewport\">",
-                        "target": [
-                            "meta[name=\"viewport\"]"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "meta-viewport",
-                "impact": null,
-                "tags": [
-                    "cat.sensory-and-visual-cues",
-                    "wcag2aa",
-                    "wcag144",
-                    "ACT"
-                ],
-                "description": "Ensures <meta name=\"viewport\"> does not disable text scaling and zooming",
-                "help": "Zooming and scaling must not be disabled",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "meta-viewport",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "<meta> tag does not disable zooming on mobile devices"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": null,
-                        "html": "<meta content=\"initial-scale=1.0, width=device-width\" name=\"viewport\">",
-                        "target": [
-                            "meta[name=\"viewport\"]"
+                            ".ptm.text-sz-m"
                         ]
                     }
                 ]
             },
             {
                 "id": "nested-interactive",
-                "impact": null,
+                "impact": "serious",
                 "tags": [
                     "cat.keyboard",
                     "wcag2a",
@@ -1979,9 +2085,12 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\">",
+                        "html": "<div id=\"flyoutValue\" role=\"button\" tabindex=\"0\" aria-controls=\"flyoutContainer\" aria-label=\"Actions\" aria-haspopup=\"true\"><slot id=\"anchor\" name=\"anchor\"><hi-icon x-hip=\"hi-icon\"></hi-icon><span x-style=\"hidden\">Actions</span></slot></div>",
                         "target": [
-                            "#siteLogo"
+                            [
+                                "#notification_messages_icon",
+                                "#flyoutValue"
+                            ]
                         ]
                     }
                 ]
@@ -2005,7 +2114,13 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                                        "html": "<div aria-level=\"1\" class=\"dropdown\" role=\"heading\">\n<h1 class=\"heading_1 current-role\">\nStudent Home\n</h1>\n<ul data-dropdown--list=\"\">\n</ul>\n</div>",
+                                        "target": [
+                                            ".dropdown"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<h1 class=\"heading_1 current-role\">\nStudent Home\n</h1>",
                                         "target": [
                                             "h1"
                                         ]
@@ -2017,7 +2132,7 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<html class=\"aui ltr yui3-js-enabled webkit ltr js chrome chrome116 chrome116-0 linux secure\" dir=\"ltr\" lang=\"en-US\">",
+                        "html": "<html lang=\"en\" class=\"ext-strict js-focus-visible\" data-js-focus-visible=\"\">",
                         "target": [
                             "html"
                         ]
@@ -2056,9 +2171,12 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<li class=\"active item1\" id=\"layout_30\" aria-selected=\"true\" role=\"presentation\">",
+                        "html": "<img id=\"image\" src=\"/images/eab_logo.png\" alt=\"\">",
                         "target": [
-                            "#layout_30"
+                            [
+                                "hi-image",
+                                "#image"
+                            ]
                         ]
                     }
                 ]
@@ -2089,9 +2207,124 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<a href=\"#main-content\" id=\"skip-to-content\">Skip to Content</a>",
+                        "html": "<section id=\"content\"><slot><!--?lit$866859167$--></slot><!--?lit$866859167$--></section>",
                         "target": [
-                            "#skip-to-content"
+                            [
+                                "hi-navigation-primary",
+                                "#content"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "role-img-alt",
+                "impact": null,
+                "tags": [
+                    "cat.text-alternatives",
+                    "wcag2a",
+                    "wcag111",
+                    "section508",
+                    "section508.22.a",
+                    "ACT",
+                    "TTv5",
+                    "TT7.a"
+                ],
+                "description": "Ensures [role='img'] elements have alternate text",
+                "help": "[role='img'] elements must have an alternative text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "aria-label",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "aria-label attribute exists and is not empty"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<hi-avatar size=\"small\" allow-border-color=\"\" interactive=\"\" theme=\"\" image=\"https://s3.amazonaws.com/production_gradesfirst_default/01D8XXVNA4HS06SY06725FGPHN/259-school/user_pictures/7131340/small/ab65177af80e0c2d30b8c2a4a307a7ab87156db8-80106828.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXBFX6U7WAZGPRR6Q%2F20230925%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230925T114748Z&amp;X-Amz-Expires=3600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0358df86ed76f565413f42f1c68dc9afee87c1e028d404941923fd8abb03d50b\" initials=\"JC\" aria-label=\"Profile Help Menu\" role=\"img\" x-hip=\"hi-avatar\">",
+                        "target": [
+                            [
+                                "hi-navigation-secondary",
+                                "hi-avatar[allow-border-color=\"\"]"
+                            ]
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "scope-attr-valid",
+                "impact": null,
+                "tags": [
+                    "cat.tables",
+                    "best-practice"
+                ],
+                "description": "Ensures the scope attribute is used correctly on tables",
+                "help": "scope attribute should be used correctly",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [
+                            {
+                                "id": "html5-scope",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Scope attribute is only used on table header elements (<th>)"
+                            },
+                            {
+                                "id": "scope-value",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "critical",
+                                "message": "Scope attribute is used correctly"
+                            }
+                        ],
+                        "none": [],
+                        "impact": null,
+                        "html": "<th scope=\"col\">Course</th>",
+                        "target": [
+                            ".table-mode > table > thead > tr > th[scope=\"col\"]:nth-child(2)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "tabindex",
+                "impact": null,
+                "tags": [
+                    "cat.keyboard",
+                    "best-practice"
+                ],
+                "description": "Ensures tabindex attribute values are not greater than 0",
+                "help": "Elements should not have tabindex greater than zero",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/tabindex?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "tabindex",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Element does not have a tabindex greater than 0"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<div id=\"flyoutValue\" role=\"button\" tabindex=\"0\" aria-controls=\"flyoutContainer\" aria-label=\"Actions\" aria-haspopup=\"true\"><slot id=\"anchor\" name=\"anchor\"><hi-icon x-hip=\"hi-icon\"></hi-icon><span x-style=\"hidden\">Actions</span></slot></div>",
+                        "target": [
+                            [
+                                "#notification_messages_icon",
+                                "#flyoutValue"
+                            ]
                         ]
                     }
                 ]
@@ -2120,9 +2353,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<table id=\"_LuminisAnnouncements_WAR_luminis_messagedetailTable\">",
+                        "html": "<table class=\"gz_table\">",
                         "target": [
-                            "#_LuminisAnnouncements_WAR_luminis_messagedetailTable"
+                            ".table-mode > table"
                         ]
                     }
                 ]
@@ -2156,9 +2389,45 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<table id=\"_LuminisAnnouncements_WAR_luminis_messagedetailTable\">",
+                        "html": "<table class=\"gz_table\">",
                         "target": [
-                            "#_LuminisAnnouncements_WAR_luminis_messagedetailTable"
+                            ".table-mode > table"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "th-has-data-cells",
+                "impact": "serious",
+                "tags": [
+                    "cat.tables",
+                    "wcag2a",
+                    "wcag131",
+                    "section508",
+                    "section508.22.g",
+                    "TTv5",
+                    "14.b"
+                ],
+                "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+                "help": "Table headers in a data table must refer to data cells",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/th-has-data-cells?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [
+                            {
+                                "id": "th-has-data-cells",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "All table header cells refer to data cells"
+                            }
+                        ],
+                        "none": [],
+                        "impact": null,
+                        "html": "<table class=\"gz_table\">",
+                        "target": [
+                            ".table-mode > table"
                         ]
                     }
                 ]
@@ -2166,382 +2435,8 @@
         ],
         "incomplete": [
             {
-                "id": "color-contrast",
-                "impact": "serious",
-                "tags": [
-                    "cat.color",
-                    "wcag2aa",
-                    "wcag143",
-                    "ACT",
-                    "TTv5",
-                    "TT13.c"
-                ],
-                "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-                "help": "Elements must meet minimum color contrast ratio thresholds",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "12.7pt (16.9px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgGradient",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background gradient"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                        "target": [
-                            ".test-ramport"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "12.7pt (16.9px)",
-                                    "fontWeight": "bold",
-                                    "messageKey": "bgGradient",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background gradient"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<b>Test RamPort</b>",
-                        "target": [
-                            "b"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "12.7pt (16.9px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgGradient",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background gradient"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>",
-                        "target": [
-                            "a[href$=\"ramport.angelo.edu\"]"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Home</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_30\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Academics</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_38\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Financial Aid &amp; Billing</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_32\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Campus Life</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_36\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Registration</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_31\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Accountability</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_77\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "elmPartiallyObscuring",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it partially overlaps other elements"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<p>Stay up to date with Angelo State’s <a href=\"https://www.angelo.edu/covid-19/\" target=\"_blank\">COVID-19 protocols</a>.</p>",
-                        "target": [
-                            ".journal-content-article > .journal-content-article > p:nth-child(1)"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "elmPartiallyObscuring",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it partially overlaps other elements"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<p>Experiencing symptoms? Fill out the <a href=\"https://www.angelo.edu/wellness-screening\" target=\"_blank\">COVID-19 reporting form</a>.</p>",
-                        "target": [
-                            "p:nth-child(2)"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "elmPartiallyObscuring",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it partially overlaps other elements"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<a href=\"https://python.angelo.edu/BannerExtensibility/customPage/page/ASU_Vaccine_Reporting\" target=\"_blank\">received your vaccine</a>",
-                        "target": [
-                            "p:nth-child(3) > a[target=\"_blank\"]"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "fgColor": "#ffffff",
-                                    "bgColor": "#ffffff",
-                                    "contrastRatio": 1,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "equalRatio",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"footer\">",
-                                        "target": [
-                                            "#page-wrapper > .footer"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element has a 1:1 contrast ratio with the background"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"node\">User Node 2</span>",
-                        "target": [
-                            ".node"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element has a 1:1 contrast ratio with the background"
-                    }
-                ]
-            }
-        ],
-        "violations": [
-            {
                 "id": "aria-allowed-attr",
-                "impact": "critical",
+                "impact": "serious",
                 "tags": [
                     "cat.aria",
                     "wcag2a",
@@ -2553,176 +2448,107 @@
                 "nodes": [
                     {
                         "any": [],
-                        "all": [
-                            {
-                                "id": "aria-allowed-attr",
-                                "data": [
-                                    "aria-selected=\"true\""
-                                ],
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "ARIA attribute is not allowed: aria-selected=\"true\""
-                            }
-                        ],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<li class=\"active item1\" id=\"layout_30\" aria-selected=\"true\" role=\"presentation\">",
-                        "target": [
-                            "#layout_30"
-                        ],
-                        "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-selected=\"true\""
-                    }
-                ]
-            },
-            {
-                "id": "aria-required-parent",
-                "impact": "critical",
-                "tags": [
-                    "cat.aria",
-                    "wcag2a",
-                    "wcag131"
-                ],
-                "description": "Ensures elements with an ARIA role that require parent roles are contained by them",
-                "help": "Certain ARIA roles must be contained by particular parents",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-required-parent?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
-                            }
-                        ],
                         "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_30\" href=\"https://test-ramport.angelo.edu/web/home-community/home\" role=\"menuitem\">",
-                        "target": [
-                            "a[aria-labelledby=\"layout_30\"]"
+                        "none": [
+                            {
+                                "id": "aria-prohibited-attr",
+                                "data": {
+                                    "role": null,
+                                    "nodeName": "hi-flyout",
+                                    "messageKey": "noRoleSingular",
+                                    "prohibited": [
+                                        "aria-label"
+                                    ]
+                                },
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "aria-label attribute is not well supported on a hi-flyout with no valid role attribute."
+                            }
                         ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+                        "impact": "serious",
+                        "html": "<hi-flyout cap-height=\"\" id=\"notification_messages_icon\" aesthetic=\"ghost\" data-tab-target=\"#gradesfirst_messages\" aria-label=\"Unread Messages\" alignment=\"left\" touch-action=\"none\" focusable=\"focusable\" x-hip=\"hi-flyout\">",
+                        "target": [
+                            "#notification_messages_icon"
+                        ],
+                        "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a hi-flyout with no valid role attribute."
                     },
                     {
-                        "any": [
+                        "any": [],
+                        "all": [],
+                        "none": [
                             {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
+                                "id": "aria-prohibited-attr",
+                                "data": {
+                                    "role": null,
+                                    "nodeName": "hi-flyout",
+                                    "messageKey": "noRoleSingular",
+                                    "prohibited": [
+                                        "aria-label"
+                                    ]
+                                },
                                 "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
+                                "impact": "serious",
+                                "message": "aria-label attribute is not well supported on a hi-flyout with no valid role attribute."
                             }
                         ],
-                        "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_38\" href=\"https://test-ramport.angelo.edu/web/home-community/academics\" role=\"menuitem\">",
+                        "impact": "serious",
+                        "html": "<hi-flyout cap-height=\"\" id=\"gf_dialogs_icon\" aesthetic=\"ghost\" data-tab-target=\"#minimized_dialogs\" aria-label=\"Minimized Dialog\" alignment=\"left\" touch-action=\"none\" focusable=\"focusable\" x-hip=\"hi-flyout\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_38\"]"
+                            "#gf_dialogs_icon"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+                        "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a hi-flyout with no valid role attribute."
                     },
                     {
-                        "any": [
+                        "any": [],
+                        "all": [],
+                        "none": [
                             {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
+                                "id": "aria-prohibited-attr",
+                                "data": {
+                                    "role": null,
+                                    "nodeName": "div",
+                                    "messageKey": "noRoleSingular",
+                                    "prohibited": [
+                                        "aria-label"
+                                    ]
+                                },
                                 "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
+                                "impact": "serious",
+                                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
                             }
                         ],
-                        "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_32\" href=\"https://test-ramport.angelo.edu/web/home-community/finances\" role=\"menuitem\">",
+                        "impact": "serious",
+                        "html": "<div id=\"student_class_listing\" class=\"gridzilla\" aria-busy=\"false\" aria-live=\"off\" aria-label=\"Loading Data\" style=\"position: relative; zoom: 1;\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_32\"]"
+                            "#student_class_listing"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+                        "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
                     },
                     {
-                        "any": [
+                        "any": [],
+                        "all": [],
+                        "none": [
                             {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
+                                "id": "aria-prohibited-attr",
+                                "data": {
+                                    "role": null,
+                                    "nodeName": "div",
+                                    "messageKey": "noRoleSingular",
+                                    "prohibited": [
+                                        "aria-label"
+                                    ]
+                                },
                                 "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
+                                "impact": "serious",
+                                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
                             }
                         ],
-                        "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_36\" href=\"https://test-ramport.angelo.edu/web/home-community/campus-life\" role=\"menuitem\">",
+                        "impact": "serious",
+                        "html": "<div id=\"student_class_assignments\" class=\"gridzilla\" aria-busy=\"false\" aria-live=\"off\" aria-label=\"Loading Data\" style=\"position: relative; zoom: 1;\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_36\"]"
+                            "#student_class_assignments"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_31\" href=\"https://test-ramport.angelo.edu/web/home-community/registration\" role=\"menuitem\">",
-                        "target": [
-                            "a[aria-labelledby=\"layout_31\"]"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_77\" href=\"https://test-ramport.angelo.edu/web/home-community/accountability\" role=\"menuitem\">",
-                        "target": [
-                            "a[aria-labelledby=\"layout_77\"]"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
+                        "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
                     }
                 ]
             },
@@ -2746,34 +2572,214 @@
                             {
                                 "id": "color-contrast",
                                 "data": {
-                                    "fgColor": "#70838f",
-                                    "bgColor": "#ffffff",
-                                    "contrastRatio": 3.93,
-                                    "fontSize": "9.8pt (13px)",
+                                    "contrastRatio": 0,
+                                    "fontSize": "9.0pt (12px)",
                                     "fontWeight": "normal",
-                                    "messageKey": null,
+                                    "messageKey": "shortTextContent",
                                     "expectedContrastRatio": "4.5:1"
                                 },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"footer\">",
-                                        "target": [
-                                            "#page-wrapper > .footer"
-                                        ]
-                                    }
-                                ],
+                                "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "Element has insufficient color contrast of 3.93 (foreground color: #70838f, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+                                "message": "Element content is too short to determine if it is actual text content"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<li class=\"copyright\">© Angelo State University All rights reserved</li>",
+                        "html": "<hi-badge dock=\"top-right\" theme=\"error\" size=\"small\" x-hip=\"hi-badge\">3 <span class=\"show-ax\">unread messages</span></hi-badge>",
                         "target": [
-                            ".copyright"
+                            "#notification_messages_icon > hi-panel > hi-badge"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.93 (foreground color: #70838f, background color: #ffffff, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+                        "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "contrastRatio": 0,
+                                    "fontSize": "0.0pt (0px)",
+                                    "fontWeight": "normal",
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Unable to determine contrast ratio"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<caption>Courses This Term</caption>",
+                        "target": [
+                            ".table-mode > table > caption"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "contrastRatio": 0,
+                                    "fontSize": "0.0pt (0px)",
+                                    "fontWeight": "normal",
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Unable to determine contrast ratio"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<caption>Assignments This Term</caption>",
+                        "target": [
+                            "div[data-has-control=\"student_class_assignments\"] > table > caption"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+                    }
+                ]
+            },
+            {
+                "id": "th-has-data-cells",
+                "impact": "serious",
+                "tags": [
+                    "cat.tables",
+                    "wcag2a",
+                    "wcag131",
+                    "section508",
+                    "section508.22.g",
+                    "TTv5",
+                    "14.b"
+                ],
+                "description": "Ensure that <th> elements and elements with role=columnheader/rowheader have data cells they describe",
+                "help": "Table headers in a data table must refer to data cells",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/th-has-data-cells?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [
+                            {
+                                "id": "th-has-data-cells",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<th class=\"l link_list\" scope=\"col\">Actions</th>",
+                                        "target": [
+                                            ".l"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Table data cells are missing or empty"
+                            }
+                        ],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<table class=\"gz_table\">",
+                        "target": [
+                            "div[data-has-control=\"student_class_assignments\"] > table"
+                        ],
+                        "failureSummary": "Fix all of the following:\n  Table data cells are missing or empty"
+                    }
+                ]
+            }
+        ],
+        "violations": [
+            {
+                "id": "aria-allowed-role",
+                "impact": "minor",
+                "tags": [
+                    "cat.aria",
+                    "best-practice"
+                ],
+                "description": "Ensures role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-role?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "aria-allowed-role",
+                                "data": [
+                                    "button"
+                                ],
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "ARIA role button is not allowed for given element"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "minor",
+                        "html": "<input class=\"select2-focusser select2-offscreen\" type=\"text\" aria-haspopup=\"true\" role=\"button\" aria-labelledby=\"select2-chosen-2\" id=\"s2id_autogen2\" tabindex=\"0\">",
+                        "target": [
+                            "#s2id_autogen2"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "aria-allowed-role",
+                                "data": [
+                                    "button"
+                                ],
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "ARIA role button is not allowed for given element"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "minor",
+                        "html": "<input class=\"select2-focusser select2-offscreen\" type=\"text\" aria-haspopup=\"true\" role=\"button\" aria-labelledby=\"select2-chosen-1\" id=\"s2id_autogen1\" tabindex=\"0\">",
+                        "target": [
+                            "#s2id_autogen1"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  ARIA role button is not allowed for given element"
+                    }
+                ]
+            },
+            {
+                "id": "duplicate-id-active",
+                "impact": "serious",
+                "tags": [
+                    "cat.parsing",
+                    "wcag2a",
+                    "wcag411"
+                ],
+                "description": "Ensures every id attribute value of active elements is unique",
+                "help": "IDs of active elements must be unique",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "duplicate-id-active",
+                                "data": "email_student_link_7132264",
+                                "relatedNodes": [
+                                    {
+                                        "html": "<hi-button aesthetic=\"ghost\" aria-label=\"Send a Message to Leticia Gonzalez\" class=\"send_message paz\" id=\"email_student_link_7132264\" tabindex=\"0\" role=\"button\" kind=\"value\" x-hip=\"hi-button\" layout=\"icon\" data-qa=\"envelope\">",
+                                        "target": [
+                                            ".student_viewable > .display-inline-block > .info:nth-child(3) > .send_message.paz[data-qa=\"envelope\"]"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Document has active elements with the same id attribute: email_student_link_7132264"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<hi-button aesthetic=\"ghost\" aria-label=\"Send a Message to Leticia Gonzalez\" class=\"send_message paz\" id=\"email_student_link_7132264\" tabindex=\"0\" role=\"button\" kind=\"value\" x-hip=\"hi-button\" layout=\"icon\" data-qa=\"envelope\">",
+                        "target": [
+                            ".staff_viewable > .display-inline-block > .info:nth-child(3) > .send_message.paz[data-qa=\"envelope\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Document has active elements with the same id attribute: email_student_link_7132264"
                     }
                 ]
             },
@@ -2793,261 +2799,325 @@
                         "any": [
                             {
                                 "id": "duplicate-id",
-                                "data": "a",
+                                "data": "hi-theme",
                                 "relatedNodes": [
                                     {
-                                        "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
+                                        "html": "<dom-module id=\"hi-theme\">",
                                         "target": [
-                                            "a[aria-labelledby=\"layout_38\"] > svg[width=\"26\"][height=\"26\"] > symbol"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
-                                        "target": [
-                                            "a[aria-labelledby=\"layout_32\"] > svg[width=\"26\"][height=\"26\"] > symbol"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
-                                        "target": [
-                                            "a[aria-labelledby=\"layout_36\"] > svg[width=\"26\"][height=\"26\"] > symbol"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
-                                        "target": [
-                                            "a[aria-labelledby=\"layout_31\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                                            "dom-module:nth-child(116)"
                                         ]
                                     }
                                 ],
                                 "impact": "minor",
-                                "message": "Document has multiple static elements with the same id attribute: a"
+                                "message": "Document has multiple static elements with the same id attribute: hi-theme"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "minor",
-                        "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
+                        "html": "<dom-module id=\"hi-theme\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_30\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                            "dom-module:nth-child(114)"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: a"
+                        "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: hi-theme"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "duplicate-id",
+                                "data": "sort_key",
+                                "relatedNodes": [
+                                    {
+                                        "html": "<input type=\"hidden\" name=\"sort_key\" id=\"sort_key\" value=\"due_at\">",
+                                        "target": [
+                                            "input[value=\"due_at\"]"
+                                        ]
+                                    }
+                                ],
+                                "impact": "minor",
+                                "message": "Document has multiple static elements with the same id attribute: sort_key"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "minor",
+                        "html": "<input type=\"hidden\" name=\"sort_key\" id=\"sort_key\" value=\"class\">",
+                        "target": [
+                            "input[value=\"class\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: sort_key"
                     }
                 ]
             },
             {
-                "id": "landmark-main-is-top-level",
+                "id": "landmark-banner-is-top-level",
                 "impact": "moderate",
                 "tags": [
                     "cat.semantics",
                     "best-practice"
                 ],
-                "description": "Ensures the main landmark is at top level",
-                "help": "Main landmark should not be contained in another landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-main-is-top-level?application=playwright",
+                "description": "Ensures the banner landmark is at top level",
+                "help": "Banner landmark should not be contained in another landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-banner-is-top-level?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
                                 "id": "landmark-is-top-level",
                                 "data": {
-                                    "role": "main"
+                                    "role": null
                                 },
                                 "relatedNodes": [],
                                 "impact": "moderate",
-                                "message": "The main landmark is contained in another landmark."
+                                "message": "The null landmark is contained in another landmark."
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
+                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
                         "target": [
-                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                            [
+                                "hi-tile:nth-child(2)",
+                                "#header"
+                            ]
                         ],
-                        "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
-                    }
-                ]
-            },
-            {
-                "id": "landmark-no-duplicate-main",
-                "impact": "moderate",
-                "tags": [
-                    "cat.semantics",
-                    "best-practice"
-                ],
-                "description": "Ensures the document has at most one main landmark",
-                "help": "Document should not have more than one main landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-main?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "page-no-duplicate-main",
-                                "data": null,
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
-                                        "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
-                                        ]
-                                    }
-                                ],
-                                "impact": "moderate",
-                                "message": "Document has more than one main landmark"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "moderate",
-                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
-                        "target": [
-                            "#main-content"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Document has more than one main landmark"
-                    }
-                ]
-            },
-            {
-                "id": "landmark-unique",
-                "impact": "moderate",
-                "tags": [
-                    "cat.semantics",
-                    "best-practice"
-                ],
-                "help": "Ensures landmarks are unique",
-                "description": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-unique?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "landmark-is-unique",
-                                "data": {
-                                    "role": "navigation",
-                                    "accessibleText": null
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<nav class=\"navbar-default navbar-static-side top-navigation\" role=\"navigation\" id=\"navigation\">",
-                                        "target": [
-                                            "#navigation"
-                                        ]
-                                    }
-                                ],
-                                "impact": "moderate",
-                                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "moderate",
-                        "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
-                        "target": [
-                            "nav:nth-child(2)"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+                        "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
                     },
                     {
                         "any": [
                             {
-                                "id": "landmark-is-unique",
+                                "id": "landmark-is-top-level",
                                 "data": {
-                                    "role": "main",
-                                    "accessibleText": null
+                                    "role": null
                                 },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
-                                        "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
-                                        ]
-                                    }
-                                ],
+                                "relatedNodes": [],
                                 "impact": "moderate",
-                                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+                                "message": "The null landmark is contained in another landmark."
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
                         "target": [
-                            "#main-content"
+                            [
+                                "hi-tile:nth-child(3)",
+                                "#header"
+                            ]
                         ],
-                        "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
+                        "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "landmark-is-top-level",
+                                "data": {
+                                    "role": null
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "The null landmark is contained in another landmark."
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
+                        "target": [
+                            [
+                                "hi-tile:nth-child(4)",
+                                "#header"
+                            ]
+                        ],
+                        "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "landmark-is-top-level",
+                                "data": {
+                                    "role": null
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "The null landmark is contained in another landmark."
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
+                        "target": [
+                            [
+                                "#container-academic-team",
+                                "#header"
+                            ]
+                        ],
+                        "failureSummary": "Fix any of the following:\n  The null landmark is contained in another landmark."
                     }
                 ]
             },
             {
-                "id": "list",
-                "impact": "serious",
+                "id": "landmark-no-duplicate-banner",
+                "impact": "moderate",
                 "tags": [
-                    "cat.structure",
-                    "wcag2a",
-                    "wcag131"
+                    "cat.semantics",
+                    "best-practice"
                 ],
-                "description": "Ensures that lists are structured correctly",
-                "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/list?application=playwright",
+                "description": "Ensures the document has at most one banner landmark",
+                "help": "Document should not have more than one banner landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-banner?application=playwright",
                 "nodes": [
                     {
-                        "any": [],
-                        "all": [],
-                        "none": [
+                        "any": [
                             {
-                                "id": "only-listitems",
+                                "id": "page-no-duplicate-banner",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
+                                        "target": [
+                                            [
+                                                "hi-tile:nth-child(3)",
+                                                "#header"
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
+                                        "target": [
+                                            [
+                                                "hi-tile:nth-child(4)",
+                                                "#header"
+                                            ]
+                                        ]
+                                    },
+                                    {
+                                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
+                                        "target": [
+                                            [
+                                                "#container-academic-team",
+                                                "#header"
+                                            ]
+                                        ]
+                                    }
+                                ],
+                                "impact": "moderate",
+                                "message": "Document has more than one banner landmark"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<header id=\"header\"><slot id=\"title\" name=\"title\"></slot><slot id=\"toolbar\" name=\"toolbar\"></slot></header>",
+                        "target": [
+                            [
+                                "hi-tile:nth-child(2)",
+                                "#header"
+                            ]
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Document has more than one banner landmark"
+                    }
+                ]
+            },
+            {
+                "id": "nested-interactive",
+                "impact": "serious",
+                "tags": [
+                    "cat.keyboard",
+                    "wcag2a",
+                    "wcag412",
+                    "TTv5",
+                    "TT6.a"
+                ],
+                "description": "Ensures interactive controls are not nested as they are not always announced by screen readers or can cause focus problems for assistive technologies",
+                "help": "Interactive controls must not be nested",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/nested-interactive?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "no-focusable-content",
                                 "data": {
-                                    "values": "[role=presentation]"
+                                    "messageKey": "notHidden"
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<li class=\"active item1\" id=\"layout_30\" aria-selected=\"true\" role=\"presentation\">",
+                                        "html": "<a href=\"#class_information_tab\" class=\"ui-tabs-anchor\" id=\"ui-id-1\" data-toggle=\"tab\" tabindex=\"-1\">\nCourses\n</a>",
                                         "target": [
-                                            "#layout_30"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<li class=\" item2\" id=\"layout_38\" role=\"presentation\">",
-                                        "target": [
-                                            "#layout_38"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<li class=\" item3\" id=\"layout_32\" role=\"presentation\">",
-                                        "target": [
-                                            "#layout_32"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<li class=\" item4\" id=\"layout_36\" role=\"presentation\">",
-                                        "target": [
-                                            "#layout_36"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<li class=\" item5\" id=\"layout_31\" role=\"presentation\">",
-                                        "target": [
-                                            "#layout_31"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<li class=\" item6\" id=\"layout_77\" role=\"presentation\">",
-                                        "target": [
-                                            "#layout_77"
+                                            "#ui-id-1"
                                         ]
                                     }
                                 ],
                                 "impact": "serious",
-                                "message": "List element has direct children that are not allowed: [role=presentation]"
+                                "message": "Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')"
                             }
                         ],
+                        "all": [],
+                        "none": [],
                         "impact": "serious",
-                        "html": "<ul class=\"nav\" id=\"side-menu\" style=\"display: none;\">",
+                        "html": "<li role=\"tab\" tabindex=\"0\" class=\"ui-tabs-tab ui-corner-top ui-state-default ui-tab ui-tabs-active ui-state-active active\" aria-controls=\"class_information_tab\" aria-labelledby=\"ui-id-1\" aria-selected=\"true\" aria-expanded=\"true\" id=\"ui-tab_courses\" aria-describedby=\"ui-tab_courses tabKeysDescribed\">",
                         "target": [
-                            "#side-menu"
+                            "#ui-tab_courses"
                         ],
-                        "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: [role=presentation]"
+                        "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "no-focusable-content",
+                                "data": {
+                                    "messageKey": "notHidden"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<a href=\"#reports_tab\" class=\"ui-tabs-anchor\" id=\"ui-id-2\" data-toggle=\"tab\" tabindex=\"-1\">\nReports\n</a>",
+                                        "target": [
+                                            "#ui-id-2"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<li role=\"tab\" tabindex=\"-1\" class=\"ui-tabs-tab ui-corner-top ui-state-default ui-tab\" aria-controls=\"reports_tab\" aria-labelledby=\"ui-id-2\" aria-selected=\"false\" aria-expanded=\"false\" id=\"ui-tab_reports\" aria-describedby=\"ui-tab_reports tabKeysDescribed\">",
+                        "target": [
+                            "#ui-tab_reports"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "no-focusable-content",
+                                "data": {
+                                    "messageKey": "notHidden"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<a href=\"#calendar_tab\" class=\"ui-tabs-anchor\" id=\"ui-id-3\" data-toggle=\"tab\" tabindex=\"-1\">\nCalendar\n</a>",
+                                        "target": [
+                                            "#ui-id-3"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<li role=\"tab\" tabindex=\"-1\" class=\"ui-tabs-tab ui-corner-top ui-state-default ui-tab\" aria-controls=\"calendar_tab\" aria-labelledby=\"ui-id-3\" aria-selected=\"false\" aria-expanded=\"false\" id=\"ui-tab_calendar\" aria-describedby=\"ui-tab_calendar tabKeysDescribed\">",
+                        "target": [
+                            "#ui-tab_calendar"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Using a negative tabindex on an element inside an interactive control does not prevent assistive technologies from focusing the element (even with 'aria-hidden=true')"
                     }
                 ]
             },
@@ -3077,9 +3147,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
+                        "html": "<hi-navigation-primary theme=\"university\" x-region=\"navigation-primary\" x-hip=\"hi-navigation-primary\" style=\"--hi-clr--university-text: var(--hi-color--white);\">\n      ANGELO STATE UNIVERSITY\n    </hi-navigation-primary>",
                         "target": [
-                            ".test-ramport"
+                            "hi-navigation-primary"
                         ],
                         "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
                     },
@@ -3098,9 +3168,12 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<ul aria-label=\"Breadcrumb\" class=\"breadcrumb breadcrumb-horizontal\">",
+                        "html": "<img id=\"image\" src=\"/images/eab_logo.png\" alt=\"\">",
                         "target": [
-                            ".breadcrumb"
+                            [
+                                "hi-image",
+                                "#image"
+                            ]
                         ],
                         "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
                     },
@@ -3119,9 +3192,30 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"footer\">",
+                        "html": "<div class=\"eab_legal display-inline-block\">",
                         "target": [
-                            "#page-wrapper > .footer"
+                            ".eab_legal"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"right\">\n      <div class=\"time-info\">\n        <div class=\"last-refresh\">Page last refreshed at 6:47am</div>\n        <div class=\"timezone\">All times listed are in Central Time (US &amp; Canada)</div>\n      </div>\n      <div class=\"additional_modes\">\n      </div>\n  </div>",
+                        "target": [
+                            ".right"
                         ],
                         "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
                     }

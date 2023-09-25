@@ -58,9 +58,12 @@ async function run() {
   };
 
   // move on to iterating over all auth urls
-  // but first, move some of the above to its own function
+  const authResult = await processMany(page, authPages);
 
-
+  if (!nonAuthResult.ok) {
+    const { error } = nonAuthResult;
+    return { browser, context, error };
+  }
   // finally, generate an overall report from 
   // all the data we just collected
 

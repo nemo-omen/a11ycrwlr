@@ -17,5 +17,5 @@ export async function saveResults(testResult: AxeResults, opts: TestOptions): Pr
 
   const data = JSON.stringify(results, null, 4);
   const writeResult = await writeFile(`${fDir}/${fName}.json`, data).catch((error) => ({ ok: false, error }));
-  return { ok: true, value: writeResult };
+  return { ok: true, value: `${fName}.json` };
 }

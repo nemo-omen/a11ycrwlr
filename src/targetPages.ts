@@ -43,7 +43,7 @@ export const nonAuthPages = [
  */
 export const loginPage = {
   title: 'Home - RamPort',
-  url: 'https://ramport.angelo.edu/',
+  url: 'https://test-ramport.angelo.edu/',
 };
 
 /**
@@ -53,113 +53,110 @@ export const loginPage = {
 export const authPages = [
   {
     title: 'Academics - RamPort',
-    url: 'https://ramport.angelo.edu/web/home-community/academics',
-    children: [
-      {
-        title: 'Week at a Glance',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchd'
-      },
-      {
-        title: 'Concise Schedule',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskcrse.P_CrseSchdDetl'
-      },
-      {
-        title: 'Detailed Schedule',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchdDetl'
-      },
-      {
-        title: 'Find Textbooks',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkbook.P_DispBuyBooks'
-      },
-      {
-        title: 'Course Catalog',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfcls.p_disp_dyn_ctlg'
-      },
-      {
-        title: 'Navigate',
-        url: 'https://angelo.campus.eab.com/'
-      },
-      {
-        title: 'Degree Evaluation',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkderd.p_degreeEvalRedir'
-      },
-      {
-        title: 'View Unofficial Transcript',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskotrn.P_ViewTermTran'
-      },
-      {
-        title: 'Request Official Transcript',
-        url: 'https://www.parchment.com/u/registration/32224/account'
-      },
-      {
-        title: 'Request Enrollment Verification',
-        url: 'https://www.angelo.edu/content/forms/35-enrollment-verification-form'
-      },
-      {
-        title: 'Suspension Appeal Application',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkappl.p_insert_appeal'
-      },
-      {
-        title: 'View TSI Status',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bzskgstu.P_TxInfo'
-      },
-    ]
+    url: 'https://test-ramport.angelo.edu/web/home-community/academics',
   },
   {
-    title: 'Financial Aid and Billing', url: 'https://ramport.angelo.edu/web/home-community/finances',
-    children: [
-      {
-        title: 'View Bill',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskoacc.P_ViewAcctTerm'
-      },
-      {
-        title: 'Pay Online',
-        url: 'https://www.angelo.edu/webpay2'
-      },
-      {
-        title: 'Payment Plans',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkistm.p_display_form'
-      },
-      {
-        title: 'Federal Loans',
-        url: 'https://www.angelo.edu/services/financial_aid/long_term_loans/'
-      },
-      {
-        title: '1098-T Tax Notification',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwtktxns.p_disp_tax_notification'
-      },
-      {
-        title: 'View/Accept Financial Aid Awards',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwrkrhst.P_DispAwdAidYear'
-      },
-      {
-        title: 'Student Requirements',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwrkelig.P_DisplayTabs'
-      },
-      {
-        title: 'Apply for ASU Scholarships',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwgksrvy.P_ShowSurveys'
-      },
-      {
-        title: 'Emergency Tuition and Fees Loan',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=tloan'
-      },
-      {
-        title: 'Book Loan',
-        url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=bloan'
-      },
-      {
-        title: 'iGrad',
-        url: 'https://igrad.angelo.edu/'
-      },
-    ]
+    title: 'Week at a Glance',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchd'
+  },
+  {
+    title: 'Concise Schedule',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskcrse.P_CrseSchdDetl'
+  },
+  {
+    title: 'Detailed Schedule',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchdDetl'
+  },
+  {
+    title: 'Find Textbooks',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkbook.P_DispBuyBooks'
+  },
+  {
+    title: 'Course Catalog',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfcls.p_disp_dyn_ctlg'
+  },
+  {
+    title: 'Navigate',
+    url: 'https://angelo.campus.eab.com/'
+  },
+  {
+    title: 'Degree Evaluation',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkderd.p_degreeEvalRedir'
+  },
+  {
+    title: 'View Unofficial Transcript',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskotrn.P_ViewTermTran'
+  },
+  {
+    title: 'Request Official Transcript',
+    url: 'https://www.parchment.com/u/registration/32224/account'
+  },
+  {
+    title: 'Request Enrollment Verification',
+    url: 'https://www.angelo.edu/content/forms/35-enrollment-verification-form'
+  },
+  {
+    title: 'Suspension Appeal Application',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkappl.p_insert_appeal'
+  },
+  {
+    title: 'View TSI Status',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bzskgstu.P_TxInfo'
+  },
+  {
+    title: 'Financial Aid and Billing',
+    url: 'https://test-ramport.angelo.edu/web/home-community/finances',
+  },
+  {
+    title: 'View Bill',
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskoacc.P_ViewAcctTerm'
+  },
+  {
+    title: 'Pay Online',
+    url: 'https://www.angelo.edu/webpay2'
+  },
+  {
+    title: 'Payment Plans',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwwkistm.p_display_form'
+  },
+  {
+    title: 'Federal Loans',
+    url: 'https://www.angelo.edu/services/financial_aid/long_term_loans/'
+  },
+  {
+    title: '1098-T Tax Notification',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwtktxns.p_disp_tax_notification'
+  },
+  {
+    title: 'View/Accept Financial Aid Awards',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwrkrhst.P_DispAwdAidYear'
+  },
+  {
+    title: 'Student Requirements',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwrkelig.P_DisplayTabs'
+  },
+  {
+    title: 'Apply for ASU Scholarships',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwgksrvy.P_ShowSurveys'
+  },
+  {
+    title: 'Emergency Tuition and Fees Loan',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=tloan'
+  },
+  {
+    title: 'Book Loan',
+    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=bloan'
+  },
+  {
+    title: 'iGrad',
+    url: 'https://igrad.angelo.edu/'
   },
   {
     title: 'Campus Life',
-    url: 'https://ramport.angelo.edu/web/home-community/campus-life'
+    url: 'https://test-ramport.angelo.edu/web/home-community/campus-life'
   },
   {
     title: 'Registration',
-    url: 'https://ramport.angelo.edu/web/home-community/registration'
+    url: 'https://test-ramport.angelo.edu/web/home-community/registration'
   },
 ];

@@ -1,6 +1,6 @@
 {
-    "title": "Login - Enter Username",
-    "url": "https://test-ramport.angelo.edu/",
+    "title": "Angelo State University Transcript Request | Parchment",
+    "url": "https://www.parchment.com/u/registration/32224/account",
     "results": {
         "testEngine": {
             "name": "axe-core",
@@ -16,8 +16,8 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:24.017Z",
-        "url": "https://login.microsoftonline.com/7cf1d100-35b0-4cec-a70d-9b8bd80b9ad0/saml2?SAMLRequest=fZLBTsMwEER%2FJfLdiR1SklptpQIHKhVR0cKBS%2BXYm9ZSYgevg8rfY1IQ5cLJ8u6%2BGe%2FIM5Rd24vlEI72Cd4GwJCcutaiGBtzMngrnESDwsoOUAQltsuHtchTJnrvglOuJRfI%2F4REBB%2BMsyRZ3c3JnjGoZaWvFSunk6ICqfOmaSaqqCTnnFUNz1VRVnGMJC%2FgMZJzEoUijjjAymKQNsQSy68om9J8suNcFKXI%2BStJ7uI2xsowUscQehRZ1rqDsWlnlHfomuBsayykynVZqRquOWP0alIzWihQVJZM02ld1bpi9VRqln3tmJNk%2BbPIrbM4dOC34N%2BNguen9a%2BVtAdoHa290QdIY1qnj1QZ7wc0Gmww4WP07Zwe2tg%2F9qN6huczp1LhWP2jsx91SLL5Dv%2FGWG3s4f%2Fc6%2FMQivvdbkM3j9sdWcy%2BTMSYo1%2F8PBnRpWe7FPSQKYnftlmIYe697Hrnwyy7ZM%2B3v59o8Qk%3D&RelayState=https%3A%2F%2Fangelo-bridge.proxy.cirrusidentity.com%2Fcas%2Flogin%3FrequestLogged%3Dtrue%26service%3Dhttps%253A%252F%252Ftest-ramport.angelo.edu%252Fc%252Fportal%252Flogin",
+        "timestamp": "2023-09-25T11:48:12.317Z",
+        "url": "https://www.parchment.com/u/registration/32224/institution",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -207,20 +207,6 @@
                 "nodes": []
             },
             {
-                "id": "autocomplete-valid",
-                "impact": null,
-                "tags": [
-                    "cat.forms",
-                    "wcag21aa",
-                    "wcag135",
-                    "ACT"
-                ],
-                "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
-                "help": "autocomplete attribute must be used correctly",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/autocomplete-valid?application=playwright",
-                "nodes": []
-            },
-            {
                 "id": "blink",
                 "impact": null,
                 "tags": [
@@ -235,24 +221,6 @@
                 "description": "Ensures <blink> elements are not used",
                 "help": "<blink> elements are deprecated and must not be used",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/blink?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "button-name",
-                "impact": null,
-                "tags": [
-                    "cat.name-role-value",
-                    "wcag2a",
-                    "wcag412",
-                    "section508",
-                    "section508.22.a",
-                    "ACT",
-                    "TTv5",
-                    "TT6.a"
-                ],
-                "description": "Ensures buttons have discernible text",
-                "help": "Buttons must have discernible text",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=playwright",
                 "nodes": []
             },
             {
@@ -368,6 +336,24 @@
                 "nodes": []
             },
             {
+                "id": "input-button-name",
+                "impact": null,
+                "tags": [
+                    "cat.name-role-value",
+                    "wcag2a",
+                    "wcag412",
+                    "section508",
+                    "section508.22.a",
+                    "ACT",
+                    "TTv5",
+                    "TT5.c"
+                ],
+                "description": "Ensures input buttons have discernible text",
+                "help": "Input buttons must have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=playwright",
+                "nodes": []
+            },
+            {
                 "id": "input-image-alt",
                 "impact": null,
                 "tags": [
@@ -387,18 +373,6 @@
                 "nodes": []
             },
             {
-                "id": "landmark-banner-is-top-level",
-                "impact": null,
-                "tags": [
-                    "cat.semantics",
-                    "best-practice"
-                ],
-                "description": "Ensures the banner landmark is at top level",
-                "help": "Banner landmark should not be contained in another landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-banner-is-top-level?application=playwright",
-                "nodes": []
-            },
-            {
                 "id": "landmark-complementary-is-top-level",
                 "impact": null,
                 "tags": [
@@ -411,30 +385,27 @@
                 "nodes": []
             },
             {
-                "id": "landmark-no-duplicate-banner",
+                "id": "landmark-main-is-top-level",
                 "impact": null,
                 "tags": [
                     "cat.semantics",
                     "best-practice"
                 ],
-                "description": "Ensures the document has at most one banner landmark",
-                "help": "Document should not have more than one banner landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-banner?application=playwright",
+                "description": "Ensures the main landmark is at top level",
+                "help": "Main landmark should not be contained in another landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-main-is-top-level?application=playwright",
                 "nodes": []
             },
             {
-                "id": "link-in-text-block",
+                "id": "landmark-no-duplicate-main",
                 "impact": null,
                 "tags": [
-                    "cat.color",
-                    "wcag2a",
-                    "wcag141",
-                    "TTv5",
-                    "TT13.a"
+                    "cat.semantics",
+                    "best-practice"
                 ],
-                "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
-                "help": "Links must be distinguishable without relying on color",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=playwright",
+                "description": "Ensures the document has at most one main landmark",
+                "help": "Document should not have more than one main landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-main?application=playwright",
                 "nodes": []
             },
             {
@@ -509,16 +480,21 @@
                 "nodes": []
             },
             {
-                "id": "presentation-role-conflict",
+                "id": "role-img-alt",
                 "impact": null,
                 "tags": [
-                    "cat.aria",
-                    "best-practice",
-                    "ACT"
+                    "cat.text-alternatives",
+                    "wcag2a",
+                    "wcag111",
+                    "section508",
+                    "section508.22.a",
+                    "ACT",
+                    "TTv5",
+                    "TT7.a"
                 ],
-                "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
-                "help": "Ensure elements marked as presentational are consistently ignored",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/presentation-role-conflict?application=playwright",
+                "description": "Ensures [role='img'] elements have alternate text",
+                "help": "[role='img'] elements must have an alternative text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=playwright",
                 "nodes": []
             },
             {
@@ -531,21 +507,6 @@
                 "description": "Ensures the scope attribute is used correctly on tables",
                 "help": "scope attribute should be used correctly",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scope-attr-valid?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "scrollable-region-focusable",
-                "impact": null,
-                "tags": [
-                    "cat.keyboard",
-                    "wcag2a",
-                    "wcag211",
-                    "TTv5",
-                    "TT4.a"
-                ],
-                "description": "Ensure elements that have scrollable content are accessible by keyboard",
-                "help": "Scrollable region must have keyboard access",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=playwright",
                 "nodes": []
             },
             {
@@ -769,16 +730,16 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
+                        "html": "<a class=\"logo\" href=\"http://www.parchment.com\" aria-label=\"Home page\">\n                                <img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">\n                            </a>",
                         "target": [
-                            "#backgroundImage"
+                            ".logo"
                         ]
                     }
                 ]
             },
             {
                 "id": "aria-allowed-role",
-                "impact": null,
+                "impact": "minor",
                 "tags": [
                     "cat.aria",
                     "best-practice"
@@ -800,9 +761,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div class=\"background-image-holder\" role=\"presentation\" data-bind=\"css: { app: isAppBranding }, style: { background: backgroundStyle }\" style=\"background: rgb(0, 82, 155);\">",
+                        "html": "<header class=\"guest-header\" id=\"guest-header\" role=\"banner\">",
                         "target": [
-                            ".background-image-holder"
+                            "#guest-header"
                         ]
                     }
                 ]
@@ -832,7 +793,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<body data-bind=\"defineGlobals: ServerData, bodyCssClass\" class=\"cb remove-segoe-ui-symbol\" style=\"display: block;\">",
+                        "html": "<body class=\"user-logged-out  env-production\">",
                         "target": [
                             "body"
                         ]
@@ -880,9 +841,9 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<input name=\"passwd\" type=\"password\" id=\"i0118\" data-bind=\"moveOffScreen, textInput: passwordBrowserPrefill\" class=\"moveOffScreen\" tabindex=\"-1\" aria-hidden=\"true\">",
+                        "html": "<svg viewBox=\"0 0 40 40\" class=\"Icon__StyledIcon-sc-1prjaow-0 goUyTN pi pi-individual-icon \" aria-hidden=\"true\" color=\"inherit\" preserveAspectRatio=\"xMidYMid meet\" width=\"1em\">",
                         "target": [
-                            "#i0118"
+                            ".pi-individual-icon"
                         ]
                     }
                 ]
@@ -912,9 +873,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div class=\"background-image-holder\" role=\"presentation\" data-bind=\"css: { app: isAppBranding }, style: { background: backgroundStyle }\" style=\"background: rgb(0, 82, 155);\">",
+                        "html": "<header class=\"guest-header\" id=\"guest-header\" role=\"banner\">",
                         "target": [
-                            ".background-image-holder"
+                            "#guest-header"
                         ]
                     }
                 ]
@@ -965,9 +926,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<div class=\"background-image-holder\" role=\"presentation\" data-bind=\"css: { app: isAppBranding }, style: { background: backgroundStyle }\" style=\"background: rgb(0, 82, 155);\">",
+                        "html": "<header class=\"guest-header\" id=\"guest-header\" role=\"banner\">",
                         "target": [
-                            ".background-image-holder"
+                            "#guest-header"
                         ]
                     }
                 ]
@@ -1011,9 +972,9 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
+                        "html": "<a class=\"logo\" href=\"http://www.parchment.com\" aria-label=\"Home page\">\n                                <img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">\n                            </a>",
                         "target": [
-                            "#backgroundImage"
+                            ".logo"
                         ]
                     }
                 ]
@@ -1043,9 +1004,42 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
+                        "html": "<a class=\"logo\" href=\"http://www.parchment.com\" aria-label=\"Home page\">\n                                <img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">\n                            </a>",
                         "target": [
-                            "#backgroundImage"
+                            ".logo"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "autocomplete-valid",
+                "impact": null,
+                "tags": [
+                    "cat.forms",
+                    "wcag21aa",
+                    "wcag135",
+                    "ACT"
+                ],
+                "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+                "help": "autocomplete attribute must be used correctly",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/autocomplete-valid?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [
+                            {
+                                "id": "autocomplete-valid",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "the autocomplete attribute is correctly formatted"
+                            }
+                        ],
+                        "none": [],
+                        "impact": null,
+                        "html": "<input id=\"user-email\" aria-label=\"Email\" aria-describedby=\"user-email-description\" autocomplete=\"email\" type=\"email\" scale=\"medium\" data-visited=\"false\" data-required=\"true\" data-valid=\"neutral\" name=\"email\" placeholder=\"Email\" class=\"TextField__StyledInput-sc-1hx1ftq-1 gTpJbB\" value=\"\">",
+                        "target": [
+                            "#user-email"
                         ]
                     }
                 ]
@@ -1090,9 +1084,46 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<body data-bind=\"defineGlobals: ServerData, bodyCssClass\" class=\"cb remove-segoe-ui-symbol\" style=\"display: block;\">",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
                         "target": [
-                            "body"
+                            "html"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "button-name",
+                "impact": null,
+                "tags": [
+                    "cat.name-role-value",
+                    "wcag2a",
+                    "wcag412",
+                    "section508",
+                    "section508.22.a",
+                    "ACT",
+                    "TTv5",
+                    "TT6.a"
+                ],
+                "description": "Ensures buttons have discernible text",
+                "help": "Buttons must have discernible text",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/button-name?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "button-has-visible-text",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "critical",
+                                "message": "Element has inner text that is visible to screen readers"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<button name=\"show-more-toggle\" class=\"ShowMoreContainer__Toggle-sc-1i8z8mk-1 lddtRs\">",
+                        "target": [
+                            ".ShowMoreContainer__Toggle-sc-1i8z8mk-1"
                         ]
                     }
                 ]
@@ -1120,34 +1151,26 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div role=\"heading\" aria-level=\"1\" data-bind=\"text: title\">Sign in</div>",
+                                        "html": "<h5 class=\"Heading5-sc-1u7yfs2-0 sc-bYMpWt bgClIY jpeJen\">A message from Angelo State University</h5>",
                                         "target": [
-                                            "div[role=\"heading\"]"
+                                            "h5"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<h4 class=\"Heading4-sc-fk814f-0 sc-gswNZR dfcnA-D bbLVwL\">Start Here - Enter Your Email Address</h4>",
+                                        "target": [
+                                            "h4"
                                         ]
                                     }
                                 ],
                                 "impact": "serious",
                                 "message": "Page has a heading"
-                            },
-                            {
-                                "id": "landmark",
-                                "data": null,
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div role=\"main\" data-bind=\"component: { name: 'pagination-control',\n            publicMethods: paginationControlMethods,\n            params: {\n                enableCssAnimation: svr.fEnableCssAnimation,\n                disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,\n                initialViewId: initialViewId,\n                currentViewId: currentViewId,\n                initialSharedData: initialSharedData,\n                initialError: $loginPage.getServerError() },\n            event: {\n                cancel: paginationControl_onCancel,\n                load: paginationControlHelper.onLoad,\n                unload: paginationControlHelper.onUnload,\n                loadView: view_onLoadView,\n                showView: view_onShow,\n                setLightBoxFadeIn: view_onSetLightBoxFadeIn,\n                animationStateChange: paginationControl_onAnimationStateChange } }\">",
-                                        "target": [
-                                            "div[role=\"main\"]"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Page has a landmark region"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<html dir=\"ltr\" class=\"\" lang=\"en\">",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1174,24 +1197,24 @@
                             {
                                 "id": "color-contrast",
                                 "data": {
-                                    "fgColor": "#1b1b1b",
-                                    "bgColor": "#ffffff",
-                                    "contrastRatio": 17.22,
-                                    "fontSize": "18.0pt (24px)",
+                                    "fgColor": "#555555",
+                                    "bgColor": "#f4f4f4",
+                                    "contrastRatio": 6.77,
+                                    "fontSize": "15.0pt (20px)",
                                     "fontWeight": "normal",
-                                    "expectedContrastRatio": "3:1"
+                                    "expectedContrastRatio": "4.5:1"
                                 },
                                 "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "Element has sufficient color contrast of 17.22"
+                                "message": "Element has sufficient color contrast of 6.77"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div role=\"heading\" aria-level=\"1\" data-bind=\"text: title\">Sign in</div>",
+                        "html": "<div class=\"FormHeaderDeprecated__TitleContainer-sc-1q4af4c-1 dkkBSf\">Learner Account</div>",
                         "target": [
-                            "div[role=\"heading\"]"
+                            ".FormHeaderDeprecated__TitleContainer-sc-1q4af4c-1"
                         ]
                     }
                 ]
@@ -1224,7 +1247,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<html dir=\"ltr\" class=\"\" lang=\"en\">",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1247,7 +1270,7 @@
                         "any": [
                             {
                                 "id": "duplicate-id-active",
-                                "data": "i0116",
+                                "data": "continue-button-email-check",
                                 "relatedNodes": [],
                                 "impact": "serious",
                                 "message": "Document has no active elements that share the same id attribute"
@@ -1256,9 +1279,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<button id=\"continue-button-email-check\" name=\"continue-email-check\" class=\"Button__StyledButton-sc-1jofteb-0 kRFEgB sc-dkrFOg ckwJmi email-check-form medium disabled\" type=\"submit\" aria-disabled=\"true\"><span class=\"Button__ButtonContent-sc-1jofteb-1 kqonFj\">Continue</span></button>",
                         "target": [
-                            "#i0116"
+                            "#continue-button-email-check"
                         ]
                     }
                 ]
@@ -1279,7 +1302,7 @@
                         "any": [
                             {
                                 "id": "duplicate-id-aria",
-                                "data": "loginHeader",
+                                "data": "order-type-learner-LEARNER",
                                 "relatedNodes": [],
                                 "impact": "critical",
                                 "message": "Document has no elements referenced with ARIA or labels that share the same id attribute"
@@ -1288,16 +1311,16 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div class=\"row title ext-title\" id=\"loginHeader\" data-bind=\"externalCss: { 'title': true }\">\n        <div role=\"heading\" aria-level=\"1\" data-bind=\"text: title\">Sign in</div>\n        <!-- ko if: isSubtitleVisible --><!-- /ko -->\n    </div>",
+                        "html": "<input name=\"order-type-learner\" id=\"order-type-learner-LEARNER\" type=\"radio\" aria-label=\"Ordering your own credentials or academic records\" class=\"OptionButton__StyledNativeInput-nyt8am-0 kQcvHG\" value=\"LEARNER\" checked=\"\">",
                         "target": [
-                            "#loginHeader"
+                            "#order-type-learner-LEARNER"
                         ]
                     }
                 ]
             },
             {
                 "id": "duplicate-id",
-                "impact": "minor",
+                "impact": null,
                 "tags": [
                     "cat.parsing",
                     "wcag2a",
@@ -1311,7 +1334,7 @@
                         "any": [
                             {
                                 "id": "duplicate-id",
-                                "data": "i0281",
+                                "data": "pageWrapper",
                                 "relatedNodes": [],
                                 "impact": "minor",
                                 "message": "Document has no static elements that share the same id attribute"
@@ -1320,9 +1343,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<form name=\"f1\" id=\"i0281\" novalidate=\"novalidate\" spellcheck=\"false\" method=\"post\" target=\"_top\" autocomplete=\"off\" data-bind=\"autoSubmit: forceSubmit, attr: { action: postUrl }, ariaHidden: !!activeDialog(), css: { 'provide-min-height': svr.fUseMinHeight }\" action=\"https://login.microsoftonline.com/7cf1d100-35b0-4cec-a70d-9b8bd80b9ad0/login\" class=\"provide-min-height\">",
+                        "html": "<div class=\"page-wrapper\" id=\"pageWrapper\">",
                         "target": [
-                            "#i0281"
+                            "#pageWrapper"
                         ]
                     }
                 ]
@@ -1351,9 +1374,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div role=\"heading\" aria-level=\"1\" data-bind=\"text: title\">Sign in</div>",
+                        "html": "<h5 class=\"Heading5-sc-1u7yfs2-0 sc-bYMpWt bgClIY jpeJen\">A message from Angelo State University</h5>",
                         "target": [
-                            "div[role=\"heading\"]"
+                            "h5"
                         ]
                     }
                 ]
@@ -1379,15 +1402,22 @@
                             {
                                 "id": "multiple-label",
                                 "data": null,
-                                "relatedNodes": [],
+                                "relatedNodes": [
+                                    {
+                                        "html": "<label for=\"order-type-learner-LEARNER\"><div id=\"order-type-learner-LEARNER-description\" class=\"OptionButton__DescriptionWrapper-nyt8am-10 ksaecj\">Ordering your own credentials or academic records</div></label>",
+                                        "target": [
+                                            "label[for=\"order-type-learner-LEARNER\"]"
+                                        ]
+                                    }
+                                ],
                                 "impact": "moderate",
                                 "message": "Form field does not have multiple label elements"
                             }
                         ],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input name=\"order-type-learner\" id=\"order-type-learner-LEARNER\" type=\"radio\" aria-label=\"Ordering your own credentials or academic records\" class=\"OptionButton__StyledNativeInput-nyt8am-0 kQcvHG\" value=\"LEARNER\" checked=\"\">",
                         "target": [
-                            "#i0116"
+                            "#order-type-learner-LEARNER"
                         ]
                     }
                 ]
@@ -1411,9 +1441,15 @@
                                     "headingOrder": [
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(2) > form:nth-child(2) > div > div > div:nth-child(2) > div:nth-child(1) > div > div > div > div > div:nth-child(1) > div:nth-child(3) > div > div > div > div:nth-child(1) > div > div > div"
+                                                "html > body > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div > div > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(1) > div > h5:nth-child(1)"
                                             ],
-                                            "level": 1
+                                            "level": 5
+                                        },
+                                        {
+                                            "ancestry": [
+                                                "html > body > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) > div > div > div > div:nth-child(1) > div > div:nth-child(1) > div > div:nth-child(4) > div > div:nth-child(2) > h4:nth-child(1)"
+                                            ],
+                                            "level": 4
                                         }
                                     ]
                                 },
@@ -1425,9 +1461,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div role=\"heading\" aria-level=\"1\" data-bind=\"text: title\">Sign in</div>",
+                        "html": "<h5 class=\"Heading5-sc-1u7yfs2-0 sc-bYMpWt bgClIY jpeJen\">A message from Angelo State University</h5>",
                         "target": [
-                            "div[role=\"heading\"]"
+                            "h5"
                         ]
                     }
                 ]
@@ -1460,7 +1496,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<html dir=\"ltr\" class=\"\" lang=\"en\">",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1495,7 +1531,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<html dir=\"ltr\" class=\"\" lang=\"en\">",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
                         "target": [
                             "html"
                         ]
@@ -1541,9 +1577,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img id=\"bannerLogo\" data-bind=\"addEventHandlers, attr: { src: bannerLogoUrl, alt: str['STR_Banner_Logo_AltText'] }, externalCss: { 'banner-logo': true }\" src=\"https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/bannerlogo?ts=635787935557386637\" alt=\"Organization banner logo\" class=\"banner-logo ext-banner-logo\">",
+                        "html": "<img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">",
                         "target": [
-                            "#bannerLogo"
+                            ".logo > img[alt=\"Parchment banner logo\"]"
                         ]
                     }
                 ]
@@ -1572,46 +1608,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img id=\"bannerLogo\" data-bind=\"addEventHandlers, attr: { src: bannerLogoUrl, alt: str['STR_Banner_Logo_AltText'] }, externalCss: { 'banner-logo': true }\" src=\"https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/bannerlogo?ts=635787935557386637\" alt=\"Organization banner logo\" class=\"banner-logo ext-banner-logo\">",
+                        "html": "<img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">",
                         "target": [
-                            "#bannerLogo"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "input-button-name",
-                "impact": null,
-                "tags": [
-                    "cat.name-role-value",
-                    "wcag2a",
-                    "wcag412",
-                    "section508",
-                    "section508.22.a",
-                    "ACT",
-                    "TTv5",
-                    "TT5.c"
-                ],
-                "description": "Ensures input buttons have discernible text",
-                "help": "Input buttons must have discernible text",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/input-button-name?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "non-empty-value",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Element has a non-empty value attribute"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": null,
-                        "html": "<input type=\"button\" id=\"idBtn_Back\" class=\"win-button button-secondary button ext-button secondary ext-secondary\" data-bind=\"\n            attr: { 'id': secondaryButtonId || 'idBtn_Back' },\n            externalCss: {\n                'button': true,\n                'secondary': true },\n            value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],\n            ariaDescribedBy: secondaryButtonDescribedBy,\n            hasFocus: focusOnSecondaryButton,\n            click: secondaryButton_onClick,\n            clickBubble: !svr.fEnableLivePreview,\n            enable: isSecondaryButtonEnabled\" value=\"Back\">",
-                        "target": [
-                            "#idBtn_Back"
+                            ".logo > img[alt=\"Parchment banner logo\"]"
                         ]
                     }
                 ]
@@ -1640,9 +1639,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input name=\"order-type-learner\" id=\"order-type-learner-LEARNER\" type=\"radio\" aria-label=\"Ordering your own credentials or academic records\" class=\"OptionButton__StyledNativeInput-nyt8am-0 kQcvHG\" value=\"LEARNER\" checked=\"\">",
                         "target": [
-                            "#i0116"
+                            "#order-type-learner-LEARNER"
                         ]
                     }
                 ]
@@ -1667,18 +1666,27 @@
                     {
                         "any": [
                             {
+                                "id": "explicit-label",
+                                "data": {
+                                    "explicitLabel": "Ordering your own credentials or academic records"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<label for=\"order-type-learner-LEARNER\"><div id=\"order-type-learner-LEARNER-description\" class=\"OptionButton__DescriptionWrapper-nyt8am-10 ksaecj\">Ordering your own credentials or academic records</div></label>",
+                                        "target": [
+                                            "label[for=\"order-type-learner-LEARNER\"]"
+                                        ]
+                                    }
+                                ],
+                                "impact": "critical",
+                                "message": "Form element has an explicit <label>"
+                            },
+                            {
                                 "id": "aria-label",
                                 "data": null,
                                 "relatedNodes": [],
                                 "impact": "serious",
                                 "message": "aria-label attribute exists and is not empty"
-                            },
-                            {
-                                "id": "non-empty-placeholder",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element has a placeholder attribute"
                             }
                         ],
                         "all": [],
@@ -1692,9 +1700,42 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<input type=\"email\" name=\"loginfmt\" id=\"i0116\" maxlength=\"113\" class=\"form-control ltr_override input ext-input text-box ext-text-box\" aria-required=\"true\" data-report-event=\"Signin_Email_Phone_Skype\" data-report-trigger=\"click\" data-report-value=\"Email_Phone_Skype_Entry\" data-bind=\"\n                    attr: { lang: svr.fApplyAsciiRegexOnInput ? null : 'en' },\n                    externalCss: {\n                        'input': true,\n                        'text-box': true,\n                        'has-error': usernameTextbox.error },\n                    ariaLabel: tenantBranding.unsafe_userIdLabel || str['CT_PWD_STR_Username_AriaLabel'],\n                    ariaDescribedBy: 'loginHeader' + (pageDescription &amp;&amp; !svr.fHideLoginDesc ? ' loginDescription usernameError' : ' usernameError'),\n                    textInput: usernameTextbox.value,\n                    hasFocusEx: usernameTextbox.focused,\n                    placeholder: $placeholderText,\n                    autocomplete: svr.fIsUpdatedAutocompleteEnabled ? 'username' : null,\" aria-label=\"username@angelo.edu\" aria-describedby=\"loginHeader usernameError\" placeholder=\"username@angelo.edu\">",
+                        "html": "<input name=\"order-type-learner\" id=\"order-type-learner-LEARNER\" type=\"radio\" aria-label=\"Ordering your own credentials or academic records\" class=\"OptionButton__StyledNativeInput-nyt8am-0 kQcvHG\" value=\"LEARNER\" checked=\"\">",
                         "target": [
-                            "#i0116"
+                            "#order-type-learner-LEARNER"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "landmark-banner-is-top-level",
+                "impact": null,
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ],
+                "description": "Ensures the banner landmark is at top level",
+                "help": "Banner landmark should not be contained in another landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-banner-is-top-level?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "landmark-is-top-level",
+                                "data": {
+                                    "role": "banner"
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "The banner landmark is at the top level."
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<header class=\"guest-header\" id=\"guest-header\" role=\"banner\">",
+                        "target": [
+                            "#guest-header"
                         ]
                     }
                 ]
@@ -1725,42 +1766,40 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"footer\" role=\"contentinfo\" data-bind=\"\n        externalCss: {\n            'footer': true,\n            'has-background': !$page.useDefaultBackground() &amp;&amp; $page.showFooter(),\n            'background-always-visible': $page.backgroundLogoUrl }\" class=\"footer ext-footer\">",
+                        "html": "<footer class=\"global-footer box-top-shadow-1\" role=\"contentinfo\">",
                         "target": [
-                            "#footer"
+                            "footer"
                         ]
                     }
                 ]
             },
             {
-                "id": "landmark-main-is-top-level",
+                "id": "landmark-no-duplicate-banner",
                 "impact": null,
                 "tags": [
                     "cat.semantics",
                     "best-practice"
                 ],
-                "description": "Ensures the main landmark is at top level",
-                "help": "Main landmark should not be contained in another landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-main-is-top-level?application=playwright",
+                "description": "Ensures the document has at most one banner landmark",
+                "help": "Document should not have more than one banner landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-banner?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
-                                "id": "landmark-is-top-level",
-                                "data": {
-                                    "role": "main"
-                                },
+                                "id": "page-no-duplicate-banner",
+                                "data": null,
                                 "relatedNodes": [],
                                 "impact": "moderate",
-                                "message": "The main landmark is at the top level."
+                                "message": "Document does not have more than one banner landmark"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div role=\"main\" data-bind=\"component: { name: 'pagination-control',\n            publicMethods: paginationControlMethods,\n            params: {\n                enableCssAnimation: svr.fEnableCssAnimation,\n                disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,\n                initialViewId: initialViewId,\n                currentViewId: currentViewId,\n                initialSharedData: initialSharedData,\n                initialError: $loginPage.getServerError() },\n            event: {\n                cancel: paginationControl_onCancel,\n                load: paginationControlHelper.onLoad,\n                unload: paginationControlHelper.onUnload,\n                loadView: view_onLoadView,\n                showView: view_onShow,\n                setLightBoxFadeIn: view_onSetLightBoxFadeIn,\n                animationStateChange: paginationControl_onAnimationStateChange } }\">",
+                        "html": "<header class=\"guest-header\" id=\"guest-header\" role=\"banner\">",
                         "target": [
-                            "div[role=\"main\"]"
+                            "#guest-header"
                         ]
                     }
                 ]
@@ -1789,71 +1828,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"footer\" role=\"contentinfo\" data-bind=\"\n        externalCss: {\n            'footer': true,\n            'has-background': !$page.useDefaultBackground() &amp;&amp; $page.showFooter(),\n            'background-always-visible': $page.backgroundLogoUrl }\" class=\"footer ext-footer\">",
+                        "html": "<footer class=\"global-footer box-top-shadow-1\" role=\"contentinfo\">",
                         "target": [
-                            "#footer"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "landmark-no-duplicate-main",
-                "impact": null,
-                "tags": [
-                    "cat.semantics",
-                    "best-practice"
-                ],
-                "description": "Ensures the document has at most one main landmark",
-                "help": "Document should not have more than one main landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-no-duplicate-main?application=playwright",
-                "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "page-no-duplicate-main",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "moderate",
-                                "message": "Document does not have more than one main landmark"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": null,
-                        "html": "<div role=\"main\" data-bind=\"component: { name: 'pagination-control',\n            publicMethods: paginationControlMethods,\n            params: {\n                enableCssAnimation: svr.fEnableCssAnimation,\n                disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,\n                initialViewId: initialViewId,\n                currentViewId: currentViewId,\n                initialSharedData: initialSharedData,\n                initialError: $loginPage.getServerError() },\n            event: {\n                cancel: paginationControl_onCancel,\n                load: paginationControlHelper.onLoad,\n                unload: paginationControlHelper.onUnload,\n                loadView: view_onLoadView,\n                showView: view_onShow,\n                setLightBoxFadeIn: view_onSetLightBoxFadeIn,\n                animationStateChange: paginationControl_onAnimationStateChange } }\">",
-                        "target": [
-                            "div[role=\"main\"]"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "landmark-one-main",
-                "impact": null,
-                "tags": [
-                    "cat.semantics",
-                    "best-practice"
-                ],
-                "description": "Ensures the document has a main landmark",
-                "help": "Document should have one main landmark",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-one-main?application=playwright",
-                "nodes": [
-                    {
-                        "any": [],
-                        "all": [
-                            {
-                                "id": "page-has-main",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "moderate",
-                                "message": "Document has at least one main landmark"
-                            }
-                        ],
-                        "none": [],
-                        "impact": null,
-                        "html": "<html dir=\"ltr\" class=\"\" lang=\"en\">",
-                        "target": [
-                            "html"
+                            "footer"
                         ]
                     }
                 ]
@@ -1874,7 +1851,7 @@
                             {
                                 "id": "landmark-is-unique",
                                 "data": {
-                                    "role": "main",
+                                    "role": "banner",
                                     "accessibleText": null
                                 },
                                 "relatedNodes": [],
@@ -1885,9 +1862,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div role=\"main\" data-bind=\"component: { name: 'pagination-control',\n            publicMethods: paginationControlMethods,\n            params: {\n                enableCssAnimation: svr.fEnableCssAnimation,\n                disableAnimationIfAnimationEndUnsupported: svr.fDisableAnimationIfAnimationEndUnsupported,\n                initialViewId: initialViewId,\n                currentViewId: currentViewId,\n                initialSharedData: initialSharedData,\n                initialError: $loginPage.getServerError() },\n            event: {\n                cancel: paginationControl_onCancel,\n                load: paginationControlHelper.onLoad,\n                unload: paginationControlHelper.onUnload,\n                loadView: view_onLoadView,\n                showView: view_onShow,\n                setLightBoxFadeIn: view_onSetLightBoxFadeIn,\n                animationStateChange: paginationControl_onAnimationStateChange } }\">",
+                        "html": "<header class=\"guest-header\" id=\"guest-header\" role=\"banner\">",
                         "target": [
-                            "div[role=\"main\"]"
+                            "#guest-header"
                         ]
                     }
                 ]
@@ -1918,6 +1895,13 @@
                                 "relatedNodes": [],
                                 "impact": "minor",
                                 "message": "Element has text that is visible to screen readers"
+                            },
+                            {
+                                "id": "aria-label",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "aria-label attribute exists and is not empty"
                             }
                         ],
                         "all": [],
@@ -1931,9 +1915,40 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<a id=\"cantAccessAccount\" name=\"cannotAccessAccount\" data-bind=\"\n                        text: svr.fEnableLivePreview ? cantAccessYourAccountText : unsafe_cantAccessYourAccountText,\n                        click: accessRecoveryLink ? null : cantAccessAccount_onClick,\n                        attr: { target: accessRecoveryLink &amp;&amp; '_blank' },\n                        href: accessRecoveryLink || '#'\" target=\"_blank\" href=\"https://www.angelo.edu/passwords\">",
+                        "html": "<a class=\"logo\" href=\"http://www.parchment.com\" aria-label=\"Home page\">\n                                <img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">\n                            </a>",
                         "target": [
-                            "#cantAccessAccount"
+                            ".logo"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "meta-viewport-large",
+                "impact": null,
+                "tags": [
+                    "cat.sensory-and-visual-cues",
+                    "best-practice"
+                ],
+                "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
+                "help": "Users should be able to zoom and scale the text up to 500%",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport-large?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "meta-viewport-large",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "<meta> tag does not prevent significant zooming on mobile devices"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+                        "target": [
+                            "meta[name=\"viewport\"]"
                         ]
                     }
                 ]
@@ -1964,7 +1979,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes\">",
+                        "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
                         "target": [
                             "meta[name=\"viewport\"]"
                         ]
@@ -1998,40 +2013,48 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
+                        "html": "<img src=\"/u/asset/Parchment.Common/img/logos/banner_logo.png\" alt=\"Parchment banner logo\">",
                         "target": [
-                            "#backgroundImage"
+                            ".logo > img[alt=\"Parchment banner logo\"]"
                         ]
                     }
                 ]
             },
             {
-                "id": "page-has-heading-one",
+                "id": "presentation-role-conflict",
                 "impact": null,
                 "tags": [
-                    "cat.semantics",
-                    "best-practice"
+                    "cat.aria",
+                    "best-practice",
+                    "ACT"
                 ],
-                "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
-                "help": "Page should contain a level-one heading",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/page-has-heading-one?application=playwright",
+                "description": "Elements marked as presentational should not have global ARIA or tabindex to ensure all screen readers ignore them",
+                "help": "Ensure elements marked as presentational are consistently ignored",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/presentation-role-conflict?application=playwright",
                 "nodes": [
                     {
                         "any": [],
-                        "all": [
+                        "all": [],
+                        "none": [
                             {
-                                "id": "page-has-heading-one",
+                                "id": "is-element-focusable",
                                 "data": null,
                                 "relatedNodes": [],
-                                "impact": "moderate",
-                                "message": "Page has at least one level-one heading"
+                                "impact": "minor",
+                                "message": "Element is focusable."
+                            },
+                            {
+                                "id": "has-global-aria-attribute",
+                                "data": [],
+                                "relatedNodes": [],
+                                "impact": "minor",
+                                "message": "Element has global ARIA attributes: "
                             }
                         ],
-                        "none": [],
                         "impact": null,
-                        "html": "<html dir=\"ltr\" class=\"\" lang=\"en\">",
+                        "html": "<img src=\"https://www.parchment.com/u/logo/institution/32224.png\" role=\"presentation\" alt=\"Angelo State University Logo\">",
                         "target": [
-                            "html"
+                            "img[role=\"presentation\"]"
                         ]
                     }
                 ]
@@ -2062,46 +2085,43 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div>",
+                        "html": "<div class=\"page-wrapper\" id=\"pageWrapper\">",
                         "target": [
-                            "body > div"
+                            "#pageWrapper"
                         ]
                     }
                 ]
             },
             {
-                "id": "role-img-alt",
+                "id": "scrollable-region-focusable",
                 "impact": null,
                 "tags": [
-                    "cat.text-alternatives",
+                    "cat.keyboard",
                     "wcag2a",
-                    "wcag111",
-                    "section508",
-                    "section508.22.a",
-                    "ACT",
+                    "wcag211",
                     "TTv5",
-                    "TT7.a"
+                    "TT4.a"
                 ],
-                "description": "Ensures [role='img'] elements have alternate text",
-                "help": "[role='img'] elements must have an alternative text",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/role-img-alt?application=playwright",
+                "description": "Ensure elements that have scrollable content are accessible by keyboard",
+                "help": "Scrollable region must have keyboard access",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/scrollable-region-focusable?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
-                                "id": "aria-label",
+                                "id": "focusable-content",
                                 "data": null,
                                 "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "aria-label attribute exists and is not empty"
+                                "message": "Element contains focusable elements"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
+                        "html": "<div class=\"content-wrapper\">",
                         "target": [
-                            "#backgroundImage"
+                            ".content-wrapper"
                         ]
                     }
                 ]
@@ -2129,37 +2149,24 @@
                                 "id": "color-contrast",
                                 "data": {
                                     "contrastRatio": 0,
-                                    "fontSize": "9.0pt (12px)",
+                                    "fontSize": "9.8pt (13px)",
                                     "fontWeight": "normal",
-                                    "messageKey": "bgImage",
+                                    "messageKey": "bgOverlap",
                                     "expectedContrastRatio": "4.5:1"
                                 },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div data-bind=\"externalCss: { 'background-overlay': true }\" class=\"background-overlay ext-background-overlay\"></div>",
-                                        "target": [
-                                            ".background-overlay"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
-                                        "target": [
-                                            "#backgroundImage"
-                                        ]
-                                    }
-                                ],
+                                "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background image"
+                                "message": "Element's background color could not be determined because it is overlapped by another element"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a id=\"ftrTerms\" data-bind=\"\n            text: termsText,\n            href: termsLink,\n            click: termsLink_onClick,\n            externalCss: {\n                'footer-content': true,\n                'footer-item': true,\n                'has-background': !useDefaultBackground,\n                'background-always-visible': hasDarkBackground }\" href=\"https://www.microsoft.com/en-US/servicesagreement/\" class=\"footer-content ext-footer-content footer-item ext-footer-item has-background ext-has-background\">",
+                        "html": "<button name=\"show-more-toggle\" class=\"ShowMoreContainer__Toggle-sc-1i8z8mk-1 lddtRs\">",
                         "target": [
-                            "#ftrTerms"
+                            ".ShowMoreContainer__Toggle-sc-1i8z8mk-1"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     },
                     {
                         "any": [
@@ -2167,129 +2174,614 @@
                                 "id": "color-contrast",
                                 "data": {
                                     "contrastRatio": 0,
-                                    "fontSize": "9.0pt (12px)",
+                                    "fontSize": "13.5pt (18px)",
                                     "fontWeight": "normal",
-                                    "messageKey": "bgImage",
+                                    "messageKey": "bgOverlap",
                                     "expectedContrastRatio": "4.5:1"
                                 },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div data-bind=\"externalCss: { 'background-overlay': true }\" class=\"background-overlay ext-background-overlay\"></div>",
-                                        "target": [
-                                            ".background-overlay"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<div id=\"backgroundImage\" role=\"img\" data-bind=\"backgroundImage: backgroundImageUrl(), externalCss: { 'background-image': true }, ariaLabel: str['STR_Background_Image_AltText']\" class=\"background-image ext-background-image\" aria-label=\"Organization background image\" style=\"background-image: url(&quot;https://aadcdn.msftauthimages.net/dbd5a2dd-xusplnqsswvmnqqb-fmohftiejo5m-624qw-ppkesyw/logintenantbranding/0/illustration?ts=637280283191804410&quot;);\">",
-                                        "target": [
-                                            "#backgroundImage"
-                                        ]
-                                    }
-                                ],
+                                "relatedNodes": [],
                                 "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background image"
+                                "message": "Element's background color could not be determined because it is overlapped by another element"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a id=\"ftrPrivacy\" data-bind=\"\n            text: privacyText,\n            href: privacyLink,\n            click: privacyLink_onClick,\n            externalCss: {\n                'footer-content': true,\n                'footer-item': true,\n                'has-background': !useDefaultBackground,\n                'background-always-visible': hasDarkBackground }\" href=\"https://privacy.microsoft.com/en-US/privacystatement\" class=\"footer-content ext-footer-content footer-item ext-footer-item has-background ext-has-background\">",
+                        "html": "<h4 class=\"Heading4-sc-fk814f-0 sc-gswNZR dfcnA-D bbLVwL\">Start Here - Enter Your Email Address</h4>",
                         "target": [
-                            "#ftrPrivacy"
+                            "h4"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "contrastRatio": 0,
+                                    "fontSize": "12.0pt (16px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": "bgOverlap",
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Element's background color could not be determined because it is overlapped by another element"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<input id=\"user-email\" aria-label=\"Email\" aria-describedby=\"user-email-description\" autocomplete=\"email\" type=\"email\" scale=\"medium\" data-visited=\"false\" data-required=\"true\" data-valid=\"neutral\" name=\"email\" placeholder=\"Email\" class=\"TextField__StyledInput-sc-1hx1ftq-1 gTpJbB\" value=\"\">",
+                        "target": [
+                            "#user-email"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     }
                 ]
             }
         ],
         "violations": [
             {
-                "id": "duplicate-id",
+                "id": "aria-allowed-role",
                 "impact": "minor",
                 "tags": [
-                    "cat.parsing",
-                    "wcag2a",
-                    "wcag411"
+                    "cat.aria",
+                    "best-practice"
                 ],
-                "description": "Ensures every id attribute value is unique",
-                "help": "id attribute value must be unique",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id?application=playwright",
+                "description": "Ensures role attribute has an appropriate value for the element",
+                "help": "ARIA role should be appropriate for the element",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/aria-allowed-role?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
-                                "id": "duplicate-id",
-                                "data": "customCssStyle",
-                                "relatedNodes": [
-                                    {
-                                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
-                                        "target": [
-                                            "style:nth-child(30)"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
-                                        "target": [
-                                            "style:nth-child(31)"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
-                                        "target": [
-                                            "style:nth-child(32)"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
-                                        "target": [
-                                            "style:nth-child(34)"
-                                        ]
-                                    }
+                                "id": "aria-allowed-role",
+                                "data": [
+                                    "presentation"
                                 ],
+                                "relatedNodes": [],
                                 "impact": "minor",
-                                "message": "Document has multiple static elements with the same id attribute: customCssStyle"
+                                "message": "ARIA role presentation is not allowed for given element"
                             }
                         ],
                         "all": [],
                         "none": [],
                         "impact": "minor",
-                        "html": "<style type=\"text/css\" id=\"customCssStyle\">.ext-promoted-fed-cred-box {\n display: none;\n}\n</style>",
+                        "html": "<img src=\"https://www.parchment.com/u/logo/institution/32224.png\" role=\"presentation\" alt=\"Angelo State University Logo\">",
                         "target": [
-                            "style:nth-child(29)"
+                            "img[role=\"presentation\"]"
                         ],
-                        "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: customCssStyle"
+                        "failureSummary": "Fix any of the following:\n  ARIA role presentation is not allowed for given element"
                     }
                 ]
             },
             {
-                "id": "meta-viewport-large",
-                "impact": "minor",
+                "id": "color-contrast",
+                "impact": "serious",
                 "tags": [
-                    "cat.sensory-and-visual-cues",
-                    "best-practice"
+                    "cat.color",
+                    "wcag2aa",
+                    "wcag143",
+                    "ACT",
+                    "TTv5",
+                    "TT13.c"
                 ],
-                "description": "Ensures <meta name=\"viewport\"> can scale a significant amount",
-                "help": "Users should be able to zoom and scale the text up to 500%",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/meta-viewport-large?application=playwright",
+                "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+                "help": "Elements must meet minimum color contrast ratio thresholds",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/color-contrast?application=playwright",
                 "nodes": [
                     {
                         "any": [
                             {
-                                "id": "meta-viewport-large",
-                                "data": "maximum-scale",
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "<meta> tag limits zooming on mobile devices"
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#ffffff",
+                                    "bgColor": "#1dafcc",
+                                    "contrastRatio": 2.6,
+                                    "fontSize": "22.5pt (30px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "3:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"member-banner\">",
+                                        "target": [
+                                            ".member-banner"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.6 (foreground color: #ffffff, background color: #1dafcc, font size: 22.5pt (30px), font weight: normal). Expected contrast ratio of 3:1"
                             }
                         ],
                         "all": [],
                         "none": [],
-                        "impact": "minor",
-                        "html": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes\">",
+                        "impact": "serious",
+                        "html": "<p class=\"issuer-name\">Angelo State University</p>",
                         "target": [
-                            "meta[name=\"viewport\"]"
+                            ".issuer-name"
                         ],
-                        "failureSummary": "Fix any of the following:\n  <meta> tag limits zooming on mobile devices"
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.6 (foreground color: #ffffff, background color: #1dafcc, font size: 22.5pt (30px), font weight: normal). Expected contrast ratio of 3:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#ffffff",
+                                    "bgColor": "#1dafcc",
+                                    "contrastRatio": 2.6,
+                                    "fontSize": "9.8pt (13px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"member-banner\">",
+                                        "target": [
+                                            ".member-banner"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.6 (foreground color: #ffffff, background color: #1dafcc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<p class=\"issuer-address\">Asu Station 10898, San Angelo, TX, 76909-0898, US</p>",
+                        "target": [
+                            ".issuer-address"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.6 (foreground color: #ffffff, background color: #1dafcc, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#6dbe45",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.3,
+                                    "fontSize": "12.0pt (16px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 kcgDZu cAxLPz order-type-section\">",
+                                        "target": [
+                                            ".order-type-section"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.3 (foreground color: #6dbe45, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div id=\"order-type-learner-LEARNER-description\" class=\"OptionButton__DescriptionWrapper-nyt8am-10 ksaecj\">Ordering your own credentials or academic records</div>",
+                        "target": [
+                            "#order-type-learner-LEARNER-description"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #6dbe45, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#e6e6e6",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 1.24,
+                                    "fontSize": "15.0pt (20px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 kcgDZu cAxLPz order-type-section\">",
+                                        "target": [
+                                            ".order-type-section"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 1.24 (foreground color: #e6e6e6, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div orientation=\"vertical\" scale=\"medium\" aria-orientation=\"vertical\" role=\"separator\" class=\"Divider-sc-19sduhe-0 sc-ezOQGI eeLQaA cPnpzd\">or</div>",
+                        "target": [
+                            ".Divider-sc-19sduhe-0"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.24 (foreground color: #e6e6e6, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#1dafcc",
+                                    "bgColor": "#ffffff",
+                                    "contrastRatio": 2.6,
+                                    "fontSize": "12.0pt (16px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 kcgDZu cAxLPz order-type-section\">",
+                                        "target": [
+                                            ".order-type-section"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.6 (foreground color: #1dafcc, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<div id=\"order-type-third-party-THIRD_PARTY-description\" class=\"OptionButton__DescriptionWrapper-nyt8am-10 ksaecj\">Ordering on behalf of someone else</div>",
+                        "target": [
+                            "#order-type-third-party-THIRD_PARTY-description"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.6 (foreground color: #1dafcc, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#1ba4bf",
+                                    "bgColor": "#e6e6e6",
+                                    "contrastRatio": 2.36,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 gnFDbU cAxLPz sc-iveFHk hfkpve footer-section\">",
+                                        "target": [
+                                            ".sc-iveFHk"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.36 (foreground color: #1ba4bf, background color: #e6e6e6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"https://www.parchment.com/terms-of-use\" target=\"_blank\">terms of use</a>",
+                        "target": [
+                            "a[target=\"_blank\"]:nth-child(1)"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.36 (foreground color: #1ba4bf, background color: #e6e6e6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#1ba4bf",
+                                    "bgColor": "#e6e6e6",
+                                    "contrastRatio": 2.36,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 gnFDbU cAxLPz sc-iveFHk hfkpve footer-section\">",
+                                        "target": [
+                                            ".sc-iveFHk"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.36 (foreground color: #1ba4bf, background color: #e6e6e6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"https://www.parchment.com/privacy-policy\" target=\"_blank\">privacy policy</a>",
+                        "target": [
+                            "a[target=\"_blank\"]:nth-child(2)"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.36 (foreground color: #1ba4bf, background color: #e6e6e6, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#1dafcc",
+                                    "bgColor": "#f4f4f4",
+                                    "contrastRatio": 2.37,
+                                    "fontSize": "10.5pt (14px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"global-footer__basement-bar\">",
+                                        "target": [
+                                            ".global-footer__basement-bar"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 2.37 (foreground color: #1dafcc, background color: #f4f4f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"javascript:void(0)\" onclick=\"checkForRcrsv()\">Support: Screen Share</a>",
+                        "target": [
+                            "a[href=\"javascript:void(0)\"]"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.37 (foreground color: #1dafcc, background color: #f4f4f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#0093b2",
+                                    "bgColor": "#f4f4f4",
+                                    "contrastRatio": 3.28,
+                                    "fontSize": "11.3pt (15px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"global-footer__basement-bar\">",
+                                        "target": [
+                                            ".global-footer__basement-bar"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.28 (foreground color: #0093b2, background color: #f4f4f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"http://www.parchment.com/terms-of-use/\" style=\"margin-right: 20px\">Terms of Use</a>",
+                        "target": [
+                            ".global-footer__basement-bar-legal-col > a:nth-child(1)"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.28 (foreground color: #0093b2, background color: #f4f4f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "fgColor": "#0093b2",
+                                    "bgColor": "#f4f4f4",
+                                    "contrastRatio": 3.28,
+                                    "fontSize": "11.3pt (15px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": null,
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div class=\"global-footer__basement-bar\">",
+                                        "target": [
+                                            ".global-footer__basement-bar"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element has insufficient color contrast of 3.28 (foreground color: #0093b2, background color: #f4f4f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"http://www.parchment.com/privacy-policy/\">Privacy Policy</a>",
+                        "target": [
+                            ".global-footer__basement-bar-legal-col > a:nth-child(2)"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.28 (foreground color: #0093b2, background color: #f4f4f4, font size: 11.3pt (15px), font weight: normal). Expected contrast ratio of 4.5:1"
+                    }
+                ]
+            },
+            {
+                "id": "landmark-one-main",
+                "impact": "moderate",
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ],
+                "description": "Ensures the document has a main landmark",
+                "help": "Document should have one main landmark",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/landmark-one-main?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [
+                            {
+                                "id": "page-has-main",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Document does not have a main landmark"
+                            }
+                        ],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
+                        "target": [
+                            "html"
+                        ],
+                        "failureSummary": "Fix all of the following:\n  Document does not have a main landmark"
+                    }
+                ]
+            },
+            {
+                "id": "link-in-text-block",
+                "impact": "serious",
+                "tags": [
+                    "cat.color",
+                    "wcag2a",
+                    "wcag141",
+                    "TTv5",
+                    "TT13.a"
+                ],
+                "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+                "help": "Links must be distinguishable without relying on color",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/link-in-text-block?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "link-in-text-block",
+                                "data": {
+                                    "messageKey": "fgContrast",
+                                    "contrastRatio": 2.52,
+                                    "requiredContrastRatio": 3,
+                                    "nodeColor": "#1ba4bf",
+                                    "parentColor": "#555555"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div>By signing up you agree to the Parchment <a href=\"https://www.parchment.com/terms-of-use\" target=\"_blank\">terms of use</a> and <a href=\"https://www.parchment.com/privacy-policy\" target=\"_blank\">privacy policy</a>.</div>",
+                                        "target": [
+                                            ".terms-footer > div"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "The link has insufficient color contrast of 2.52:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1ba4bf, surrounding text: #555555)"
+                            },
+                            {
+                                "id": "link-in-text-block-style",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div>By signing up you agree to the Parchment <a href=\"https://www.parchment.com/terms-of-use\" target=\"_blank\">terms of use</a> and <a href=\"https://www.parchment.com/privacy-policy\" target=\"_blank\">privacy policy</a>.</div>",
+                                        "target": [
+                                            ".terms-footer > div"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"https://www.parchment.com/terms-of-use\" target=\"_blank\">terms of use</a>",
+                        "target": [
+                            "a[target=\"_blank\"]:nth-child(1)"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.52:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1ba4bf, surrounding text: #555555)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "link-in-text-block",
+                                "data": {
+                                    "messageKey": "fgContrast",
+                                    "contrastRatio": 2.52,
+                                    "requiredContrastRatio": 3,
+                                    "nodeColor": "#1ba4bf",
+                                    "parentColor": "#555555"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div>By signing up you agree to the Parchment <a href=\"https://www.parchment.com/terms-of-use\" target=\"_blank\">terms of use</a> and <a href=\"https://www.parchment.com/privacy-policy\" target=\"_blank\">privacy policy</a>.</div>",
+                                        "target": [
+                                            ".terms-footer > div"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "The link has insufficient color contrast of 2.52:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1ba4bf, surrounding text: #555555)"
+                            },
+                            {
+                                "id": "link-in-text-block-style",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<div>By signing up you agree to the Parchment <a href=\"https://www.parchment.com/terms-of-use\" target=\"_blank\">terms of use</a> and <a href=\"https://www.parchment.com/privacy-policy\" target=\"_blank\">privacy policy</a>.</div>",
+                                        "target": [
+                                            ".terms-footer > div"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
+                        "html": "<a href=\"https://www.parchment.com/privacy-policy\" target=\"_blank\">privacy policy</a>",
+                        "target": [
+                            "a[target=\"_blank\"]:nth-child(2)"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 2.52:1 with the surrounding text. (Minimum contrast is 3:1, link text: #1ba4bf, surrounding text: #555555)\n  The link has no styling (such as underline) to distinguish it from the surrounding text"
+                    }
+                ]
+            },
+            {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "tags": [
+                    "cat.semantics",
+                    "best-practice"
+                ],
+                "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+                "help": "Page should contain a level-one heading",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/page-has-heading-one?application=playwright",
+                "nodes": [
+                    {
+                        "any": [],
+                        "all": [
+                            {
+                                "id": "page-has-heading-one",
+                                "data": null,
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Page must have a level-one heading"
+                            }
+                        ],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<html lang=\"en\" class=\" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths checked-selector multipleupload xhr2 env-production\" style=\"\">",
+                        "target": [
+                            "html"
+                        ],
+                        "failureSummary": "Fix all of the following:\n  Page must have a level-one heading"
                     }
                 ]
             },
@@ -2319,9 +2811,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div id=\"lightboxBackgroundContainer\" data-bind=\"css: { 'provide-min-height': svr.fUsePlaywrightMinHeight },\n    component: { name: 'background-image-control',\n        publicMethods: $page.backgroundControlMethods,\n        event: { load: $page.backgroundImageControl_onLoad } }\">",
+                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 gnFDbU cAxLPz sc-bBABsx kPsrpx form-header\">",
                         "target": [
-                            "#lightboxBackgroundContainer"
+                            ".sc-bBABsx"
                         ],
                         "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
                     },
@@ -2340,9 +2832,240 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div data-bind=\"component: { name: 'logo-control',\n            params: {\n                isChinaDc: svr.fIsChinaDc,\n                bannerLogoUrl: bannerLogoUrl() } }\">",
+                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 kcgDZu cAxLPz form-banner\">",
                         "target": [
-                            "#lightbox > div:nth-child(2)"
+                            ".form-banner"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<input name=\"order-type-learner\" id=\"order-type-learner-LEARNER\" type=\"radio\" aria-label=\"Ordering your own credentials or academic records\" class=\"OptionButton__StyledNativeInput-nyt8am-0 kQcvHG\" value=\"LEARNER\" checked=\"\">",
+                        "target": [
+                            "#order-type-learner-LEARNER"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"OptionButton__LabelContainer-nyt8am-4 kUrJOw\"><label for=\"order-type-learner-LEARNER\"><div id=\"order-type-learner-LEARNER-description\" class=\"OptionButton__DescriptionWrapper-nyt8am-10 ksaecj\">Ordering your own credentials or academic records</div></label></div>",
+                        "target": [
+                            ".beUJOf > .OptionButton__LabelContainer-nyt8am-4.kUrJOw"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div orientation=\"vertical\" scale=\"medium\" aria-orientation=\"vertical\" role=\"separator\" class=\"Divider-sc-19sduhe-0 sc-ezOQGI eeLQaA cPnpzd\">or</div>",
+                        "target": [
+                            ".Divider-sc-19sduhe-0"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<input name=\"order-type-third-party\" id=\"order-type-third-party-THIRD_PARTY\" type=\"radio\" aria-label=\"Ordering on behalf of someone else\" class=\"OptionButton__StyledNativeInput-nyt8am-0 kQcvHG\" value=\"THIRD_PARTY\">",
+                        "target": [
+                            "#order-type-third-party-THIRD_PARTY"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"OptionButton__LabelContainer-nyt8am-4 kUrJOw\"><label for=\"order-type-third-party-THIRD_PARTY\"><div id=\"order-type-third-party-THIRD_PARTY-description\" class=\"OptionButton__DescriptionWrapper-nyt8am-10 ksaecj\">Ordering on behalf of someone else</div></label></div>",
+                        "target": [
+                            ".cSjDlR > .OptionButton__LabelContainer-nyt8am-4.kUrJOw"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<h5 class=\"Heading5-sc-1u7yfs2-0 sc-bYMpWt bgClIY jpeJen\">A message from Angelo State University</h5>",
+                        "target": [
+                            "h5"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"ShowMoreContainer__AnimatedContent-sc-1i8z8mk-0 cDIAbu\" style=\"height: 300px;\">",
+                        "target": [
+                            ".ShowMoreContainer__AnimatedContent-sc-1i8z8mk-0"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<h4 class=\"Heading4-sc-fk814f-0 sc-gswNZR dfcnA-D bbLVwL\">Start Here - Enter Your Email Address</h4>",
+                        "target": [
+                            "h4"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<input id=\"user-email\" aria-label=\"Email\" aria-describedby=\"user-email-description\" autocomplete=\"email\" type=\"email\" scale=\"medium\" data-visited=\"false\" data-required=\"true\" data-valid=\"neutral\" name=\"email\" placeholder=\"Email\" class=\"TextField__StyledInput-sc-1hx1ftq-1 gTpJbB\" value=\"\">",
+                        "target": [
+                            "#user-email"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<p>All items marked with a red asterisk are required</p>",
+                        "target": [
+                            ".sc-eDvSVe > p"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "region",
+                                "data": {
+                                    "isIframe": false
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "Some page content is not contained by landmarks"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"Container-sc-1imjosf-0 FormContainerDeprecated__Container-sc-hsi635-0 gnFDbU cAxLPz sc-iveFHk hfkpve footer-section\">",
+                        "target": [
+                            ".sc-iveFHk"
                         ],
                         "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
                     }

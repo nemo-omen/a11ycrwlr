@@ -1,6 +1,6 @@
 {
-    "title": "Home - RamPort",
-    "url": "https://test-ramport.angelo.edu/",
+    "title": "Registration - RamPort",
+    "url": "https://test-ramport.angelo.edu/web/home-community/registration",
     "results": {
         "testEngine": {
             "name": "axe-core",
@@ -16,8 +16,8 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:31.550Z",
-        "url": "https://test-ramport.angelo.edu/",
+        "timestamp": "2023-09-25T11:38:15.071Z",
+        "url": "https://test-ramport.angelo.edu/web/home-community/registration",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -634,6 +634,35 @@
                 "nodes": []
             },
             {
+                "id": "table-duplicate-name",
+                "impact": null,
+                "tags": [
+                    "cat.tables",
+                    "best-practice"
+                ],
+                "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
+                "help": "tables should not have the same summary and caption",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/table-duplicate-name?application=playwright",
+                "nodes": []
+            },
+            {
+                "id": "td-headers-attr",
+                "impact": null,
+                "tags": [
+                    "cat.tables",
+                    "wcag2a",
+                    "wcag131",
+                    "section508",
+                    "section508.22.g",
+                    "TTv5",
+                    "TT14.b"
+                ],
+                "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
+                "help": "Table cells that use the headers attribute must only refer to cells in the same table",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/td-headers-attr?application=playwright",
+                "nodes": []
+            },
+            {
                 "id": "th-has-data-cells",
                 "impact": null,
                 "tags": [
@@ -1149,33 +1178,33 @@
                                         ]
                                     },
                                     {
-                                        "html": "<h2 class=\"portlet-title\"> <span class=\"\" onmouseover=\"Liferay.Portal.ToolTip.show(this, 'COVID-19')\"> <img id=\"rjus__column2__3\" src=\"/html/icons/journal_content.png\" alt=\"\"> <span class=\"taglib-text hide-accessible\">COVID-19</span> </span> <span class=\"portlet-title-text\">COVID-19</span> </h2>",
+                                        "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_XafGzZGzVmJR > header > .portlet-title"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<h2 class=\"portlet-title\"> <span class=\"portlet-title-text\">Announcements</span> </h2>",
-                                        "target": [
-                                            "#portlet_LuminisAnnouncements_WAR_luminis > header > .portlet-title"
+                                            "#portlet_118_INSTANCE_RfRlrvu42tLp > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_spYY7BjH5cTy > header > .portlet-title"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<h2 class=\"portlet-title\"> <span class=\"\" onmouseover=\"Liferay.Portal.ToolTip.show(this, 'Library')\"> <img id=\"rjus__column4__0\" src=\"/html/icons/default.png\" alt=\"\"> <span class=\"taglib-text hide-accessible\">Library</span> </span> <span class=\"portlet-title-text\">Library</span> </h2>",
-                                        "target": [
-                                            "#portlet_118_INSTANCE_Hs8mtvWuVl5l > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_r7QMzPrE4p4c > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_IDhHhXSh9JhP > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_jGArhoC5mTBz > header > .portlet-title"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<h2 class=\"portlet-title\">",
+                                        "target": [
+                                            "#portlet_56_INSTANCE_RP5cLesHOvlu > header > .portlet-title"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<h2 class=\"portlet-title\">",
+                                        "target": [
+                                            "#portlet_118_INSTANCE_6VGQZrrMuIsN > header > .portlet-title"
                                         ]
                                     }
                                 ],
@@ -1187,15 +1216,27 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1-2\" id=\"main-content\" role=\"main\">",
                                         "target": [
                                             "#main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_vMeJJ7RcDFh4_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                                            "#_118_INSTANCE_vMeJJ7RcDFh4_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_RfRlrvu42tLp_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_RfRlrvu42tLp_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_6VGQZrrMuIsN_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_6VGQZrrMuIsN_main-content"
                                         ]
                                     }
                                 ],
@@ -1443,6 +1484,18 @@
                                         },
                                         {
                                             "ancestry": [
+                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > section > div:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                            ],
+                                            "level": 2
+                                        },
+                                        {
+                                            "ancestry": [
+                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(1) > section > div:nth-child(2) > div > div > div > div > div:nth-child(2) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                            ],
+                                            "level": 2
+                                        },
+                                        {
+                                            "ancestry": [
                                                 "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
@@ -1450,18 +1503,6 @@
                                         {
                                             "ancestry": [
                                                 "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
-                                            ],
-                                            "level": 2
-                                        },
-                                        {
-                                            "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
-                                            ],
-                                            "level": 2
-                                        },
-                                        {
-                                            "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         }
@@ -1655,7 +1696,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1-2\" id=\"main-content\" role=\"main\">",
                         "target": [
                             "#main-content"
                         ]
@@ -1688,7 +1729,7 @@
                         "impact": null,
                         "html": "<header class=\"portlet-topper\">",
                         "target": [
-                            "#portlet_56_INSTANCE_XafGzZGzVmJR > header"
+                            "#portlet_118_INSTANCE_RfRlrvu42tLp > header"
                         ]
                     }
                 ]
@@ -1712,15 +1753,27 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1-2\" id=\"main-content\" role=\"main\">",
                                         "target": [
                                             "#main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_vMeJJ7RcDFh4_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                                            "#_118_INSTANCE_vMeJJ7RcDFh4_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_RfRlrvu42tLp_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_RfRlrvu42tLp_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_6VGQZrrMuIsN_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_6VGQZrrMuIsN_main-content"
                                         ]
                                     }
                                 ],
@@ -2056,7 +2109,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<li class=\"active item1\" id=\"layout_30\" aria-selected=\"true\" role=\"presentation\">",
+                        "html": "<li class=\" item1\" id=\"layout_30\" role=\"presentation\">",
                         "target": [
                             "#layout_30"
                         ]
@@ -2092,73 +2145,6 @@
                         "html": "<a href=\"#main-content\" id=\"skip-to-content\">Skip to Content</a>",
                         "target": [
                             "#skip-to-content"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "table-duplicate-name",
-                "impact": null,
-                "tags": [
-                    "cat.tables",
-                    "best-practice"
-                ],
-                "description": "Ensure the <caption> element does not contain the same text as the summary attribute",
-                "help": "tables should not have the same summary and caption",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/table-duplicate-name?application=playwright",
-                "nodes": [
-                    {
-                        "any": [],
-                        "all": [],
-                        "none": [
-                            {
-                                "id": "same-caption-summary",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "minor",
-                                "message": "Content of summary attribute and <caption> are not duplicated"
-                            }
-                        ],
-                        "impact": null,
-                        "html": "<table id=\"_LuminisAnnouncements_WAR_luminis_messagedetailTable\">",
-                        "target": [
-                            "#_LuminisAnnouncements_WAR_luminis_messagedetailTable"
-                        ]
-                    }
-                ]
-            },
-            {
-                "id": "td-headers-attr",
-                "impact": null,
-                "tags": [
-                    "cat.tables",
-                    "wcag2a",
-                    "wcag131",
-                    "section508",
-                    "section508.22.g",
-                    "TTv5",
-                    "TT14.b"
-                ],
-                "description": "Ensure that each cell in a table that uses the headers attribute refers only to other cells in that table",
-                "help": "Table cells that use the headers attribute must only refer to cells in the same table",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/td-headers-attr?application=playwright",
-                "nodes": [
-                    {
-                        "any": [],
-                        "all": [
-                            {
-                                "id": "td-headers-attr",
-                                "data": null,
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "The headers attribute is exclusively used to refer to other cells in the table"
-                            }
-                        ],
-                        "none": [],
-                        "impact": null,
-                        "html": "<table id=\"_LuminisAnnouncements_WAR_luminis_messagedetailTable\">",
-                        "target": [
-                            "#_LuminisAnnouncements_WAR_luminis_messagedetailTable"
                         ]
                     }
                 ]
@@ -2432,7 +2418,7 @@
                                 "id": "color-contrast",
                                 "data": {
                                     "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
+                                    "fontSize": "12.0pt (16px)",
                                     "fontWeight": "normal",
                                     "messageKey": "elmPartiallyObscuring",
                                     "expectedContrastRatio": "4.5:1"
@@ -2445,59 +2431,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<p>Stay up to date with Angelo State’s <a href=\"https://www.angelo.edu/covid-19/\" target=\"_blank\">COVID-19 protocols</a>.</p>",
+                        "html": "<a href=\"http://www.angelo.edu/dept/advising/\" target=\"_blank\"><img alt=\"\" src=\"/documents/10354/190981/icons_advising.svg/cce96e28-97a6-4ee1-b867-de559903ef38\" style=\"width: 48px; height: 48px;\"><br> Find your Advisor</a>",
                         "target": [
-                            ".journal-content-article > .journal-content-article > p:nth-child(1)"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "elmPartiallyObscuring",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it partially overlaps other elements"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<p>Experiencing symptoms? Fill out the <a href=\"https://www.angelo.edu/wellness-screening\" target=\"_blank\">COVID-19 reporting form</a>.</p>",
-                        "target": [
-                            "p:nth-child(2)"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "elmPartiallyObscuring",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it partially overlaps other elements"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<a href=\"https://python.angelo.edu/BannerExtensibility/customPage/page/ASU_Vaccine_Reporting\" target=\"_blank\">received your vaccine</a>",
-                        "target": [
-                            "p:nth-child(3) > a[target=\"_blank\"]"
+                            "#p_p_id_56_INSTANCE_kpbUB5f1qf6b_ > .portlet-borderless-container > .portlet-body > .journal-content-article > p > a[target=\"_blank\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
                     },
@@ -2566,9 +2502,9 @@
                         ],
                         "none": [],
                         "impact": "critical",
-                        "html": "<li class=\"active item1\" id=\"layout_30\" aria-selected=\"true\" role=\"presentation\">",
+                        "html": "<li class=\"active item5\" id=\"layout_31\" aria-selected=\"true\" role=\"presentation\">",
                         "target": [
-                            "#layout_30"
+                            "#layout_31"
                         ],
                         "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-selected=\"true\""
                     }
@@ -2861,9 +2797,51 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_vMeJJ7RcDFh4_main-content\" role=\"main\">",
                         "target": [
-                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                            "#_118_INSTANCE_vMeJJ7RcDFh4_main-content"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "landmark-is-top-level",
+                                "data": {
+                                    "role": "main"
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "The main landmark is contained in another landmark."
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_RfRlrvu42tLp_main-content\" role=\"main\">",
+                        "target": [
+                            "#_118_INSTANCE_RfRlrvu42tLp_main-content"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "landmark-is-top-level",
+                                "data": {
+                                    "role": "main"
+                                },
+                                "relatedNodes": [],
+                                "impact": "moderate",
+                                "message": "The main landmark is contained in another landmark."
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "moderate",
+                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_6VGQZrrMuIsN_main-content\" role=\"main\">",
+                        "target": [
+                            "#_118_INSTANCE_6VGQZrrMuIsN_main-content"
                         ],
                         "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
                     }
@@ -2887,9 +2865,21 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_vMeJJ7RcDFh4_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                                            "#_118_INSTANCE_vMeJJ7RcDFh4_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_RfRlrvu42tLp_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_RfRlrvu42tLp_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_6VGQZrrMuIsN_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_6VGQZrrMuIsN_main-content"
                                         ]
                                     }
                                 ],
@@ -2900,7 +2890,7 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1-2\" id=\"main-content\" role=\"main\">",
                         "target": [
                             "#main-content"
                         ],
@@ -2958,9 +2948,21 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_Hs8mtvWuVl5l_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_vMeJJ7RcDFh4_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_Hs8mtvWuVl5l_main-content"
+                                            "#_118_INSTANCE_vMeJJ7RcDFh4_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_RfRlrvu42tLp_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_RfRlrvu42tLp_main-content"
+                                        ]
+                                    },
+                                    {
+                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_6VGQZrrMuIsN_main-content\" role=\"main\">",
+                                        "target": [
+                                            "#_118_INSTANCE_6VGQZrrMuIsN_main-content"
                                         ]
                                     }
                                 ],
@@ -2971,7 +2973,7 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1-3\" id=\"main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1-2\" id=\"main-content\" role=\"main\">",
                         "target": [
                             "#main-content"
                         ],
@@ -3002,7 +3004,7 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<li class=\"active item1\" id=\"layout_30\" aria-selected=\"true\" role=\"presentation\">",
+                                        "html": "<li class=\" item1\" id=\"layout_30\" role=\"presentation\">",
                                         "target": [
                                             "#layout_30"
                                         ]
@@ -3026,7 +3028,7 @@
                                         ]
                                     },
                                     {
-                                        "html": "<li class=\" item5\" id=\"layout_31\" role=\"presentation\">",
+                                        "html": "<li class=\"active item5\" id=\"layout_31\" aria-selected=\"true\" role=\"presentation\">",
                                         "target": [
                                             "#layout_31"
                                         ]
