@@ -1,6 +1,6 @@
 {
     "title": "Registration Term",
-    "url": "https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskfshd.P_CrseSchdDetl",
+    "url": "https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkistm.p_display_form",
     "results": {
         "testEngine": {
             "name": "axe-core",
@@ -16,8 +16,8 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:42.402Z",
-        "url": "https://ssb.angelo.edu/prod/bwskfshd.P_CrseSchdDetl",
+        "timestamp": "2023-11-06T01:54:43.247Z",
+        "url": "https://ssb.angelo.edu/prod/bwwkistm.p_display_form",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -2161,7 +2161,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nSep 25,2023 06:47 am<br>\n</div>",
+                        "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nNov 05,2023 07:54 pm<br>\n</div>",
                         "target": [
                             ".staticheaders"
                         ],

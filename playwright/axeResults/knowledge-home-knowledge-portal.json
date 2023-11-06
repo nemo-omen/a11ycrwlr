@@ -16,7 +16,7 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:17.492Z",
+        "timestamp": "2023-11-06T01:53:20.861Z",
         "url": "https://angelostate.servicenowservices.com/kb?id=kb_home",
         "toolOptions": {
             "resultTypes": [
@@ -2295,7 +2295,7 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">6</span>",
+                                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">7</span>",
                                         "target": [
                                             "li[ng-include=\"'kbv3-category-template.html'\"][ng-if=\"category.count != 0\"]:nth-child(3) > .group-item.group-item-primary[ng-enabled=\"category.count != 0\"] > .badge.pull-right.pointer"
                                         ]
@@ -2308,7 +2308,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">6</span>",
+                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">7</span>",
                         "target": [
                             "li[ng-include=\"'kbv3-category-template.html'\"][ng-if=\"category.count != 0\"]:nth-child(3) > .group-item.group-item-primary[ng-enabled=\"category.count != 0\"] > .badge.pull-right.pointer"
                         ],
@@ -2884,7 +2884,7 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">82</span>",
+                                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">84</span>",
                                         "target": [
                                             "div[aria-label=\"Collapsed category Blackboard\"] > .badge.pull-right.pointer"
                                         ]
@@ -2897,7 +2897,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">82</span>",
+                        "html": "<span ng-if=\"category.count > 0 &amp;&amp; options.omit_badges != 'true'\" class=\"badge pull-right pointer ng-binding ng-scope\">84</span>",
                         "target": [
                             "div[aria-label=\"Collapsed category Blackboard\"] > .badge.pull-right.pointer"
                         ],
@@ -3169,7 +3169,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7384 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7835 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3237,7 +3237,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7054 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7511 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3305,7 +3305,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">6215 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">6479 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3373,7 +3373,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">5470 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">5473 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3441,7 +3441,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">3523 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">3681 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Viewed\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3509,7 +3509,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">261 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">287 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3577,7 +3577,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">348 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">363 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3645,7 +3645,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">326 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">336 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3713,7 +3713,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">1004 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">1075 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Featured\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3781,7 +3781,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">2600 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">2629 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(1) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3815,7 +3815,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Submitting Video/Audio Recordings in Blackboard as a Student</div>",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Prohibited Technologies Ban</div>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
@@ -3849,7 +3849,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">2374 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">443 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(2) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3883,7 +3883,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">ASU Login</div>",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Submitting Video/Audio Recordings in Blackboard as a Student</div>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
@@ -3917,7 +3917,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">424 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">2391 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(3) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -3951,7 +3951,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Kaltura Express Capture</div>",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">ASU Login</div>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
@@ -3985,7 +3985,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">1586 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">447 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(4) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],
@@ -4019,7 +4019,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">YuJa for Students</div>",
+                        "html": "<div ng-switch-default=\"\" ng-bind=\"::item.display_field\" class=\"ng-binding ng-scope\">Kaltura Express Capture</div>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > .main_text > a > div[ng-switch=\"\"][on=\"::item.display_field.type\"] > .ng-binding[ng-switch-default=\"\"][ng-bind=\"::item.display_field\"]"
                         ],
@@ -4053,7 +4053,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">7054 Views</span>",
+                        "html": "<span aria-hidden=\"true\" class=\"ng-binding\">1586 Views</span>",
                         "target": [
                             ".hide-x-overflow[aria-label=\"Most Useful\"][ng-if=\"c.options.result.length > 0\"] > .kb-list-item[role=\"group\"][ng-class=\"{'kb-item-block':c.isNative}\"]:nth-child(5) > .kb-list-row > .kb-list-col-content > small > .secondary-info.ng-scope > .about-outer-span > .ng-scope > .ng-scope[ng-if=\"f.value || f.name == 'rating'\"] > .art-label[ng-switch=\"f.name\"] > .ng-scope[ng-switch-when=\"sys_view_count\"] > .no-warp.ng-scope[ng-if=\"::f.value != '1' \"] > .ng-binding[aria-hidden=\"true\"]"
                         ],

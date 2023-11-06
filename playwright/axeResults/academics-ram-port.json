@@ -1,6 +1,6 @@
 {
     "title": "Academics - RamPort",
-    "url": "https://test-ramport.angelo.edu/web/home-community/academics",
+    "url": "https://ramport.angelo.edu/web/home-community/academics",
     "results": {
         "testEngine": {
             "name": "axe-core",
@@ -16,8 +16,8 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:34.342Z",
-        "url": "https://test-ramport.angelo.edu/web/home-community/academics",
+        "timestamp": "2023-11-06T01:53:40.337Z",
+        "url": "https://ramport.angelo.edu/web/home-community/academics",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -810,7 +810,7 @@
                         "impact": null,
                         "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "nav:nth-child(1)"
                         ]
                     }
                 ]
@@ -840,7 +840,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<body class=\"skin-2 yui3-skin-sam controls-visible signed-in public-page site  dockbar-ready pace-done\">",
+                        "html": "<body class=\"skin-2 yui3-skin-sam controls-visible signed-in public-page site role-guest role-user role-power-user role-student role-student-graduation-eligible role-student-not-international role-header-icon-rams-student role-student-degree-seeking-non-international role-header-icon-blackboard role-phase-1-site-member-not-admit-applicant role-header-icon-rammail role-student-degree-seeking role-page-financial-aid-and-billing role-student-non-dual-credit role-page-academics role-page-campus-life role-student-undergraduate role-employee-non-finance-user role-site-member-phase-1 role-email-rammail-user role-student-phase-1 role-page-registration   dockbar-ready pace-done\">",
                         "target": [
                             "body"
                         ]
@@ -922,7 +922,7 @@
                         "impact": null,
                         "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "nav:nth-child(1)"
                         ]
                     }
                 ]
@@ -975,7 +975,7 @@
                         "impact": null,
                         "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "nav:nth-child(1)"
                         ]
                     }
                 ]
@@ -1100,7 +1100,7 @@
                         "impact": null,
                         "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "nav:nth-child(1)"
                         ]
                     }
                 ]
@@ -1172,7 +1172,7 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\"> </a> </h1>",
                                         "target": [
                                             "h1"
                                         ]
@@ -1180,61 +1180,61 @@
                                     {
                                         "html": "<h2 class=\"portlet-title\"> <span class=\"\" onmouseover=\"Liferay.Portal.ToolTip.show(this, 'Graduation')\"> <img id=\"bvrs__column1__2\" src=\"/html/icons/default.png\" alt=\"\"> <span class=\"taglib-text hide-accessible\">Graduation</span> </span> <span class=\"portlet-title-text\">Graduation</span> </h2>",
                                         "target": [
-                                            "#portlet_118_INSTANCE_hTtZ1D3jHbZn > header > .portlet-title"
+                                            "#portlet_118_INSTANCE_rj5qnQXtUZlZ > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_fDL86ZWvaCmW > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_T83QaoeswmNJ > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_Pvet1uf5iLPc > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_9B3410HAayX7 > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\"> <span class=\"\" onmouseover=\"Liferay.Portal.ToolTip.show(this, 'My\\x20Classes')\"> <img id=\"etlj__column2__0\" src=\"/html/icons/default.png\" alt=\"\"> <span class=\"taglib-text hide-accessible\">My Classes</span> </span> <span class=\"portlet-title-text\">My Classes</span> </h2>",
                                         "target": [
-                                            "#portlet_118_INSTANCE_FkBJprT7mp21 > header > .portlet-title"
+                                            "#portlet_118_INSTANCE_7HlxgwsugjAz > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_dKe8skVXv4dl > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_5frJGRRT58ZF > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_6ygrp0Ece7h9 > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_88frB6JzogaU > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_nx4xSmRvH1eE > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_0l97ndf3ACcp > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_a9JTLRFtdDcZ > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_KwWbWn17BbGz > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_8udAHKNhTzLA > header > .portlet-title"
+                                            "#portlet_56_INSTANCE_l8Jw7LffzLju > header > .portlet-title"
                                         ]
                                     },
                                     {
                                         "html": "<h2 class=\"portlet-title\">",
                                         "target": [
-                                            "#portlet_118_INSTANCE_0EJHElEy5RCk > header > .portlet-title"
+                                            "#portlet_118_INSTANCE_kFS04yUqbFqr > header > .portlet-title"
                                         ]
                                     }
                                 ],
@@ -1252,33 +1252,33 @@
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_fy7bJVGv21NV_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_6XOL1UDIRjXT_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_fy7bJVGv21NV_main-content"
+                                            "#_118_INSTANCE_6XOL1UDIRjXT_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_hTtZ1D3jHbZn_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_rj5qnQXtUZlZ_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_hTtZ1D3jHbZn_main-content"
+                                            "#_118_INSTANCE_rj5qnQXtUZlZ_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_VvXPQIJl91CB_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_25Q0DbiOXCAb_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_VvXPQIJl91CB_main-content"
+                                            "#_118_INSTANCE_25Q0DbiOXCAb_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_FkBJprT7mp21_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_7HlxgwsugjAz_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_FkBJprT7mp21_main-content"
+                                            "#_118_INSTANCE_7HlxgwsugjAz_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_0EJHElEy5RCk_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_kFS04yUqbFqr_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_0EJHElEy5RCk_main-content"
+                                            "#_118_INSTANCE_kFS04yUqbFqr_main-content"
                                         ]
                                     }
                                 ],
@@ -1488,7 +1488,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\"> </a> </h1>",
                         "target": [
                             "h1"
                         ]
@@ -1514,67 +1514,67 @@
                                     "headingOrder": [
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > nav:nth-child(2) > div:nth-child(1) > h1"
+                                                "html > body > div:nth-child(3) > nav:nth-child(1) > div:nth-child(1) > h1"
                                             ],
                                             "level": 1
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > section > div:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > div > div > div > div > div:nth-child(1) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > section > div:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > div > div > div > div > div:nth-child(1) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > section > div:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > div > div > div > div > div:nth-child(2) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > div > div > div:nth-child(2) > section > div:nth-child(2) > div > div > div > div > div:nth-child(1) > div > div > div > div > div > div > div:nth-child(2) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(3) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div > div > section > div:nth-child(2) > div > div > div > div > div > div > div:nth-child(3) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(1) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         },
                                         {
                                             "ancestry": [
-                                                "html > body > div:nth-child(3) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
+                                                "html > body > div:nth-child(3) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > div > div > section > header:nth-child(1) > h2:nth-child(1)"
                                             ],
                                             "level": 2
                                         }
@@ -1588,7 +1588,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\"> </a> </h1>",
                         "target": [
                             "h1"
                         ]
@@ -1704,7 +1704,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\">",
+                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\">",
                         "target": [
                             "#siteLogo"
                         ]
@@ -1735,7 +1735,7 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\">",
+                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\">",
                         "target": [
                             "#siteLogo"
                         ]
@@ -1801,7 +1801,7 @@
                         "impact": null,
                         "html": "<header class=\"portlet-topper\">",
                         "target": [
-                            "#portlet_118_INSTANCE_hTtZ1D3jHbZn > header"
+                            "#portlet_118_INSTANCE_rj5qnQXtUZlZ > header"
                         ]
                     }
                 ]
@@ -1831,33 +1831,33 @@
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_fy7bJVGv21NV_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_6XOL1UDIRjXT_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_fy7bJVGv21NV_main-content"
+                                            "#_118_INSTANCE_6XOL1UDIRjXT_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_hTtZ1D3jHbZn_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_rj5qnQXtUZlZ_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_hTtZ1D3jHbZn_main-content"
+                                            "#_118_INSTANCE_rj5qnQXtUZlZ_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_VvXPQIJl91CB_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_25Q0DbiOXCAb_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_VvXPQIJl91CB_main-content"
+                                            "#_118_INSTANCE_25Q0DbiOXCAb_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_FkBJprT7mp21_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_7HlxgwsugjAz_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_FkBJprT7mp21_main-content"
+                                            "#_118_INSTANCE_7HlxgwsugjAz_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_0EJHElEy5RCk_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_kFS04yUqbFqr_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_0EJHElEy5RCk_main-content"
+                                            "#_118_INSTANCE_kFS04yUqbFqr_main-content"
                                         ]
                                     }
                                 ],
@@ -1891,13 +1891,27 @@
                     {
                         "any": [
                             {
+                                "id": "link-in-text-block",
+                                "data": null,
+                                "relatedNodes": [
+                                    {
+                                        "html": "<p>",
+                                        "target": [
+                                            ".portlet-content-container > .portlet-body > .journal-content-article > p:nth-child(2)"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Links can be distinguished from surrounding text in some way other than by color"
+                            },
+                            {
                                 "id": "link-in-text-block-style",
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
+                                        "html": "<p>",
                                         "target": [
-                                            ".test-ramport"
+                                            ".portlet-content-container > .portlet-body > .journal-content-article > p:nth-child(2)"
                                         ]
                                     }
                                 ],
@@ -1908,9 +1922,9 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>",
+                        "html": "<a class=\"pdf\" href=\"https://www.angelo.edu/content/files/15711-tuition-rebate-form\" target=\"_blank\">Tuition Rebate</a>",
                         "target": [
-                            "a[href$=\"ramport.angelo.edu\"]"
+                            "p:nth-child(2) > .pdf[target=\"_blank\"]"
                         ]
                     }
                 ]
@@ -2116,7 +2130,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\">",
+                        "html": "<img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\">",
                         "target": [
                             "#siteLogo"
                         ]
@@ -2142,7 +2156,7 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=16059&amp;t=1695641566670\"> </a> </h1>",
+                                        "html": "<h1 class=\"site-title\"> <a class=\"logo custom-logo\" href=\"/web/home-community\" title=\"Home\"> <img id=\"siteLogo\" alt=\"home-community\" src=\"/image/company_logo?img_id=11728&amp;t=1699235136175\"> </a> </h1>",
                                         "target": [
                                             "h1"
                                         ]
@@ -2193,9 +2207,9 @@
                             }
                         ],
                         "impact": null,
-                        "html": "<li class=\" item1\" id=\"layout_30\" role=\"presentation\">",
+                        "html": "<li class=\" item1\" id=\"layout_16\" role=\"presentation\">",
                         "target": [
-                            "#layout_30"
+                            "#layout_16"
                         ]
                     }
                 ]
@@ -2256,102 +2270,6 @@
                                 "id": "color-contrast",
                                 "data": {
                                     "contrastRatio": 0,
-                                    "fontSize": "12.7pt (16.9px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgGradient",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background gradient"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                        "target": [
-                            ".test-ramport"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "12.7pt (16.9px)",
-                                    "fontWeight": "bold",
-                                    "messageKey": "bgGradient",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background gradient"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<b>Test RamPort</b>",
-                        "target": [
-                            "b"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "12.7pt (16.9px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgGradient",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [
-                                    {
-                                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                                        "target": [
-                                            ".test-ramport"
-                                        ]
-                                    }
-                                ],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined due to a background gradient"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>",
-                        "target": [
-                            "a[href$=\"ramport.angelo.edu\"]"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
                                     "fontSize": "9.8pt (13px)",
                                     "fontWeight": "normal",
                                     "messageKey": "bgOverlap",
@@ -2367,7 +2285,7 @@
                         "impact": "serious",
                         "html": "<span class=\"nav-label menu-name\">Home</span>",
                         "target": [
-                            "a[aria-labelledby=\"layout_30\"] > .nav-label.menu-name"
+                            "a[aria-labelledby=\"layout_16\"] > .nav-label.menu-name"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     },
@@ -2392,7 +2310,7 @@
                         "impact": "serious",
                         "html": "<span class=\"nav-label menu-name\">Academics</span>",
                         "target": [
-                            "a[aria-labelledby=\"layout_38\"] > .nav-label.menu-name"
+                            "a[aria-labelledby=\"layout_17\"] > .nav-label.menu-name"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     },
@@ -2417,7 +2335,7 @@
                         "impact": "serious",
                         "html": "<span class=\"nav-label menu-name\">Financial Aid &amp; Billing</span>",
                         "target": [
-                            "a[aria-labelledby=\"layout_32\"] > .nav-label.menu-name"
+                            "a[aria-labelledby=\"layout_19\"] > .nav-label.menu-name"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     },
@@ -2442,7 +2360,7 @@
                         "impact": "serious",
                         "html": "<span class=\"nav-label menu-name\">Campus Life</span>",
                         "target": [
-                            "a[aria-labelledby=\"layout_36\"] > .nav-label.menu-name"
+                            "a[aria-labelledby=\"layout_20\"] > .nav-label.menu-name"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     },
@@ -2467,32 +2385,7 @@
                         "impact": "serious",
                         "html": "<span class=\"nav-label menu-name\">Registration</span>",
                         "target": [
-                            "a[aria-labelledby=\"layout_31\"] > .nav-label.menu-name"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "color-contrast",
-                                "data": {
-                                    "contrastRatio": 0,
-                                    "fontSize": "9.8pt (13px)",
-                                    "fontWeight": "normal",
-                                    "messageKey": "bgOverlap",
-                                    "expectedContrastRatio": "4.5:1"
-                                },
-                                "relatedNodes": [],
-                                "impact": "serious",
-                                "message": "Element's background color could not be determined because it is overlapped by another element"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "serious",
-                        "html": "<span class=\"nav-label menu-name\">Accountability</span>",
-                        "target": [
-                            "a[aria-labelledby=\"layout_77\"] > .nav-label.menu-name"
+                            "a[aria-labelledby=\"layout_21\"] > .nav-label.menu-name"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
                     },
@@ -2524,7 +2417,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span class=\"node\">User Node 2</span>",
+                        "html": "<span class=\"node\">User Node 1</span>",
                         "target": [
                             ".node"
                         ],
@@ -2561,9 +2454,9 @@
                         ],
                         "none": [],
                         "impact": "critical",
-                        "html": "<li class=\"active item2\" id=\"layout_38\" aria-selected=\"true\" role=\"presentation\">",
+                        "html": "<li class=\"active item2\" id=\"layout_17\" aria-selected=\"true\" role=\"presentation\">",
                         "target": [
-                            "#layout_38"
+                            "#layout_17"
                         ],
                         "failureSummary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-selected=\"true\""
                     }
@@ -2598,9 +2491,9 @@
                         "all": [],
                         "none": [],
                         "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_30\" href=\"https://test-ramport.angelo.edu/web/home-community/home\" role=\"menuitem\">",
+                        "html": "<a aria-labelledby=\"layout_16\" href=\"https://ramport.angelo.edu/web/home-community/home\" role=\"menuitem\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_30\"]"
+                            "a[aria-labelledby=\"layout_16\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
                     },
@@ -2621,9 +2514,9 @@
                         "all": [],
                         "none": [],
                         "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_38\" href=\"https://test-ramport.angelo.edu/web/home-community/academics\" role=\"menuitem\">",
+                        "html": "<a aria-labelledby=\"layout_17\" href=\"https://ramport.angelo.edu/web/home-community/academics\" role=\"menuitem\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_38\"]"
+                            "a[aria-labelledby=\"layout_17\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
                     },
@@ -2644,9 +2537,9 @@
                         "all": [],
                         "none": [],
                         "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_32\" href=\"https://test-ramport.angelo.edu/web/home-community/finances\" role=\"menuitem\">",
+                        "html": "<a aria-labelledby=\"layout_19\" href=\"https://ramport.angelo.edu/web/home-community/finances\" role=\"menuitem\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_32\"]"
+                            "a[aria-labelledby=\"layout_19\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
                     },
@@ -2667,9 +2560,9 @@
                         "all": [],
                         "none": [],
                         "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_36\" href=\"https://test-ramport.angelo.edu/web/home-community/campus-life\" role=\"menuitem\">",
+                        "html": "<a aria-labelledby=\"layout_20\" href=\"https://ramport.angelo.edu/web/home-community/campus-life\" role=\"menuitem\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_36\"]"
+                            "a[aria-labelledby=\"layout_20\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
                     },
@@ -2690,32 +2583,9 @@
                         "all": [],
                         "none": [],
                         "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_31\" href=\"https://test-ramport.angelo.edu/web/home-community/registration\" role=\"menuitem\">",
+                        "html": "<a aria-labelledby=\"layout_21\" href=\"https://ramport.angelo.edu/web/home-community/registration\" role=\"menuitem\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_31\"]"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
-                    },
-                    {
-                        "any": [
-                            {
-                                "id": "aria-required-parent",
-                                "data": [
-                                    "menu",
-                                    "menubar",
-                                    "group"
-                                ],
-                                "relatedNodes": [],
-                                "impact": "critical",
-                                "message": "Required ARIA parents role not present: menu, menubar, group"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "critical",
-                        "html": "<a aria-labelledby=\"layout_77\" href=\"https://test-ramport.angelo.edu/web/home-community/accountability\" role=\"menuitem\">",
-                        "target": [
-                            "a[aria-labelledby=\"layout_77\"]"
+                            "a[aria-labelledby=\"layout_21\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Required ARIA parents role not present: menu, menubar, group"
                     }
@@ -2751,9 +2621,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_fDL86ZWvaCmW\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_T83QaoeswmNJ\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_fDL86ZWvaCmW"
+                                            "#portlet_56_INSTANCE_T83QaoeswmNJ"
                                         ]
                                     }
                                 ],
@@ -2764,9 +2634,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"http://www.angelo.edu/commencement/\" target=\"_blank\">Get Commencement Info</a>",
+                        "html": "<a href=\"https://www.angelo.edu/commencement/\" target=\"_blank\">Get Commencement Info</a>",
                         "target": [
-                            ".portlet-content-container > .portlet-body > .journal-content-article > p:nth-child(1) > a[target=\"_blank\"]"
+                            "#portlet_56_INSTANCE_T83QaoeswmNJ > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > ul > li:nth-child(1) > a[target=\"_blank\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #246faf, background color: #d5ebf6, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -2785,9 +2655,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_fDL86ZWvaCmW\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_T83QaoeswmNJ\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_fDL86ZWvaCmW"
+                                            "#portlet_56_INSTANCE_T83QaoeswmNJ"
                                         ]
                                     }
                                 ],
@@ -2798,9 +2668,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"https://collegegrad.herffjones.com/site/schoolname/Angelo%20State%20University\" target=\"_blank\">Cap, Gown and Invitations</a>",
+                        "html": "<a href=\"https://www.bkstr.com/angelostatestore/home\" target=\"_blank\">ASU Bookstore - For Your Graduation Needs</a>",
                         "target": [
-                            "#portlet_56_INSTANCE_fDL86ZWvaCmW > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > ul > li:nth-child(1) > a[target=\"_blank\"]"
+                            "#portlet_56_INSTANCE_T83QaoeswmNJ > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > ul > li:nth-child(2) > a[target=\"_blank\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #246faf, background color: #d5ebf6, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -2819,9 +2689,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_fDL86ZWvaCmW\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_T83QaoeswmNJ\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_fDL86ZWvaCmW"
+                                            "#portlet_56_INSTANCE_T83QaoeswmNJ"
                                         ]
                                     }
                                 ],
@@ -2832,9 +2702,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"http://www.balfour.com/angelo/\" target=\"_blank\">Class Ring</a>",
+                        "html": "<a href=\"https://www.balfour.com/angelo\" target=\"_blank\">Class Ring</a>",
                         "target": [
-                            "a[href$=\"angelo/\"]"
+                            "a[href$=\"angelo\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #246faf, background color: #d5ebf6, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -2853,9 +2723,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_Pvet1uf5iLPc\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_9B3410HAayX7\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_Pvet1uf5iLPc"
+                                            "#portlet_56_INSTANCE_9B3410HAayX7"
                                         ]
                                     }
                                 ],
@@ -2866,9 +2736,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"http://www.angelo.edu/commencement/graduates/\" target=\"_blank\">View the Graduation List</a>",
+                        "html": "<a href=\"https://www.angelo.edu/commencement/graduates/\" target=\"_blank\">View the Graduation List</a>",
                         "target": [
-                            "#portlet_56_INSTANCE_Pvet1uf5iLPc > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > ul > li:nth-child(1) > a[target=\"_blank\"]"
+                            "#portlet_56_INSTANCE_9B3410HAayX7 > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > ul > li:nth-child(1) > a[target=\"_blank\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #246faf, background color: #d5ebf6, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -2887,9 +2757,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_Pvet1uf5iLPc\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_9B3410HAayX7\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_Pvet1uf5iLPc"
+                                            "#portlet_56_INSTANCE_9B3410HAayX7"
                                         ]
                                     }
                                 ],
@@ -2900,9 +2770,9 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"https://angelo.site-ym.com/\" target=\"_blank\">Join the Alumni Association</a>",
+                        "html": "<a href=\"https://www.angelo.edu/alumni/membership/\" target=\"_blank\">Join the Alumni Association</a>",
                         "target": [
-                            "a[href$=\"angelo.site-ym.com/\"]"
+                            "#portlet_56_INSTANCE_9B3410HAayX7 > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > ul > li:nth-child(2) > a[target=\"_blank\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #246faf, background color: #d5ebf6, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -2921,9 +2791,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_Pvet1uf5iLPc\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_9B3410HAayX7\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_Pvet1uf5iLPc"
+                                            "#portlet_56_INSTANCE_9B3410HAayX7"
                                         ]
                                     }
                                 ],
@@ -2934,7 +2804,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a class=\"pdf\" href=\"http://www.angelo.edu/content/files/15711-tuition-rebate-form\" target=\"_blank\">Tuition Rebate</a>",
+                        "html": "<a class=\"pdf\" href=\"https://www.angelo.edu/content/files/15711-tuition-rebate-form\" target=\"_blank\">Tuition Rebate</a>",
                         "target": [
                             "p:nth-child(2) > .pdf[target=\"_blank\"]"
                         ],
@@ -2955,9 +2825,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_Pvet1uf5iLPc\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_9B3410HAayX7\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_Pvet1uf5iLPc"
+                                            "#portlet_56_INSTANCE_9B3410HAayX7"
                                         ]
                                     }
                                 ],
@@ -2989,9 +2859,9 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_Pvet1uf5iLPc\">",
+                                        "html": "<section class=\"portlet portlet-container\" id=\"portlet_56_INSTANCE_9B3410HAayX7\">",
                                         "target": [
-                                            "#portlet_56_INSTANCE_Pvet1uf5iLPc"
+                                            "#portlet_56_INSTANCE_9B3410HAayX7"
                                         ]
                                     }
                                 ],
@@ -3004,7 +2874,7 @@
                         "impact": "serious",
                         "html": "<a href=\"https://www.angelo.edu/services/controller/1098T.php#tabset0-formerstudent\" target=\"_blank\">tax web page</a>",
                         "target": [
-                            "#portlet_56_INSTANCE_Pvet1uf5iLPc > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > p:nth-child(3) > a[target=\"_blank\"]"
+                            "#portlet_56_INSTANCE_9B3410HAayX7 > .portlet-content > .portlet-content-container > .portlet-body > .journal-content-article > p:nth-child(3) > a[target=\"_blank\"]"
                         ],
                         "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.29 (foreground color: #246faf, background color: #d5ebf6, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
                     },
@@ -3065,25 +2935,25 @@
                                     {
                                         "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
                                         "target": [
-                                            "a[aria-labelledby=\"layout_38\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                                            "a[aria-labelledby=\"layout_17\"] > svg > symbol"
                                         ]
                                     },
                                     {
                                         "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
                                         "target": [
-                                            "a[aria-labelledby=\"layout_32\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                                            "a[aria-labelledby=\"layout_19\"] > svg > symbol"
                                         ]
                                     },
                                     {
                                         "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
                                         "target": [
-                                            "a[aria-labelledby=\"layout_36\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                                            "a[aria-labelledby=\"layout_20\"] > svg > symbol"
                                         ]
                                     },
                                     {
                                         "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
                                         "target": [
-                                            "a[aria-labelledby=\"layout_31\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                                            "a[aria-labelledby=\"layout_21\"] > svg > symbol"
                                         ]
                                     }
                                 ],
@@ -3096,7 +2966,7 @@
                         "impact": "minor",
                         "html": "<symbol id=\"a\" viewBox=\"-52.048 -52.048 104.096 104.096\">",
                         "target": [
-                            "a[aria-labelledby=\"layout_30\"] > svg[width=\"26\"][height=\"26\"] > symbol"
+                            "a[aria-labelledby=\"layout_16\"] > svg > symbol"
                         ],
                         "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: a"
                     }
@@ -3128,9 +2998,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_fy7bJVGv21NV_main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_6XOL1UDIRjXT_main-content\" role=\"main\">",
                         "target": [
-                            "#_118_INSTANCE_fy7bJVGv21NV_main-content"
+                            "#_118_INSTANCE_6XOL1UDIRjXT_main-content"
                         ],
                         "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
                     },
@@ -3149,9 +3019,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_hTtZ1D3jHbZn_main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_rj5qnQXtUZlZ_main-content\" role=\"main\">",
                         "target": [
-                            "#_118_INSTANCE_hTtZ1D3jHbZn_main-content"
+                            "#_118_INSTANCE_rj5qnQXtUZlZ_main-content"
                         ],
                         "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
                     },
@@ -3170,9 +3040,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_VvXPQIJl91CB_main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_25Q0DbiOXCAb_main-content\" role=\"main\">",
                         "target": [
-                            "#_118_INSTANCE_VvXPQIJl91CB_main-content"
+                            "#_118_INSTANCE_25Q0DbiOXCAb_main-content"
                         ],
                         "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
                     },
@@ -3191,9 +3061,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_FkBJprT7mp21_main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_7HlxgwsugjAz_main-content\" role=\"main\">",
                         "target": [
-                            "#_118_INSTANCE_FkBJprT7mp21_main-content"
+                            "#_118_INSTANCE_7HlxgwsugjAz_main-content"
                         ],
                         "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
                     },
@@ -3212,9 +3082,9 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_0EJHElEy5RCk_main-content\" role=\"main\">",
+                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_kFS04yUqbFqr_main-content\" role=\"main\">",
                         "target": [
-                            "#_118_INSTANCE_0EJHElEy5RCk_main-content"
+                            "#_118_INSTANCE_kFS04yUqbFqr_main-content"
                         ],
                         "failureSummary": "Fix any of the following:\n  The main landmark is contained in another landmark."
                     }
@@ -3238,33 +3108,33 @@
                                 "data": null,
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_fy7bJVGv21NV_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_6XOL1UDIRjXT_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_fy7bJVGv21NV_main-content"
+                                            "#_118_INSTANCE_6XOL1UDIRjXT_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_hTtZ1D3jHbZn_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_rj5qnQXtUZlZ_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_hTtZ1D3jHbZn_main-content"
+                                            "#_118_INSTANCE_rj5qnQXtUZlZ_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_VvXPQIJl91CB_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_25Q0DbiOXCAb_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_VvXPQIJl91CB_main-content"
+                                            "#_118_INSTANCE_25Q0DbiOXCAb_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_FkBJprT7mp21_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_7HlxgwsugjAz_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_FkBJprT7mp21_main-content"
+                                            "#_118_INSTANCE_7HlxgwsugjAz_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_0EJHElEy5RCk_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_kFS04yUqbFqr_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_0EJHElEy5RCk_main-content"
+                                            "#_118_INSTANCE_kFS04yUqbFqr_main-content"
                                         ]
                                     }
                                 ],
@@ -3319,7 +3189,7 @@
                         "impact": "moderate",
                         "html": "<nav class=\"navbar navbar-static-top \" role=\"navigation\" style=\"margin-bottom: 0; z-index: 111;\">",
                         "target": [
-                            "nav:nth-child(2)"
+                            "nav:nth-child(1)"
                         ],
                         "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable"
                     },
@@ -3333,33 +3203,33 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_fy7bJVGv21NV_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_6XOL1UDIRjXT_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_fy7bJVGv21NV_main-content"
+                                            "#_118_INSTANCE_6XOL1UDIRjXT_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_hTtZ1D3jHbZn_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_rj5qnQXtUZlZ_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_hTtZ1D3jHbZn_main-content"
+                                            "#_118_INSTANCE_rj5qnQXtUZlZ_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_VvXPQIJl91CB_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-2\" id=\"_118_INSTANCE_25Q0DbiOXCAb_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_VvXPQIJl91CB_main-content"
+                                            "#_118_INSTANCE_25Q0DbiOXCAb_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_FkBJprT7mp21_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_7HlxgwsugjAz_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_FkBJprT7mp21_main-content"
+                                            "#_118_INSTANCE_7HlxgwsugjAz_main-content"
                                         ]
                                     },
                                     {
-                                        "html": "<div class=\"columns-1-2\" id=\"_118_INSTANCE_0EJHElEy5RCk_main-content\" role=\"main\">",
+                                        "html": "<div class=\"columns-1\" id=\"_118_INSTANCE_kFS04yUqbFqr_main-content\" role=\"main\">",
                                         "target": [
-                                            "#_118_INSTANCE_0EJHElEy5RCk_main-content"
+                                            "#_118_INSTANCE_kFS04yUqbFqr_main-content"
                                         ]
                                     }
                                 ],
@@ -3401,39 +3271,33 @@
                                 },
                                 "relatedNodes": [
                                     {
-                                        "html": "<li class=\" item1\" id=\"layout_30\" role=\"presentation\">",
+                                        "html": "<li class=\" item1\" id=\"layout_16\" role=\"presentation\">",
                                         "target": [
-                                            "#layout_30"
+                                            "#layout_16"
                                         ]
                                     },
                                     {
-                                        "html": "<li class=\"active item2\" id=\"layout_38\" aria-selected=\"true\" role=\"presentation\">",
+                                        "html": "<li class=\"active item2\" id=\"layout_17\" aria-selected=\"true\" role=\"presentation\">",
                                         "target": [
-                                            "#layout_38"
+                                            "#layout_17"
                                         ]
                                     },
                                     {
-                                        "html": "<li class=\" item3\" id=\"layout_32\" role=\"presentation\">",
+                                        "html": "<li class=\" item3\" id=\"layout_19\" role=\"presentation\">",
                                         "target": [
-                                            "#layout_32"
+                                            "#layout_19"
                                         ]
                                     },
                                     {
-                                        "html": "<li class=\" item4\" id=\"layout_36\" role=\"presentation\">",
+                                        "html": "<li class=\" item4\" id=\"layout_20\" role=\"presentation\">",
                                         "target": [
-                                            "#layout_36"
+                                            "#layout_20"
                                         ]
                                     },
                                     {
-                                        "html": "<li class=\" item5\" id=\"layout_31\" role=\"presentation\">",
+                                        "html": "<li class=\" item5\" id=\"layout_21\" role=\"presentation\">",
                                         "target": [
-                                            "#layout_31"
-                                        ]
-                                    },
-                                    {
-                                        "html": "<li class=\" item6\" id=\"layout_77\" role=\"presentation\">",
-                                        "target": [
-                                            "#layout_77"
+                                            "#layout_21"
                                         ]
                                     }
                                 ],
@@ -3461,27 +3325,6 @@
                 "help": "All page content should be contained by landmarks",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/region?application=playwright",
                 "nodes": [
-                    {
-                        "any": [
-                            {
-                                "id": "region",
-                                "data": {
-                                    "isIframe": false
-                                },
-                                "relatedNodes": [],
-                                "impact": "moderate",
-                                "message": "Some page content is not contained by landmarks"
-                            }
-                        ],
-                        "all": [],
-                        "none": [],
-                        "impact": "moderate",
-                        "html": "<div class=\"test-ramport\"><b>Test RamPort</b> - This is a test system and may not contain recent data. Please use <a href=\"https://ramport.angelo.edu\">ramport.angelo.edu</a>.</div>",
-                        "target": [
-                            ".test-ramport"
-                        ],
-                        "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks"
-                    },
                     {
                         "any": [
                             {

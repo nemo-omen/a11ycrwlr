@@ -6,6 +6,8 @@ import { saveResults } from './saveResults';
 import { processMany } from './processMany';
 import { generateFinalReport } from './generateFinalReport';
 import { Result } from './types';
+
+
 async function run() {
   const browser = await chromium.launch({
     headless: false

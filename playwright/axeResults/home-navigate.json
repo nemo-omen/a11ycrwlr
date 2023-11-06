@@ -16,7 +16,7 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:52.869Z",
+        "timestamp": "2023-11-06T01:54:02.086Z",
         "url": "https://angelo.campus.eab.com/home",
         "toolOptions": {
             "resultTypes": [
@@ -758,7 +758,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<body class=\"ssc_plus  ext-safari ext-linux\" x-hip-style=\"no-link\" flag--eip-hi-navigation-hide-network-activity=\"flag--eip-hi-navigation-hide-network-activity\" style=\"--hi-clr--university-bkg: #00529b; --hi-clr--university-primary: #000000; --hi-clr--university-text: var(--hi-color--white);\" x-hip=\"hi-loader\">",
+                        "html": "<body class=\"ssc_plus  ext-safari ext-linux\" x-hip-style=\"no-link\" style=\"--hi-clr--university-bkg: #00529b; --hi-clr--university-primary: #000000; --hi-clr--university-text: var(--hi-color--white);\" x-hip=\"hi-loader\" flag--eip-hi-navigation-hide-network-activity=\"flag--eip-hi-navigation-hide-network-activity\">",
                         "target": [
                             "body"
                         ]
@@ -1080,7 +1080,7 @@
                         ],
                         "none": [],
                         "impact": null,
-                        "html": "<body class=\"ssc_plus  ext-safari ext-linux\" x-hip-style=\"no-link\" flag--eip-hi-navigation-hide-network-activity=\"flag--eip-hi-navigation-hide-network-activity\" style=\"--hi-clr--university-bkg: #00529b; --hi-clr--university-primary: #000000; --hi-clr--university-text: var(--hi-color--white);\" x-hip=\"hi-loader\">",
+                        "html": "<body class=\"ssc_plus  ext-safari ext-linux\" x-hip-style=\"no-link\" style=\"--hi-clr--university-bkg: #00529b; --hi-clr--university-primary: #000000; --hi-clr--university-text: var(--hi-color--white);\" x-hip=\"hi-loader\" flag--eip-hi-navigation-hide-network-activity=\"flag--eip-hi-navigation-hide-network-activity\">",
                         "target": [
                             "body"
                         ]
@@ -1228,7 +1228,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<section id=\"content\"><slot><!--?lit$866859167$--></slot><!--?lit$866859167$--></section>",
+                        "html": "<section id=\"content\"><slot><!--?lit$331418344$--></slot><!--?lit$331418344$--></section>",
                         "target": [
                             [
                                 "hi-navigation-primary",
@@ -2207,7 +2207,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<section id=\"content\"><slot><!--?lit$866859167$--></slot><!--?lit$866859167$--></section>",
+                        "html": "<section id=\"content\"><slot><!--?lit$331418344$--></slot><!--?lit$331418344$--></section>",
                         "target": [
                             [
                                 "hi-navigation-primary",
@@ -2247,7 +2247,7 @@
                         "all": [],
                         "none": [],
                         "impact": null,
-                        "html": "<hi-avatar size=\"small\" allow-border-color=\"\" interactive=\"\" theme=\"\" image=\"https://s3.amazonaws.com/production_gradesfirst_default/01D8XXVNA4HS06SY06725FGPHN/259-school/user_pictures/7131340/small/ab65177af80e0c2d30b8c2a4a307a7ab87156db8-80106828.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXBFX6U7WAZGPRR6Q%2F20230925%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20230925T114748Z&amp;X-Amz-Expires=3600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=0358df86ed76f565413f42f1c68dc9afee87c1e028d404941923fd8abb03d50b\" initials=\"JC\" aria-label=\"Profile Help Menu\" role=\"img\" x-hip=\"hi-avatar\">",
+                        "html": "<hi-avatar size=\"small\" allow-border-color=\"\" interactive=\"\" theme=\"\" image=\"https://s3.amazonaws.com/production_gradesfirst_default/01D8XXVNA4HS06SY06725FGPHN/259-school/user_pictures/7131340/small/ab65177af80e0c2d30b8c2a4a307a7ab87156db8-80106828.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAXBFX6U7WAZGPRR6Q%2F20231106%2Fus-east-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20231106T015356Z&amp;X-Amz-Expires=3600&amp;X-Amz-SignedHeaders=host&amp;X-Amz-Signature=95e57b87b39ea76dc32910e94141221fb35615c2e03adcfff2b51ce15747e47a\" initials=\"JC\" aria-label=\"Profile Help Menu\" role=\"img\" x-hip=\"hi-avatar\">",
                         "target": [
                             [
                                 "hi-navigation-secondary",
@@ -2804,7 +2804,7 @@
                                     {
                                         "html": "<dom-module id=\"hi-theme\">",
                                         "target": [
-                                            "dom-module:nth-child(116)"
+                                            "dom-module:nth-child(119)"
                                         ]
                                     }
                                 ],
@@ -2817,7 +2817,7 @@
                         "impact": "minor",
                         "html": "<dom-module id=\"hi-theme\">",
                         "target": [
-                            "dom-module:nth-child(114)"
+                            "dom-module:nth-child(113)"
                         ],
                         "failureSummary": "Fix any of the following:\n  Document has multiple static elements with the same id attribute: hi-theme"
                     },
@@ -3213,7 +3213,7 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"right\">\n      <div class=\"time-info\">\n        <div class=\"last-refresh\">Page last refreshed at 6:47am</div>\n        <div class=\"timezone\">All times listed are in Central Time (US &amp; Canada)</div>\n      </div>\n      <div class=\"additional_modes\">\n      </div>\n  </div>",
+                        "html": "<div class=\"right\">\n      <div class=\"time-info\">\n        <div class=\"last-refresh\">Page last refreshed at 7:53pm</div>\n        <div class=\"timezone\">All times listed are in Central Time (US &amp; Canada)</div>\n      </div>\n      <div class=\"additional_modes\">\n      </div>\n  </div>",
                         "target": [
                             ".right"
                         ],

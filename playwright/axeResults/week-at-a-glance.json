@@ -16,7 +16,7 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:47:39.021Z",
+        "timestamp": "2023-11-06T01:53:44.094Z",
         "url": "https://ssb.angelo.edu/prod/bwskfshd.P_CrseSchd",
         "toolOptions": {
             "resultTypes": [
@@ -2234,7 +2234,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nSep 25,2023 06:47 am<br>\n</div>",
+                        "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nNov 05,2023 07:53 pm<br>\n</div>",
                         "target": [
                             ".staticheaders"
                         ],
@@ -2362,7 +2362,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"/prod/bwskfshd.P_CrseSchd?start_date_in=09/18/2023\" onmouseover=\"window.status='Previous Week';  return true\" onfocus=\"window.status='Previous Week';  return true\" onmouseout=\"window.status='';  return true\" onblur=\"window.status='';  return true\">Previous Week</a>",
+                        "html": "<a href=\"/prod/bwskfshd.P_CrseSchd?start_date_in=10/23/2023\" onmouseover=\"window.status='Previous Week';  return true\" onfocus=\"window.status='Previous Week';  return true\" onmouseout=\"window.status='';  return true\" onblur=\"window.status='';  return true\">Previous Week</a>",
                         "target": [
                             ".pldefault[colspan=\"1\"]:nth-child(1) > a[onmouseout=\"window.status='';  return true\"][onblur=\"window.status='';  return true\"]"
                         ],
@@ -2394,7 +2394,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span class=\"fieldlargetext\">Week of Sep 25,2023</span>",
+                        "html": "<span class=\"fieldlargetext\">Week of Oct 30,2023</span>",
                         "target": [
                             ".fieldlargetext"
                         ],
@@ -2426,7 +2426,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span class=\"fieldmediumtext\"> (110 of 121)</span>",
+                        "html": "<span class=\"fieldmediumtext\"> (115 of 121)</span>",
                         "target": [
                             ".fieldmediumtext"
                         ],
@@ -2458,7 +2458,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<a href=\"/prod/bwskfshd.P_CrseSchd?start_date_in=10/02/2023\" onmouseover=\"window.status='Next Week';  return true\" onfocus=\"window.status='Next Week';  return true\" onmouseout=\"window.status='';  return true\" onblur=\"window.status='';  return true\">Next Week</a>",
+                        "html": "<a href=\"/prod/bwskfshd.P_CrseSchd?start_date_in=11/06/2023\" onmouseover=\"window.status='Next Week';  return true\" onfocus=\"window.status='Next Week';  return true\" onmouseout=\"window.status='';  return true\" onblur=\"window.status='';  return true\">Next Week</a>",
                         "target": [
                             ".rightaligntext > a[onmouseout=\"window.status='';  return true\"][onblur=\"window.status='';  return true\"]"
                         ],

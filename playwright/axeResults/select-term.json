@@ -1,6 +1,6 @@
 {
     "title": "Select Term",
-    "url": "https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bzskgstu.P_TxInfo",
+    "url": "https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskoacc.P_ViewAcctTerm",
     "results": {
         "testEngine": {
             "name": "axe-core",
@@ -16,8 +16,8 @@
             "orientationAngle": 0,
             "orientationType": "landscape-primary"
         },
-        "timestamp": "2023-09-25T11:48:20.158Z",
-        "url": "https://ssb.angelo.edu/prod/bzskgstu.P_TxInfo",
+        "timestamp": "2023-11-06T01:54:32.329Z",
+        "url": "https://ssb.angelo.edu/prod/bwskoacc.P_ViewAcctTerm",
         "toolOptions": {
             "resultTypes": [
                 "incomplete",
@@ -373,19 +373,6 @@
                 "description": "Ensures <dt> and <dd> elements are contained by a <dl>",
                 "help": "<dt> and <dd> elements must be contained by a <dl>",
                 "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/dlitem?application=playwright",
-                "nodes": []
-            },
-            {
-                "id": "duplicate-id-active",
-                "impact": null,
-                "tags": [
-                    "cat.parsing",
-                    "wcag2a",
-                    "wcag411"
-                ],
-                "description": "Ensures every id attribute value of active elements is unique",
-                "help": "IDs of active elements must be unique",
-                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=playwright",
                 "nodes": []
             },
             {
@@ -1081,6 +1068,38 @@
                         "html": "<html lang=\"en\">",
                         "target": [
                             "html"
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "duplicate-id-active",
+                "impact": null,
+                "tags": [
+                    "cat.parsing",
+                    "wcag2a",
+                    "wcag411"
+                ],
+                "description": "Ensures every id attribute value of active elements is unique",
+                "help": "IDs of active elements must be unique",
+                "helpUrl": "https://dequeuniversity.com/rules/axe/4.7/duplicate-id-active?application=playwright",
+                "nodes": [
+                    {
+                        "any": [
+                            {
+                                "id": "duplicate-id-active",
+                                "data": "ssbbackurl",
+                                "relatedNodes": [],
+                                "impact": "serious",
+                                "message": "Document has no active elements that share the same id attribute"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": null,
+                        "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
+                        "target": [
+                            "#ssbbackurl"
                         ]
                     }
                 ]
@@ -1982,6 +2001,38 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
+                        "html": "<a href=\"/prod/twbkwbis.P_GenMenu?name=bmenu.P_AdminMnu\" class=\"submenulinktext2\" id=\"ssbbackurl\">RETURN TO MENU</a>",
+                        "target": [
+                            "#ssbbackurl"
+                        ],
+                        "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+                    },
+                    {
+                        "any": [
+                            {
+                                "id": "color-contrast",
+                                "data": {
+                                    "contrastRatio": 0,
+                                    "fontSize": "8.7pt (11.664px)",
+                                    "fontWeight": "normal",
+                                    "messageKey": "bgImage",
+                                    "expectedContrastRatio": "4.5:1"
+                                },
+                                "relatedNodes": [
+                                    {
+                                        "html": "<body>",
+                                        "target": [
+                                            "body"
+                                        ]
+                                    }
+                                ],
+                                "impact": "serious",
+                                "message": "Element's background color could not be determined due to a background image"
+                            }
+                        ],
+                        "all": [],
+                        "none": [],
+                        "impact": "serious",
                         "html": "<a href=\"/prod/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&amp;depth_in=2&amp;columns_in=3\" accesskey=\"2\" class=\"submenulinktext2\">SITE MAP</a>",
                         "target": [
                             "a[accesskey=\"2\"]"
@@ -2110,7 +2161,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nSep 25,2023 06:48 am<br>\n</div>",
+                        "html": "<div class=\"staticheaders\">\nJeffrey D Caldwell<br>\nNov 05,2023 07:54 pm<br>\n</div>",
                         "target": [
                             ".staticheaders"
                         ],
@@ -2174,7 +2225,7 @@
                         "all": [],
                         "none": [],
                         "impact": "serious",
-                        "html": "<span class=\"releasetext\">Release: 8.19</span>",
+                        "html": "<span class=\"releasetext\">Release: 8.7.1</span>",
                         "target": [
                             ".releasetext"
                         ],
@@ -2453,7 +2504,7 @@
                         "all": [],
                         "none": [],
                         "impact": "moderate",
-                        "html": "<div class=\"pagefooterdiv\">\n<span class=\"releasetext\">Release: 8.19</span>\n</div>",
+                        "html": "<div class=\"pagefooterdiv\">\n<span class=\"releasetext\">Release: 8.7.1</span>\n</div>",
                         "target": [
                             ".pagefooterdiv"
                         ],

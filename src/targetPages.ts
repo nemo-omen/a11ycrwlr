@@ -43,7 +43,7 @@ export const nonAuthPages = [
  */
 export const loginPage = {
   title: 'Home - RamPort',
-  url: 'https://test-ramport.angelo.edu/',
+  url: 'https://ramport.angelo.edu/',
 };
 
 /**
@@ -53,7 +53,7 @@ export const loginPage = {
 export const authPages = [
   {
     title: 'Academics - RamPort',
-    url: 'https://test-ramport.angelo.edu/web/home-community/academics',
+    url: 'https://ramport.angelo.edu/web/home-community/academics',
   },
   {
     title: 'Week at a Glance',
@@ -88,10 +88,6 @@ export const authPages = [
     url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwskotrn.P_ViewTermTran'
   },
   {
-    title: 'Request Official Transcript',
-    url: 'https://www.parchment.com/u/registration/32224/account'
-  },
-  {
     title: 'Request Enrollment Verification',
     url: 'https://www.angelo.edu/content/forms/35-enrollment-verification-form'
   },
@@ -105,7 +101,7 @@ export const authPages = [
   },
   {
     title: 'Financial Aid and Billing',
-    url: 'https://test-ramport.angelo.edu/web/home-community/finances',
+    url: 'https://ramport.angelo.edu/web/home-community/finances',
   },
   {
     title: 'View Bill',
@@ -117,7 +113,7 @@ export const authPages = [
   },
   {
     title: 'Payment Plans',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwwkistm.p_display_form'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkistm.p_display_form'
   },
   {
     title: 'Federal Loans',
@@ -125,27 +121,27 @@ export const authPages = [
   },
   {
     title: '1098-T Tax Notification',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwtktxns.p_disp_tax_notification'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwtktxns.p_disp_tax_notification'
   },
   {
     title: 'View/Accept Financial Aid Awards',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwrkrhst.P_DispAwdAidYear'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwrkrhst.P_DispAwdAidYear'
   },
   {
     title: 'Student Requirements',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwrkelig.P_DisplayTabs'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwrkelig.P_DisplayTabs'
   },
   {
     title: 'Apply for ASU Scholarships',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=bwgksrvy.P_ShowSurveys'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwgksrvy.P_ShowSurveys'
   },
   {
     title: 'Emergency Tuition and Fees Loan',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=tloan'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=tloan'
   },
   {
     title: 'Book Loan',
-    url: 'https://sso-stage.test.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=bloan'
+    url: 'https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=!bwwksela.p_application?loan_type=bloan'
   },
   {
     title: 'iGrad',
@@ -153,10 +149,10 @@ export const authPages = [
   },
   {
     title: 'Campus Life',
-    url: 'https://test-ramport.angelo.edu/web/home-community/campus-life'
+    url: 'https://ramport.angelo.edu/web/home-community/campus-life'
   },
   {
     title: 'Registration',
-    url: 'https://test-ramport.angelo.edu/web/home-community/registration'
+    url: 'https://ramport.angelo.edu/web/home-community/registration'
   },
 ];
