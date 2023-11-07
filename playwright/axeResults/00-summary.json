@@ -75,7 +75,7 @@
     ]
   },
   {
-    "title": "Academic Suspension Appeal - Appeal Submission",
+    "title": "Academic Suspension Appeal",
     "url": "https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwwkappl.p_insert_appeal",
     "violationCount": 3,
     "violations": [
@@ -327,7 +327,7 @@
     ]
   },
   {
-    "title": "Academics - RamPort",
+    "title": "RamPort-Academics",
     "url": "https://ramport.angelo.edu/web/home-community/academics",
     "violationCount": 9,
     "violations": [
@@ -1276,7 +1276,7 @@
     ]
   },
   {
-    "title": "Aid Year",
+    "title": "SSB - Aid Year",
     "url": "https://sso.prod.angelo.edu/ssomanager/c/SSB?pkg=bwrkelig.P_DisplayTabs",
     "violationCount": 3,
     "violations": [
@@ -1570,7 +1570,7 @@
     ]
   },
   {
-    "title": "Angelo State University Transcript Request | Parchment",
+    "title": "Transcript Request | Parchment",
     "url": "https://www.parchment.com/u/registration/32224/account",
     "violationCount": 6,
     "violations": [
@@ -2426,7 +2426,7 @@
     ]
   },
   {
-    "title": "Campus Life - RamPort",
+    "title": "RamPort - Campus Life",
     "url": "https://ramport.angelo.edu/web/home-community/campus-life",
     "violationCount": 10,
     "violations": [
@@ -4630,7 +4630,7 @@
     ]
   },
   {
-    "title": "Enrollment Verification Request · Angelo State University",
+    "title": "Enrollment Verification Request",
     "url": "https://www.angelo.edu/content/forms/35-enrollment-verification-form",
     "violationCount": 2,
     "violations": [
@@ -4703,7 +4703,7 @@
     ]
   },
   {
-    "title": "Financial Aid & Billing - RamPort",
+    "title": "RamPort - Financial Aid & Billing",
     "url": "https://ramport.angelo.edu/web/home-community/finances",
     "violationCount": 10,
     "violations": [
@@ -5958,7 +5958,7 @@
     ]
   },
   {
-    "title": "Home - RamPort",
+    "title": "RamPort - Home",
     "url": "https://ramport.angelo.edu/",
     "violationCount": 9,
     "violations": [
@@ -6503,7 +6503,7 @@
     ]
   },
   {
-    "title": "Knowledge Home - Knowledge Portal",
+    "title": "Knowledge Home",
     "url": "https://angelostate.servicenowservices.com/kb?id=kb_home",
     "violationCount": 4,
     "violations": [
@@ -8219,7 +8219,7 @@
     ]
   },
   {
-    "title": "Loans · Angelo State University",
+    "title": "Loans",
     "url": "https://www.angelo.edu/services/financial_aid/long_term_loans/",
     "violationCount": 8,
     "violations": [
@@ -8818,7 +8818,7 @@
     ]
   },
   {
-    "title": "Login - Parking Services - OPS-COM",
+    "title": "Parking Services",
     "url": "https://angelostate.ops-com.com/login",
     "violationCount": 5,
     "violations": [
@@ -9715,7 +9715,7 @@
     ]
   },
   {
-    "title": "Password Reset Server",
+    "title": "Password Reset",
     "url": "https://mypassword.angelo.edu/Login.aspx?ReturnUrl=%2f",
     "violationCount": 4,
     "violations": [
@@ -9900,7 +9900,7 @@
     ]
   },
   {
-    "title": "Public Knowledge - Using the MyPassword Service",
+    "title": "Public Knowledge - MyPassword Service",
     "url": "https://angelostate.servicenowservices.com/kb?id=kb_article_view&sysparm_article=KB0010286&sys_kb_id=62b1d388dbd08d1047e8818a1396193c&spa=1",
     "violationCount": 2,
     "violations": [
@@ -11046,7 +11046,7 @@
     ]
   },
   {
-    "title": "Registration - RamPort",
+    "title": "RamPort - RamPort",
     "url": "https://ramport.angelo.edu/web/home-community/registration",
     "violationCount": 9,
     "violations": [
